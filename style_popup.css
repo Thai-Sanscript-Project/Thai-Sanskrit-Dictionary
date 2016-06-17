@@ -1,0 +1,39 @@
+/*//===================================================================================
+// Version: 1.0
+// Copyright (c) Ales Chejn, hvalur.org 2011
+// All rights reserved
+//
+// This program is free software: you can redistribute it and/or modify
+// it under the terms of the GNU General Public License as published by
+// the Free Software Foundation, either version 3 of the License, or
+// (at your option) any later version.
+//
+// This program is distributed in the hope that it will be useful,
+// but WITHOUT ANY WARRANTY; without even the implied warranty of
+// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+// GNU General Public License for more details.
+//
+// You should have received a copy of the GNU General Public License
+// along with this program.  If not, see <http://www.gnu.org/licenses/>.
+//
+// For support contact us at www.hvalur.org
+//===================================================================================*/
+body {
+margin: 0px 20px;
+padding: 5px;
+font-family: "Trebuchet MS", Verdana, Arial, sans-serif;
+font-size: 12px;
+color: #333333;
+}
+h2 {
+color: #B7271F;
+font-size: 18px;
+font-weight: 100;
+padding : 10px 0 15px 0;
+}
+h4 {
+color: #B7271F;
+font-size: 16px;
+font-weight: 100;
+padding : 15px 0 5px 0;
+}

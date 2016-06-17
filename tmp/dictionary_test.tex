@@ -1,0 +1,1078 @@
+\documentclass[twocolumn]{book}
+\usepackage[top=2cm, bottom=2cm, left=2cm, right=2cm]{geometry}
+\usepackage{fancyhdr}
+\usepackage[icelandic, czech, english]{babel}
+
+\usepackage[utf8x, utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{enumitem}
+\usepackage{hanging}
+\newcommand{\entry}[2]{\hangpara{2em}{1}\textsf{\textbf{#1}}\ #2\markboth{#1}{#1}\par}\nopagebreak[4]
+\newcommand*{\dictchar}[1]{\centerline{\LARGE\textbf{#1}}\par}
+\pagestyle{fancy}
+\fancypagestyle{basicstyle}{%
+ \fancyhf{}
+  \renewcommand{\headrulewidth}{0.4pt}
+  \renewcommand{\footrulewidth}{0pt}
+  \fancyhead[LE,RO]{\textsf{\textbf{\chaptitle}}}
+  \fancyhead[LO,RE]{\textsf{\textbf{\thepage}}}}
+\fancypagestyle{dictstyle}{%
+
+  \fancyhf{}
+  \fancyhead[LE,RO]{\textsf{\textbf{\rightmark\ -- \leftmark}}}
+  \fancyhead[LO,RE]{\textsf{\textbf{\thepage}}}}
+\usepackage{tipa}
+\usepackage{fix2col}
+\usepackage{marvosym}
+\usepackage{dingbat}
+\usepackage{manfnt}
+\usepackage{latexsym}
+\usepackage{graphicx}
+\usepackage{color}
+
+\usepackage{titlesec}
+\titleformat{\chapter}[block]
+  {\normalfont\huge\bfseries}{\thechapter.}{1em}{\Huge}
+\titlespacing*{\chapter}{20pt}{20pt}{20pt}
+\definecolor{darkgreen}{rgb}{0.80,0.40,0.11}
+\graphicspath{{/home/chejnik/Dokumenty/web/HVALUR-JOINED/www/images/biolib/full/}{/home/chejnik/Dokumenty/web/HVALUR-JOINED/www/images/uploaded_files/}}
+
+\title{\textbf{Islandsko-český studijní slovník}
+       \thanks{Tato kniha byla vytvořena v \LaTeX{}u pod Ubuntu 10.04. Poděkování patří všem autorům, kteří publikují pod svobodnými licencemi.}}
+\author{Aleš Chejn, Jón Gíslason}
+
+\date{říjen 2011}
+
+\begin{document}
+ \makeatletter\@openrightfalse
+\maketitle
+\@openrighttrue\makeatother
+\renewcommand {\contentsname} {Obsah}
+\renewcommand {\chaptername} {Kapitola}
+ \makeatletter\@openrightfalse
+\tableofcontents
+\@openrighttrue\makeatother
+\newpage\pagestyle{basicstyle}
+
+\newcommand*{\sectitle}{}
+
+\renewcommand*{\sectionmark}[1]{%
+    \renewcommand*{\sectitle}{#1}}
+\newcommand*{\chaptitle}{}
+\renewcommand*{\chaptermark}[1]{%
+    \renewcommand*{\chaptitle}{#1}}
+    \makeatletter\@openrightfalse
+\chapter{Průvodce po slovníku}
+\@openrighttrue\makeatother
+
+\section{Heslové slovo}
+
+\subsection{Řazení slov }
+Heslová  slova jsou zobrazena tučně a jsou seřazena podle islandské abecedy :
+
+\textbf{a, á, b, d, ð, e, é, f, g, h, i, í, j, k, l, m, n, o, ó, p, r, s, t, u, ú, v, x, y, ý, þ, æ, ö}
+
+\subsection{Členění heslových slov}
+Uvnitř heslových slov  se vyskytují značky  \textbf{“·”} a \textbf{“|”}. Složená slova jsou rozdělena značkami \textbf{“··”}, pokud se jedná o hlavní dělení slova,  
+
+
+\entry{ráð··hús}{}
+Pokud se jedná o vedlejší dělení slova, je použita jen jedna značka \textbf{“·”} 
+
+
+\entry{við·bótar··líf·eyris·sparnað|ur}{}
+Značka \textbf{“|”} označuje místo ve slově, kde se deklinační koncovka připojuje ke slovu
+
+
+\entry{heils|a} {\small{f (-u) }}
+Pokud se ohýbá celá poslední část složeného slova je to označeno znaky \textbf{“··”} (hlavní dělení složeného slova) a \textbf{“|”}.
+
+
+\entry{við··|bragð} {\small{n (-bragðs, -brögð)}}
+
+\subsection{Varianty}
+Některá heslová slova mají varianty. Varianty jsou uvedeny v záhlaví hesla a lze je vyhledat ve slovníku jako svébytná hesla. V online verzi lze variantu navštívit kliknutím na hypertextový odkaz. 
+
+	
+\entry{albatros|i albatros} {\small{m (-a, -ar)}}
+
+\subsection{Homonyma }
+Homonyma (heslová slova stejného reprezentativního tvaru) se označují povýšenými arabskými číslicemi uváděnými před klíčovým slovem. 
+
+
+\entry{\textsuperscript{1}vor} {\small{n (-s, -)}} 
+\entry{\textsuperscript{2}vor} {\small{pron poss}}
+Homonyma jsou řazena podle slovního druhu. V případě dvou  podstatných jmen je pořadí mužský rod, ženský rod, střední rod. V případě dvou podstatných jmen stejného rodu je pořadí podle druhu skloňování – nejdříve je slovo se slabým skloňováním, potom se silným. V případě dvou sloves, opět má přednost sloveso se slabým časováním před slovesem se silným časováním.
+
+
+\section{Slovní druhy}
+Za každým klíčovým slovem se nachází zkratka, která popisuje slovní druh heslového slova. Pokud se heslové slovo řadí do více slovních druhů, jsou jednotlivé zkratky pro slovní druhy odděleny znakem \textbf{“/”}
+
+
+\entry{af} {\small{prep/ adv}}
+a seřazeny podle českého ustáleného řazení slovních druhů (podst. jméno, příd. jméno, zájmeno, číslovka, sloveso, příslovce, předložka, spojka, částice, citoslovce)
+
+\subsection{Podstatná jména}
+Podstatná jména jsou označená následovně: \textbf{m} – podst. jméno rodu mužského, \textbf{f} – podst. jméno rodu ženského, \textbf{n} – podst. jméno rodu středního
+
+	
+\entry{hestur} {\small{ m}}
+\entry{kona } {\small{f}}
+\entry{hús } {\small{n}}
+
+\subsection{Přídavná jména}
+Přídavná jména se ve slovníku vyskytují v rodě mužském. Přídavná jména jsou označena zkratkou \textbf{adj}. Druhý stupeň stupňování je označen zkratkou \textbf{comp} a třetí stupeň zkratkou \textbf{sup}
+
+
+\entry{fallegur} {\small{ adj}}
+\entry{fremri} {\small{ adj comp}}
+\entry{einasti} {\small{ adj sup}}
+Pokud se přídavné jméno pojí s určitý pádem, jsou použity zkratky \textbf{acc} (4. pád), \textbf{dat} (3.pád), \textbf{gen} (2.pád).
+
+
+\entry{líkur} {\small{ adj dat}}
+
+\subsection{Zájmena}
+Zájmena jsou označena zkratkou \textbf{pron}. Dále jsou zájmena tříděna na zájmena ukazovací (\textbf{dem}), přivlastňovací (\textbf{poss}), osobní (\textbf{pers}) a neurčitá (\textbf{indef}).
+
+
+\entry{\textsuperscript{2}hver} {\small{ pron}}
+\entry{þessi} {\small{ pron dem}}
+\entry{minn} {\small{ pron poss}}
+\entry{ég} {\small{ pron pers }}
+\entry{nokkur} {\small{ pron indef}}
+U zájmena osobních je dále popsán pád a číslo
+
+
+\entry{mig} {\small{ pron pers acc sg}}
+
+\subsection{Číslovky}
+Číslovky jsou označeny zkratkou \textbf{num}. V případě prvních čtyř číslovek (1-4) jsou ve slovníku uvedeny jako heslová slova také tvary ženského i středního rodu. V takovém případě jsou označeny zkratkou \textbf{m} pro mužský rod, zkratkou \textbf{f} pro ženský rod a zkratkou \textbf{n} pro střední rod. Zkratkou \textbf{ord} jsou označeny číslovky řadové.
+
+
+\entry{tuttugu} {\small{ num}}
+\entry{tveir} {\small{ num m}}
+\entry{tvær} {\small{ num f}}
+\entry{tvö} {\small{ num n}}
+\entry{fyrsti} {\small{ num ord}}
+
+\subsection{Slovesa}
+Slovesa jsou jako heslová slova uvedena v infinitivu. Slovesa jsou označena zkratkou \textbf{v}. Mediopasiva jsou označena jako \textbf{refl} a slovesa, která jsou vždy neosobní, jsou označena \textbf{impers}
+
+
+\entry{fara} {\small{ v}}
+\entry{nálgast} {\small{ v refl}}
+\entry{svima} {\small{ v impers}}
+U sloves je dále uvedeno s jakým pádem se pojí. Zkratka \textbf{acc} označuje 4. pád, zkratka \textbf{dat} 3. pád, zkratka \textbf{gen} 2. pád, zkratka \textbf{nom} 1. pád. V případě, že se sloveso pojí s různými pády je použit znak \textbf{“/”}
+
+
+\entry{klór|a} {\small{ v acc/dat}}
+V případě, že se sloveso pojí s více pády je použit znak \textbf{“+”}
+
+	
+\entry{gefa} {\small{ v dat + acc}}
+ 
+\subsection{Příslovce}
+Příslovce jsou označena zkratkou \textbf{adv}. Druhý stupeň stupňování je označen zkratkou \textbf{comp} a třetí stupeň zkratkou \textbf{sup}
+
+
+\entry{nýlega} {\small{ adv}}
+\entry{ofar} {\small{ adv comp }}
+\entry{síðast} {\small{ adv sup}}
+
+\subsection{Předložky}
+Předložky jsou označeny zkratkou \textbf{prep}. Pokud se předložka pojí výhradně s jedním pádem, jsou použity zkratky pro 4. pád (\textbf{acc}), 3. pád (\textbf{dat}), 2. pád (\textbf{gen}). V případě, že se předložky pojí s různými pády je použit znak \textbf{“/”}
+
+
+\entry{af} {\small{ prep/ adv dat}}
+\entry{fyrir} {\small{ prep/ adv acc/ dat}}
+\entry{milli} {\small{ prep gen}}
+
+\subsection{Spojky}
+Spojky jsou označeny zkratkou \textbf{conj}
+
+\subsection{Částice}
+Částice jsou označeny zkratkou \textbf{part}
+
+\subsection{Citoslovce}
+Citoslovce jsou označeny zkratkou \textbf{inter}
+
+
+\section{Skloňování a časování}
+V online verzi jsou po pravé straně uvedeny kompletní deklinační tabulky pro podstatná jména, přídavná jména, zájmena, číslovky (1-4), slovesa a stupňování příslovcí. Následující příklad ukazuje skloňovací tabulku pro heslové slovo hvalur.
+
+Deklinační tvary nebo koncovky podst. jmen, příd. jmen, zájmen, sloves jsou uvedeny v závorkách za slovním druhem. Pokud se ve slově vyskytuje změna samohlásky, je uvedena celá poslední část složeného slova. Pokud se nejedná o slovo složené a vyskytuje se změna samohlásky, pak jsou uvedeny tvary celého slova.
+
+
+\entry{mynd} {\small{ f (-ar, -ir)}}
+\entry{á··|lag} {\small{ n (-lags, -lög) }}
+\entry{maður} {\small{ m (manns, menn)}}
+V případě, že heslové slovo má více deklinačních tvarů např. pro 2. pád jednotného čísla, jsou varianty koncovky odděleny znakem \textbf{“/”}
+
+
+\entry{beð|ur} {\small{ m (-s/-jar, -ir)}}
+
+\subsection{Podstatná jména}
+U podstatných jmen je ukázán tvar heslového slova pro 2. pád jednotného čísla a 1. pád množného čísla.
+
+	
+\entry{hval|ur} {\small{ m (-s, -ir)}}
+kde hvals je 2. pád jednotného čísla a hvalir 1. pád množného čísla
+ Pokud je uveden pouze jeden tvar, jedná se o 2. pád jednotného čísla a znamená to rovněž, že heslové slovo se nevyskytuje v množném čísle.
+
+
+\entry{heisl|a} {\small{ (-u)}}
+kde heislu je 2. pád jednotného čísla (množné číslo se nevyskytuje)
+ Pokud není uveden žádný tvar v závorce a místo toho je použita zkratka \textbf{pl}, znamená to, že heslové slovo se vyskytuje pouze v množném čísle. 
+
+
+\entry{afar··kostir} {\small{ m pl}}
+Pokud je použita zkratka \textbf{indecl}, znamená to, že podst. jméno je nesklonné.
+
+
+\entry{fræði} {\small{ f indecl}}
+
+\subsection{Přídavná jména}
+U přídavných jmen jsou uvedeny v závorkách pouze tvary, které nejsou tvořeny pravidelně nebo se v nich objevuje změna samohlásky. Pokud je přídavené jméno nesklonné, je uvedena zkratka \textbf{indecl}
+
+
+\entry{reglu··|samur} {\small{ adj (f -söm)}}
+\entry{hýr } {\small{adj (f hýr)}}
+\entry{tví··mála} {\small{ adj indecl}}
+
+\subsection{Slovesa}
+Islandská slovesa se dělí na slabá a silná. Do jaké skupiny sloveso patří, lze poznat podle počtu koncovek nebo slovních tvarů uvedených v závorce.
+3.3.1 Slabá slovesa, která tvoří 1. osobu jednotného čísla minulého času koncovkou -aði, mají v závorce uveden jen jednu koncovku a to jmenovitě (-aði). Příčestí minulé není ukázáno, neboť se tvoří pravidelně přidáním -ð k infinitivu slovesa .
+
+
+\entry{ætl|a} {\small{ v (-aði)}}
+
+3.3.2 U zbývajících skupin slabých sloves se v závorce nachází koncovka  1. osoby jednotného čísla minulého času a příčestí minulé ve středním rodě.
+
+
+\entry{kenn|a} {\small{ v (-di, -t) }}
+kde tvar kenndi je 1. osoba jednotného čísla minulého času a tvar kennt je příčestí minulé ve středním rodě. 
+
+3.3.3 Silná a nepravidelná slovesa mají v závorce vždy čtyři tvary – jmenovitě 1. osobu jednotného čísla přítomného času, 1. osobu jednotného čísla minulého času, 1. osobu množného čísla minulého času a příčestí minulé ve středním rodě
+
+
+\entry{grípa} {\small{ v (gríp, greip, gripum, gripið) acc}}
+
+\subsection{Gramatické informace ve významech heslových slov}
+U některých významů v heslovém slově se vyskytují gramatické informace, které popisují chování danného významu
+
+
+\entry{batn/a} {\small{ v (-aði)}
+
+...
+\textbf{2.}\textbf{ e-m batnar }{\small{impers }}{(kdo) se uzdravuje, (komu) je lépe } 
+	\textit{Mér batnaði fljótt.} \textit{Rychle jsem se uzdravil. }}
+	
+Zkratka \textbf{impers} označuje, že druhý význam slovesa batna se vyskytuje jako neosobní sloveso. V tomto případě je ukázáno na příkladu, v jakém pádu je podnět v mrtvé příkladě (e-m batnar) i ilustračním příkladě (mér batnaði fljót). 
+Nějčastějšími gramatickými informacemi u významů v heslovém slově jsou \textbf{pl} pro množné číslo podstatného jména    
+
+
+\entry{bót} {\small{ f (bótar, bætur)}
+
+...
+\textbf{bætur} \textit{(tryggingafé)} {\small{pl} {dávky, příspěvky }}}
+dále \textbf{refl} pro mediopasivní tvary slovesa a \textbf{impers} pro neosobní slovesa. 
+
+
+\section{Definice}
+
+\subsection{Základní tvar}
+Základním tvarem definice je, že jednomu islandskému slovu odpovídá jeden nebo více českých významů.
+
+
+\entry{landa··fræði} {\small{ f indecl}
+
+{zeměpis, geografie}}
+V některých případech je v české části použita závorka. Slovo v závorce a) zužuje význam českého slova 
+
+
+\entry{að··stoð} {\small{ f (-ar)} 
+{(malá) pomoc }}
+a b) brání dvojznačnosti
+
+
+\entry{fíkj|a} {\small{ f (-u, -ur)}
+\footnotesize{bot.} {fík (plod) }}
+
+V mnoha případech je závorka v české části použita pro příklad užití českého slova a tím vymezení jeho významu
+
+\entry{að·gengi··legur} {\small{ adj}
+{přístupný (vchod ap.) }}
+Značka \textbf{“/”} slouží v české části významu k oddělení více významů pojících se s jedním nebo více slovy a je použit v české části následujícím způsobem
+
+\entry{andlits··fall} {\small{ n (-s)}
+{rysy/podoba tváře }}
+čte se rysy tváře, podoba tváře
+
+\subsection{Opis heslového slova}
+V případech, kdy islandské slovo nemá ekvivalent v českém jazyku, jsou významy islandských slov opsány  delším opisem, a menším písmem. Příkladem jsou slova z lidových pověstí, kulinářské speciality nebo botanické pojmy. 
+
+\entry{til··ber|i} {\small{ m (-a, -ar)} 
+\footnotesize{pov.} \textit{stvoření, které dojí krávy a ovce jiných hospodářů}}
+
+\entry{klein|a} {\small{ f (-u, -ur)} 
+\footnotesize{kulin. }\textit{druh islandské koblihy }}
+
+\subsection{Slovní spojení}
+V definici heslového slovo jsou uváděny slovní spojení. Ustálená slovní spojení jsou psány tučně a červenou barvou. Po slovním spojení následuje překlad slovního spojení. 
+
+\entry{lær|a} {\small{v (-ði, -t) acc}
+...
+\textbf{læra utanbókar} {učit se zpaměti, memorovat}}
+Mezi slovní spojení v tomto slovníku řadíme a) tvary heslového slova, které se chovají jako samostatné slovo b) příkladová spojení c) ustálená slovní spojení (fráze) a d) rčení, přísloví. 
+
+4.3.1 	Tvary heslového slova, které se chovají jako samostatné slovo 
+Zde řadíme např. množné číslo heslového slova, které má odlišný význam. (zkratka \textbf{pl})
+
+\entry{bót} {\small{ f (bótar, bætur)}
+...
+\textbf{bætur} \textit{(tryggingafé)} {\small{ pl} {dávky, příspěvky} }}
+Dále sem patří mediopasivní slovní tvar (zkratka \textbf{refl})
+
+\entry{finna} {\small{ v (finn, fann, fundum, fundið) acc}
+...
+\textbf{finnast} {\small{ refl} {potkat se, setkat se, shledat se} }}
+Rovněž do této skupiny patří tvar příčestí minulého v mužském rodě. Tento tvar je označen zkratkou \textbf{pp}. 
+
+\entry{drekka} {
+...
+\textbf{drukkinn} {\small{ pp }} {$\rightarrow$} \textbf{drukkinn}}
+V tomto případě se slovní tvar drukkinn vyskytuje ve slovníku jako heslové slovo a je použit odkaz na toto slovo. V online verzi lze navštívit slovní tvar kliknutím na hypertextový odkaz.
+
+4.3.2	 Příkladová spojení
+Příkladová spojení  jednotlivých významů jsou uváděna za významem, ke kterému patří. Příkladová spojení ilustrují komunikační chování těchto slov v příslušných významech a v různých syntagmatech, např. sloveso s určitou předložkou ap. 
+
+\entry{leit/a} {\small{ v (-aði) gen}
+...
+\textbf{leita að e-u} \small{dat} {hledat (co)}
+	\textit{leita að lyklunum} \textit{hledat klíče}  }
+
+4.3.3	 Ustálená slovní spojení 
+Tento druh slovních spojení je charakterizován většinou přeneseným významem ve slovním spojení a tato spojení jsou uváděna za posledním významem, viz. 6. Řazení významů v definici. 
+
+\textbf{leita e-s dyrum og dyngjum} {hledat (co/ koho) úplně všude/ po všech čertech}
+
+4.3.4	 Rčení a přísloví 
+
+\entry{eik} {\small{ f (-ar/-ur, -ur)}
+...
+\textbf{Eplið fellur sjaldan langt frá eikinni.} \footnotesize{přís.} {Jablko nepadá daleko od stromu.}}
+
+v plném znění je slovní spojení  halda á einhverju, přičemž einhverju zastupuje neživotné podstatné jméno v 3. pádě.
+Znak \textbf{"/"} vyjadřuje různé možnosti vyjádření slovního spojení
+
+\entry{blín|a} {\small{ v (-di, -t)}
+...
+\textbf{blína á e-ð/e-n} {koukat se na (co/koho)} }
+se může přečíst jako blína á e-ð nebo blína á e-n
+Závorky jsou použity na tu část slovního spojení, které je možné vypustit.
+	
+\entry{\textsuperscript{1}ár} {\small{ f (-ar, -ar) }
+...
+\textbf{taka (of) djúpt í árinni} \footnotesize{přen.} {přehnat (co v tvrzení)}}
+se může přečíst jako taka djúpt í árinni nebo taka of djúpt í árinni
+
+\section{Vícevýznamovost}
+
+\subsection{Jednotlivá slova}
+Velké množství islandských slov má více než jeden význam. Odlišné významy jsou uvedeny každý zvlášť a rozlišeny arabskými číslicemi a islandskými synonymy. 
+
+\entry{land} {\small{ n (lands, lönd) }
+\textbf{1.} \textit{(þurrlendi)} {souš, pevnina, země} 
+\textbf{2.} \textit{(árbakki)} {břeh }
+\textbf{3.} \textit{(ríki)} {země, stát }
+\textbf{4.} \textit{(landareign)} {pozemek} }
+
+\subsection{Slovní spojení}
+V případě, že slovní spojení uvnitř definice má více významů, jsou jednotlivé významy odlišeny písmeny a., b., c.
+
+\entry{drag} {\small{ n (drags, drög) }
+{mokřina, podmoklý terén} 
+\textbf{drög}\textbf{ a.} \textit{(uppsprettur)} {\small{ pl}} {prameny (řeky ap.)} 
+\textbf{drög} \textbf{b.} \textit{(undirbúningur)} {\small{ pl }}{náčtr, návrh}}
+
+\section{Řazení významů v definici }
+V definici jsou nejříve seřazeny významy slova a odlišeny arabskými číslicemi.
+
+\subsection{V rámci významu}
+Ustálená slovní spojení jsou uváděna v rámci jednotlivého významu, pokud se s ním významově váží.   
+
+\entry{tím|i} {\small{ m (-a, -ar) }
+\textbf{1.} \textit{(tíð)} {čas} 
+\textbf{í þann tíma} \textit{(\textsuperscript{2}þá)} {pak} 
+\textbf{2.} \textit{(klukkustund)} {hodina (šedesát minut)} }
+
+\subsection{Za posledním očíslovaným významem}
+Pokud se slovní spojení nijak silně neváže k žádnému významu, je řazeno po posledním očíslovaném významu. Ustálená slovní spojení jsou uvedena značkou {$\diamondsuit$}
+
+\entry{finna} {\small{ v (finn, fann, fundum, fundið) acc }
+\textbf{1.} \textit{(uppgötva)} {najít, nalézt} 
+...
+\textbf{3.} \textit{(skynja)} {cítit, vnímat} 
+...
+{$\diamondsuit$}
+\textbf{finna að} \textit{(gagnrýna)} {kritizovat, nacházet chyby }
+...}
+
+\subsection{Způsob řazení slovních spojení:}
+Slovní spojení, které se nachází po posledním očíslovaném významu, jsou řazeny podle předložky, se kterou se pojí. Pro orientaci v rozsáhlých definicích je uvedeno heslové slovo \textbf{"+"} předložka před slovním spojením. 
+
+\entry{\textsuperscript{2}koma} {\small{ v (kem, kom, komum, komið) dat}
+...
+{\small{koma + úr}}
+\textbf{e-ð er komið úr móð} {(co) vychází z módy}
+{\small{koma + út}}
+\textbf{koma út} {vyjít, objevit se }
+\textbf{koma upp úr kafinu}{ objasnit se, vyjasnit se}
+...}
+Potom následují slovní spojení mediopasiva řazená opět podle předložky, se kterou se pojí. 
+
+\entry{\textsuperscript{2}koma} {\small{ v (kem, kom, komum, komið) dat}
+... 	
+{\small{komast}}
+\textbf{komast} {\small{ refl}} {přijet, dostat se} 
+...}
+
+Poté následuje příčestí minulé v mužském rodě. V případě, že se příčestí minulé vyskytuje jako heslové slovo ve slovníku, je uveden odkaz na toto heslové slovo.
+
+\entry{\textsuperscript{2}koma} {\small{ v (kem, kom, komum, komið) dat}
+...
+{\small{kominn}} 
+\textbf{kominn af góðu fólki} {být z dobré rodiny}
+...}
+
+Poté následují slovní spojení, která neobsahují předložky nebo které nebylo možné zařadit.
+
+\entry{\textsuperscript{2}koma} {\small{ v (kem, kom, komum, komið) dat}
+... 
+{\small{Slovní spojení}}
+
+\textbf{koma e-u heim og saman} \textit{(samrýma)} {uvést v soulad} 
+...}
+
+Nakonec přicházejí přísloví nebo rčení. 
+
+\entry{\textsuperscript{2}koma} {\small{ v (kem, kom, komum, komið) dat}
+...
+{\small{Přísloví}}
+
+\textbf{Ekki (eigi) fellur eik við fyrsta högg.} \footnotesize{přís.} {Jedna vlaštovka jaro nedělá.} }
+
+\section{Užití synonym a antonym}
+
+\subsection{Synonyma}
+Před opisem významu heslového slova jsou uváděny v závorkách synonyma nebo synonymní slovní spojení. Islandská synonyma slouží a) islandskému uživateli k rozlišení českých významů b) českému uživateli  jako dodatečná informace o významu slova. V online verzi se přechod na význam synonyma uskutečňuje kliknutím na hypertextový odkaz. 
+
+\entry{staða} {\small{ f (stöðu, stöður) }
+\textbf{1.} \textit{(ástand)} {situace} 
+\textbf{2.} \textit{(starf)} {pozice (ve firmě ap.), profese}}
+V případě, že je uveden synonymní slovní spojení je v závorce se znakem \textbf{"*"} za tímto spojením uveden odkaz na heslové slovo ve slovníku. V online verzi je tento odkaz realizován hypertextovým odkazem a není pro to nutné odkaz uvádět.
+V tištěné verzi
+
+\entry{bygging} {\small{ f (-ar, -ar) }
+\textbf{1.}\textit{(það að byggja)(* byggja)} {(vý)stavba, stavení} 
+\textbf{2.} \textit{(hús)} {budova }}
+
+\subsection{Antonyma}
+Antonyma jsou uváděna za opisem významu heslového slova se značkou \textbf{x}. Antonyma pomáhají vymezovat význam slova a také slouží k větší provázanosti slov. V online verzi je přenesení na antonymum realizován kliknutím na hypertextový odkaz.
+
+\entry{kaldur} {\small{ adj (f köld) }
+\textbf{1.} {studený, chladný} \textit{x (heitur)}}
+
+\section{Oborové a stylové charakteristiky}
+K upřesnění významu heslového slova slouží oborové a stylové charakteristiky.
+
+\subsection{Oborové charakteristiky}
+Oborové charakteristiky plní více funkcí
+a) Oborové charakteristiky zařazují islandské slovo do určitého oboru a naznačují použití danného slova v jazyce.
+
+\entry{berg } {\small{n (-s, -)}
+\textbf{1.} \footnotesize{ geol. } {hornina, kámen} 
+\textbf{2. } \textit{(klöpp)} { skalní stěna } }
+b) Oborové charakteristiky vymezují význam českého slova,
+
+\entry{mús} {\small{ f (músar, mýs)}
+\textbf{1.} \footnotesize{ zool.} { myš } (Mus)
+\textbf{2.} \footnotesize{ poč.} { myš } }
+
+\subsection{Stylové charakteristiky}
+Stylové charakteristiky jsou uváděny v případu, kdy význam heslového slova je možné použít pouze při určité příležitosti nebo je význam jazykově zabarven.
+
+\entry{dís} {\small{ f (-ar, -ir) }
+...
+\textbf{2.} \footnotesize{básn.} {sestra} }
+
+\section{Syntax}
+Informace o syntaxi se slovníku vyskytuje ve třech různých zápisech. 1) Informace uvedené zkratkou 2) Mrtvé příklady 3) Ilustrační příklady. 
+Jaká informace o syntaxi je ve slovníku obsažena a co je možno vyčíst z informace?
+
+Informace o syntaxi popisují
+a) zda-li je sloveso tranzitivní nebo intranzitivní a s jakým(i) pádem (pády) se pojí, pokud je tranzitivní
+b) zda-li je podmět a předmět slovesa živý či neživý
+c) zda-li je sloveso osobní či neosobní a v jakém pádu je podmět, pokud je sloveso neosobní
+d) zda-li je podmět gramatický? (gerfifrumlag)
+e) zda-li je sloveso použito v mediopasivním tvaru
+f) informace o významu - nejčastější příklady, které se pojí se slovesem
+g) s kterými příslovci nebo předložkami se sloveso pojí
+h) samostatná definice pro příčestí minulé nebo přítomné
+\subsection{Informace o syntaxi uvedené zkratkou (viz. oddíl 2. Slovní druhy)}
+Zde máme na mysli informace o pádě (nom, acc, dat, gen), slovesu v mediopasivním tvaru (refl), neosobním slovesu (impers), slovesu počasí (met), čísle (sg, pl) ap.
+\subsection{Mrtvý příklad}
+Mrtvým příkladem nazýváme příklad, kdy předmět je zastoupen zájmenem neurčitým v pádě, s kterým se slovo pojí a slovesa je zpravidla v infinitivu. V případě, že podmět není v 1. pádě (např. u sloves neosobních), je sloveso uvedeno v 3. osobě jednotného čísla přítomného času.
+Ve slovních spojeních používáme zkratky pro tvary islandského slova einhver (někdo) a eitthvað (něco). Tyto zkratky vyjadřují a) pád a b) životnost nebo neživotnost předmětu
+Vysvětlení zkratek: 
+\textbf{e-ð}  - eitthvað (4. pád, neživotný předmět), \textbf{e-n}  - einhvern (4. pád, životný předmět), \textbf{e-u} -einhverju (3. pád, neživotný předmět), \textbf{e-m} – einhverjum (3. pád, životný předmět),  \textbf{e-s} einhvers (2. pád, neživotný předmět), \textbf{e-rs} einhvers (2. pád, životný předmět)
+
+\entry{
+leit|a } {\small{v (-aði) gen}
+...
+{\small{leita + að}}
+\textbf{leita að e-u/ e-m} {hledat (co/ koho)}
+	\textit{
+leita að lyklunum} \textit{ hledat klíče  }}
+Příklad tedy přečteme jako leita að einhverju (hledat co) a leita að einhverjum (hledat koho). V tomto případě se tedy sloveso pojí s 3. pádem a předmět může být životný i neživotný.
+
+\subsection{Ilustrační příklad}
+Ve slovníku se vyskytuje velké množství ilustračních příkladů a jejich překladů. Ilustrační příklad se liší od příkladu mrtvého tím, že místo zájmen neurčitých se vyskytuje frekventované slovo v bězném projevu. Ilustrační příklady slouží k ilustraci použití
+heslového slova. Snahou bylo uvést příklady, které jsou časté v běžné řeči.
+Ilustračním příkladem může být a)(složené) slovo, b) slovní spojení, c) věta 
+
+9.3.1	 Slovo jako ilustrační příklad 
+
+\entry{
+hett/a } {\small{f (-u, -ur)}
+\textbf{1. } {kapuce}
+\textit{hettuúlpa} \textit{ bunda s kapucí  }}
+
+9.3.2	 Slovní spojení jako ilustrační příklad 
+
+\entry{
+tím|i  } {\small{m (-a, -ar)}
+...
+\textbf{2. } \textit{ (klukkustund) }{hodina (šedesát minut)}
+\textit{tveggja tíma gangur} \textit{ dvouhodinový pochod  }}
+
+9.3.3	 Věta jako ilustrační příklad 
+
+\entry{
+mæt|a   } {\small{v (-ti, -t) dat}
+...
+\textbf{mætast } \textit{ (ná saman) }
+{\small{ refl }}{setkat se}
+\textit{Þau mættust á miðri leið.} \textit{  Potkali se na půli cesty. }} 
+
+\section{Fotografie, obrázky a ilustrace}
+V online verzi je publikováno značné množství fotografií zejména rostlin a živočichů ale i fotografií, které dokumentují místopisně heslová slova (např. knihovnu, poštu, řeku nebo islandské kulinářské speciality (různé druhy koláčů, dortů, koblih ap.)).
+
+Fotografie z oblasti biologie a botaniky jsou dvojího druhu. Buď a) odkazují hypertextově na www.biolib.cz (Databázi rostlin a živočichů), kde je možné se dozvědět více o daném druhu rostliny nebo živočicha nebo b) po kliknutí na miniaturní fotografii se otevře detailní fotografie ve vyskakovacím okně (kliknutím poza fotografii se okno s fotografií automaticky zavře).
+Všechny fotografie, které se vyskytují ve slovníku, jsou publikovány pod veřejnými licencemi a jsou uvedeny s názvem autora a licence.
+
+\par\begin{center}\setlength\fboxsep{0pt}\setlength\fboxrule{0.5pt}\fbox{\includegraphics[width=6cm]{/home/chejnik/Dokumenty/web/HVALUR-JOINED/www/images/uploaded_files/ds_image_posthus_0_2.jpg}}\end{center}
+\par\begin{center}\footnotesize {Autor:hvalur.org Licence: CC Unported Licence}\end{center}
+
+\section{Výslovnost slov }
+V hranatých závorkách je uveden IPA zápis výslovnosti heslového slova (např. heslové slovo úlfur - [ulv{\textscy}r]). Dvojtečka označuje dlouhou samohlásku nebo souhlásku (např. renna - [r{\textepsilon}n{\textlengthmark}a]). V IPA zápise nejsou zaznačeny hlavní a vedlejší přízvuky.
+
+\clearpage
+\makeatletter\@openrightfalse
+\chapter{Zkratky}
+\@openrighttrue\makeatother 
+\begin{description}\itemsep2pt
+\item[\small{acc}] \small{4. pád}
+\item[\small{adj}] \small{přídavné jméno}
+\item[\small{adv}] \small{příslovce}
+\item[\small{astro.}] \small{astronomie, výzkum vesmíru}
+\item[\small{biol.}] \small{biologie}
+\item[\small{bot.}] \small{botanika}
+\item[\small{básn.}] \small{básnický, poetický výraz}
+\item[\small{chem.}] \small{chemie}
+\item[\small{comp}] \small{stupňování, 2. stupeň}
+\item[\small{conj}] \small{spojka}
+\item[\small{cykl.}] \small{cyklistika, jízdní kola}
+\item[\small{dat}] \small{3. pád}
+\item[\small{def}] \small{tvar určitý}
+\item[\small{dem}] \small{zájmeno ukazovací}
+\item[\small{dět.}] \small{dětsky}
+\item[\small{ekon.}] \small{ekonomika, obchod}
+\item[\small{elek.}] \small{elektřina}
+\item[\small{f}] \small{podstatné jméno, rod ženský}
+\item[\small{filos.}] \small{filosofie, logika}
+\item[\small{form.}] \small{formálně}
+\item[\small{fyz.}] \small{fyzika}
+\item[\small{gen}] \small{2. pád}
+\item[\small{geog.}] \small{zeměpis, geografie}
+\item[\small{geol.}] \small{geologie}
+\item[\small{han.}] \small{hanlivě, pejorativně}
+\item[\small{hist.}] \small{historie}
+\item[\small{hovor.}] \small{hovorově}
+\item[\small{hrub.}] \small{hrubě}
+\item[\small{hud.}] \small{hudba}
+\item[\small{impers}] \small{sloveso neosobní}
+\item[\small{indef}] \small{zájmeno neurčité}
+\item[\small{inter}] \small{citoslovce}
+\item[\small{jaz.}] \small{jazykověda}
+\item[\small{kulin.}] \small{kulinářství, vaření}
+\item[\small{let.}] \small{letectví}
+\item[\small{lit.}] \small{literatura, vydavatelství}
+\item[\small{m}] \small{podstatné jméno, rod mužský}
+\item[\small{mat.}] \small{matematika}
+\item[\small{med. }] \small{lékařství}
+\item[\small{met}] \small{sloveso počasí}
+\item[\small{meteo.}] \small{meteorologie}
+\item[\small{n}] \small{podstatné jméno, rod střední}
+\item[\small{neform.}] \small{neformálně}
+\item[\small{neo.}] \small{neologismus}
+\item[\small{nom}] \small{1. pád}
+\item[\small{num}] \small{číslovka}
+\item[\small{náb.}] \small{náboženství}
+\item[\small{nám.}] \small{námořnictví, rybolov}
+\item[\small{ord}] \small{řadová číslovka}
+\item[\small{part}] \small{částice}
+\item[\small{pers}] \small{osoba/ zájmeno osobní}
+\item[\small{pol.}] \small{politika, politologie}
+\item[\small{poss}] \small{zájmeno přivlastňovací}
+\item[\small{pov.}] \small{lidové pověsti, folkloristika}
+\item[\small{poč.}] \small{informatika, počítače}
+\item[\small{pp}] \small{příčestí minulé}
+\item[\small{predp}] \small{předpona}
+\item[\small{prep}] \small{předložka}
+\item[\small{pron}] \small{zájmeno}
+\item[\small{prop}] \small{vlastní jméno}
+\item[\small{práv.}] \small{právnictví, soudnictví}
+\item[\small{psych.}] \small{psychologie}
+\item[\small{přen.}] \small{přeneseně}
+\item[\small{přís.}] \small{přísloví}
+\item[\small{refl}] \small{mediopasivum}
+\item[\small{slang.}] \small{slang}
+\item[\small{sport.}] \small{sport}
+\item[\small{stav.}] \small{stavebnictví, architektura}
+\item[\small{sup}] \small{stupňování, 3. stupeň}
+\item[\small{techn.}] \small{technika, mechanika}
+\item[\small{v}] \small{sloveso}
+\item[\small{voj.}] \small{vojenství}
+\item[\small{zast.}] \small{zastarale}
+\item[\small{zdrob.}] \small{zdrobněle}
+\item[\small{zem.}] \small{zemědělství}
+\item[\small{zkr}] \small{zkratka}
+\item[\small{zool.}] \small{zoologie}
+\item[\small{zool.}] \small{zoologie}
+\item[\small{říd.}] \small{řídce}
+\item[\small{škol.}] \small{školství}
+\end{description}
+\clearpage
+\makeatletter\@openrightfalse
+\chapter{Islandsko-český studijní slovník}
+\@openrighttrue\makeatother
+\clearpage
+\pagestyle{dictstyle}
+\dictchar{A}\entry{{a.m.k.}}{{\color{darkgreen}{\small{ zkr}}}{\textsl{\textbf{ að minnsta kosti}}} $\rightarrow$       kostur}
+\entry{{a.n.}}{{\color{darkgreen}{\small{ zkr}}}{\textsl{\textbf{ að neðan}}}\foreignlanguage{czech}{{ pod, dole}}}
+\entry{{a.n.l.}}{{\color{darkgreen}{\small{ zkr}}}{\textsl{\textbf{ að nokkru leyti}}}\foreignlanguage{czech}{{ do určité míry, částečně}}}
+\entry{{a.o.}}{{\color{darkgreen}{\small{ zkr}}}{\textsl{\textbf{ að ofan}}}\foreignlanguage{czech}{{ nahoře, nad}}}
+\entry{{ab. fn.}}{{\color{darkgreen}{\small{ zkr}}}{\textsl{\textbf{ afturbeygt fornafn}}} $\rightarrow$       afturbeygður}
+\entry{{aborr|i}}{{\textipa{[{a}{\textsubring{b}}{\textopeno}{r}{\textlengthmark}{\textsci}]}}{\color{darkgreen}{\small{ m}}}{\small{ (-a, -ar)}}\foreignlanguage{czech}{{\footnotesize{ zool.}}}\foreignlanguage{czech}{{ okoun, okoun říční}}{\textit{ Perca fluviatilis}}\par\begin{center}\setlength\fboxsep{0pt}\setlength\fboxrule{0.5pt}\fbox{\includegraphics[width=6cm]{13418.jpg}}\end{center}\par\begin{center}\footnotesize {Autor: Kesl Michael Licence: COPYRIGHT/CC-BY-NC}\end{center}}
+\entry{{\textsuperscript{1}}{að}}{{\textipa{[{a}{\textlengthmark}{\texttheta}]}}{\color{darkgreen}{\small{ prep/ adv}}}{\small{ dat}}{ 1.}\foreignlanguage{czech}{{ k}}{\footnotesize {\foreignlanguage{czech}{ (o pohybu k nějakému místu)}}} $\triangleright$ {\textit{\textbf{ Hann gekk að steininum.}}}{\textit{\foreignlanguage{czech}{ Šel ke kamenu.}}}{ 2.}{\footnotesize {\foreignlanguage{czech}{ (o změně (z jedné věci na druhou))}}} $\triangleright$ {\textit{\textbf{ Vatnið verður að ís.}}}{\textit{\foreignlanguage{czech}{ Z vody se stává led.}}},{ 3.}{\footnotesize {\foreignlanguage{czech}{ (o pobytu na místě)}}} $\triangleright$ {\textit{\textbf{ sitja að búi sínu}}},{ 4.}\foreignlanguage{czech}{{ o, k}}{\footnotesize {\foreignlanguage{czech}{ (o čase)}}},{\textsl{\textbf{ að jólum}}}\foreignlanguage{czech}{{ o vánocích}},{\textsl{\textbf{ að lokum}}}\foreignlanguage{czech}{{ nakonec}},{ 5.}\foreignlanguage{czech}{{ kvůli, z}}{\footnotesize {\foreignlanguage{czech}{ (o důvodu, motivu)}}} $\triangleright$ {\textit{\textbf{ hvítur að lit}}}{\textit{\foreignlanguage{czech}{ bílý}}},{ 6.}{\footnotesize {\foreignlanguage{czech}{ (ve spojeních s některými slovesy)}}} $\triangleright$ {\textit{\textbf{ leita að e-u}}}{\textit{\foreignlanguage{czech}{ hledat (co)}}},{\textsl{\textbf{ að kvöldi}}}\foreignlanguage{czech}{{ večerem, k večeru}},}
+\entry{{\textsuperscript{2}}{að}}{{\textipa{[{a}{\textlengthmark}{\texttheta}]}}{\color{darkgreen}{\small{ conj}}}{ 1.}\foreignlanguage{czech}{{ že}} $\triangleright$ {\textit{\textbf{ Hann sagði að hann kæmi aftur á morgun.}}}{\textit{\foreignlanguage{czech}{ Řekl, že přijde zase zítra.}}}{ 2.}\foreignlanguage{czech}{{ (o účelu) aby}} $\triangleright$ {\textit{\textbf{ Ég var sendur (til) að kaupa mjólk.}}}{\textit{\foreignlanguage{czech}{ Poslali mě, abych koupil mléko.}}},}
+\entry{{\textsuperscript{3}}{að}}{{\textipa{[{a}{\textlengthmark}{\texttheta}]}}{\color{darkgreen}{\small{ part}}}\foreignlanguage{czech}{{\footnotesize{ jaz.}}}\foreignlanguage{czech}{{ částice značící infinitiv}}}
+\entry{{aðal}}{{\textipa{[{a}{\textlengthmark}{ð}{a}{\textsubring{l}}]}}{\color{darkgreen}{\small{ n}}}{\small{ (-s)}}{\textit{ (einkenni)}}\foreignlanguage{czech}{{ charakteristický/ hlavní rys}}}
+\entry{{aðal-}}{{\textipa{[{a}{\textlengthmark}{ð}{a}{l}]}}{\color{darkgreen}{\small{ predp}}}\foreignlanguage{czech}{{ hlavní, centrální}} $\triangleright$ {\textit{\textbf{ aðalmál, aðalpersóna, aðalhöfundur}}}{\textit{\foreignlanguage{czech}{ hlavní záležitost, hlavní postava, hlavní spisovatel}}}}
+\entry{{aðal··atriði}}{{\textipa{[{a}{\textlengthmark}{ð}{a}{\textsubring{l}}{a}{\textsubring{d}}{r}{\textsci}{ð}{\textsci}]}}{\color{darkgreen}{\small{ n}}}{\small{ (-s, -)}}\foreignlanguage{czech}{{ hlavní věc, to nejdůležitější}} $\triangleright$ {\textit{\textbf{ Aðalatriðið er að enginn slasaðist.}}}{\textit{\foreignlanguage{czech}{ Nejdůležitější je, že se nikdo nezranil.}}}}
+\entry{{aðal··á·hersl|a}}{{\textipa{[{a}{\textlengthmark}{ð}{a}{\textsubring{l}}{au}{h}{\textepsilon}{\textsubring{r}}{s}{\textsubring{d}}{l}{a}]}}{\color{darkgreen}{\small{ f}}}{\small{ (-u, -ur)}}{ 1.}{\textit{ (höfuðáhersla)}}\foreignlanguage{czech}{{ hlavní důraz}}{ 2.}\foreignlanguage{czech}{{\footnotesize{ jaz.}}}\foreignlanguage{czech}{{ hlavní přízvuk}} $\triangleright$ {\textit{\textbf{ Aðaláhersla er á fyrsta atkvæði.}}}{\textit{\foreignlanguage{czech}{ Hlavní přízvuk je na první slabice.}}},}
+\entry{{aðal··braut}}{{\textipa{[{a}{ð}{a}{\textsubring{l}}{\textsubring{b}}{r}{\ae i}{\textsubring{d}}]}}{\color{darkgreen}{\small{ f}}}{\small{ (-ar, -ir)}}{ 1.}{\textit{ (helsta leið)}}\foreignlanguage{czech}{{ hlavní ulice, třída}}{ 2.}\foreignlanguage{czech}{{ hlavní silnice (v dopravním ruchu)}} $\triangleright$ {\textit{\textbf{ aðalbrautarréttur}}},}
+\entry{{aðal··fund|ur}}{{\textipa{[{a}{ð}{a}{\textsubring{l}}{f}{\textscy}{n}{\textsubring{d}}{\textscy}{r}]}}{\color{darkgreen}{\small{ m}}}{\small{ (-ar, -ir)}}\foreignlanguage{czech}{{ výroční schůze}}}
+\entry{{aðal··|gata}}{{\textipa{[{a}{ð}{a}{\textsubring{l}}{\r{g}}{a}{\textsubring{d}}{a}]}}{\color{darkgreen}{\small{ f}}}{\small{ (-götu, -götur)}}\foreignlanguage{czech}{{ hlavní třída, hlavní ulice}}}
+\entry{{aðal··hending}}{{\textipa{[{a}{\textlengthmark}{ð}{a}{\textsubring{l}}{}{h}{\textepsilon}{n}{\textsubring{d}}{i}{}{\r{g}}]}}{\color{darkgreen}{\small{ f}}}{\small{ (-ar, -ar)}}\foreignlanguage{czech}{{\footnotesize{ jaz.}}}{\footnotesize {\foreignlanguage{czech}{ rým ve stejném verši, v kterém se rýmují souhláska a po ní následující samohláska}}}}
+\entry{{aðal··hlut·verk}}{{\textipa{[{a}{ð}{a}{\textsubring{l}}{\textscy}{\textsubring{d}}{v}{\textepsilon}{\textsubring{r}}{\r{g}}]}}{\color{darkgreen}{\small{ n}}}{\small{ (-s, -)}}\foreignlanguage{czech}{{ hlavní role}} $\triangleright$ {\textit{\textbf{ aðalhlutverk í leikriti}}}{\textit{\foreignlanguage{czech}{ hlavní role v divadelní hře}}}}
+\entry{{aðal|l}}{{\textipa{[{a}{\textlengthmark}{ð}{a}{\textsubring{d}}{\textsubring{l}}]}}{\color{darkgreen}{\small{ m}}}{\small{ (-s)}}{ 1.}{\textit{ (yfirstétt í lénsveldi)}}\foreignlanguage{czech}{{ šlechta, aristokracie}}{ 2.}{\textit{ (meginhluti)}}\foreignlanguage{czech}{{ jádro, hlavní část}},}
+\entry{{aðal··lega}}{{\textipa{[{a}{ð}{a}{l}{\textepsilon}{\textbabygamma}{a}]}}{\color{darkgreen}{\small{ adv}}}\foreignlanguage{czech}{{ hlavně}}}
+\entry{{aðal··|maður}}{{\textipa{[{a}{ð}{a}{\textsubring{l}}{m}{a}{ð}{\textscy}{r}]}}{\color{darkgreen}{\small{ m}}}{\small{ (-manns, -menn)}}\foreignlanguage{czech}{{ hlavní/ ústřední postava}} $\triangleright$ {\textit{\textbf{ aðalmaður í framkvæmdum}}}{\textit{\foreignlanguage{czech}{ ústřední postava v realizaci}}}}
+\entry{{aðal··nám·skrá}}{{\textipa{[{a}{ð}{a}{\textsubring{l}}{n}{au}{m}{}{s}{u}{p}{}{}{}{}{s}{u}{p}{}{s}{\r{g}}{r}{au}]}}{\color{darkgreen}{\small{ f}}}{\small{ (-r, -r)}}\foreignlanguage{czech}{{\footnotesize{ škol.}}}\foreignlanguage{czech}{{ hlavní učební plán}}}
+\entry{{aðal··persón|a}}{{\textipa{[{a}{ð}{a}{\textsubring{l}}{p\textsuperscript{h}}{\textepsilon}{\textsubring{r}}{s}{ou}{n}{a}]}}{\color{darkgreen}{\small{ f}}}{\small{ (-u, -ur)}}\foreignlanguage{czech}{{\footnotesize{ lit.}}}\foreignlanguage{czech}{{ protagonista, hlavní postava}}}
+\entry{{aðal··setning}}{{\textipa{[{a}{ð}{a}{\textsubring{l}}{s}{\textepsilon}{h}{\textsubring{d}}{n}{i}{}{\r{g}}]}}{\color{darkgreen}{\small{ f}}}{\small{ (-ar, -ar)}}\foreignlanguage{czech}{{\footnotesize{ jaz.}}}\foreignlanguage{czech}{{ hlavní věta}}}
+\entry{{aðal··skipu·lag}}{{\textipa{[{a}{ð}{a}{\textsubring{l}}{s}{\r{\textObardotlessj}}{\textsci}{\textsubring{b}}{\textscy}{l}{a}{\textbabygamma}]}}{\color{darkgreen}{\small{ n}}}{\small{ (-s)}}\foreignlanguage{czech}{{ ???}}}
+\entry{{aðal··|sögn}}{{\textipa{[{a}{ð}{a}{\textsubring{l}}{s}{\ae}{\r{g}}{\textsubring{n}}]}}{\color{darkgreen}{\small{ f}}}{\small{ (-sagnar, -sagnir)}}\foreignlanguage{czech}{{\footnotesize{ jaz.}}}\foreignlanguage{czech}{{ hlavní sloveso}}}
+\entry{{aðal··tenging}}{{\textipa{[{a}{ð}{a}{\textsubring{l}}{t\textsuperscript{h}}{ei}{\textltailn}{\r{\textObardotlessj}}{i}{}{\r{g}}]}}{\color{darkgreen}{\small{ f}}}{\small{ (-ar, -ar)}}\foreignlanguage{czech}{{\footnotesize{ jaz.}}}\foreignlanguage{czech}{{ spojka souřadící}}}
+\entry{{að··blástur}}{{\textipa{[{a}{ð}{\textsubring{b}}{l}{au}{s}{\textsubring{d}}{\textscy}{r}]}}{\color{darkgreen}{\small{ m}}}{\small{ (-s)}}\foreignlanguage{czech}{{\footnotesize{ jaz.}}}\foreignlanguage{czech}{{ preaspirace, předpřídech}}}
+\entry{{að··búð}}{{\textipa{[{a}{ð}{\textsubring{b}}{u}{\texttheta}]}}{\color{darkgreen}{\small{ f}}}{\small{ (-ar)}}{\textit{ (kjör)}}\foreignlanguage{czech}{{ podmínky, okolnosti}}}
+\entry{{að··búnað|ur}}{{\textipa{[{a}{ð}{\textsubring{b}}{u}{n}{a}{ð}{\textscy}{r}]}}{\color{darkgreen}{\small{ m}}}{\small{ (-ar)}}{ 1.}{\textit{ (aðhlynning)}}\foreignlanguage{czech}{{ péče, opatrování}}{ 2.}{\textit{ (kjör)}}\foreignlanguage{czech}{{ podmínky}} $\triangleright$ {\textit{\textbf{ njóta góðs aðbúnaðar}}}{\textit{\foreignlanguage{czech}{ těšit se z dobrých podmínek}}},}
+\entry{{að··dá|andi}}{{\textipa{[{a}{ð}{\textsubring{d}}{au}{a}{n}{\textsubring{d}}{\textsci}]}}{\color{darkgreen}{\small{ m}}}{\small{ (-anda, -endur)}}\foreignlanguage{czech}{{ obdivovatel, fanoušek}} $\triangleright$ {\textit{\textbf{ vera mikill aðdáandi hans}}}{\textit{\foreignlanguage{czech}{ být jeho velkým fanouškem}}}}
+\entry{{að·dáan··legur}}{{\textipa{[{a}{ð}{\textsubring{d}}{au}{a}{n}{l}{\textepsilon}{\textbabygamma}{\textscy}{r}]}}{\color{darkgreen}{\small{ adj}}}\foreignlanguage{czech}{{ obdivuhodný}}}
+\entry{{að··dáun}}{{\textipa{[{a}{ð}{\textsubring{d}}{au}{\textscy}{n}]}}{\color{darkgreen}{\small{ f}}}{\small{ (-ar)}}\foreignlanguage{czech}{{ obdiv, údiv, úžas}} $\triangleright$ {\textit{\textbf{ blind aðdáun}}}{\textit{\foreignlanguage{czech}{ slepý obdiv}}}}
+\entry{{að·dáunar··verður}}{{\textipa{[{a}{ð}{\textsubring{d}}{au}{\textscy}{n}{a}{r}{v}{\textepsilon}{r}{ð}{\textscy}{r}]}}{\color{darkgreen}{\small{ adj}}}\foreignlanguage{czech}{{ obdivuhodný}}}
+\entry{{að··dragand|i}}{{\textipa{[{a}{ð}{\textsubring{d}}{r}{a}{\textbabygamma}{a}{n}{\textsubring{d}}{\textsci}]}}{\color{darkgreen}{\small{ m}}}{\small{ (-a)}}{ 1.}\foreignlanguage{czech}{{ předchozí příčíny}} $\triangleright$ {\textit{\textbf{ Málið á sér sögulegan aðdraganda.}}}{ 2.}{\textit{ (undirbúningur)}}\foreignlanguage{czech}{{ přípravy}},}
+\entry{{að·dráttar··afl}}{{\textipa{[{a}{ð}{\textsubring{d}}{r}{au}{h}{\textsubring{d}}{a}{r}{a}{\textsubring{b}}{\textsubring{l}}]}}{\color{darkgreen}{\small{ n}}}{\small{ (-s)}}\foreignlanguage{czech}{{ přitažlivost}}{\textsl{\textbf{ aðdráttarafl jarðar}}}\foreignlanguage{czech}{{\footnotesize{ fyz.}}}\foreignlanguage{czech}{{ gravitační síla}},}
+\entry{{að·dráttar··lins|a}}{{\textipa{[{a}{ð}{\textsubring{d}}{r}{au}{h}{\textsubring{d}}{a}{r}{l}{\textsci}{n}{s}{a}]}}{\color{darkgreen}{\small{ f}}}{\small{ (-u, -ur)}}\foreignlanguage{czech}{{\footnotesize{ fyz.}}}\foreignlanguage{czech}{{ teleobjektiv}}}
+\entry{{að··drótt|un}}{{\textipa{[{a}{ð}{\textsubring{d}}{r}{ou}{h}{\textsubring{d}}{\textscy}{n}]}}{\color{darkgreen}{\small{ f}}}{\small{ (-unar, -anir)}}\foreignlanguage{czech}{{ narážka, naznačení}} $\triangleright$ {\textit{\textbf{ aðdróttanir um morð}}}}
+\entry{{aðeins}}{{\textipa{[{a}{\textlengthmark}{ð}{ei}{n}{s}]}}{\color{darkgreen}{\small{ adv}}}{\textit{ (bara)}}\foreignlanguage{czech}{{ pouze, jen(om)}} $\triangleright$ {\textit{\textbf{ aðeins í dag}}}{\textit{\foreignlanguage{czech}{ jenom dneska}}}{\textsl{\textbf{ því aðeins}}}\foreignlanguage{czech}{{ pouze pokud}},}
+\entry{{að··|fall}}{{\textipa{[{a}{ð}{f}{a}{\textsubring{d}}{\textsubring{l}}]}}{\color{darkgreen}{\small{ n}}}{\small{ (-falls, -föll)}}{\textit{ (flóð)}}\foreignlanguage{czech}{{ příliv}}{\textit{ (útfall)}}}
+\entry{{að·fanga·dags··kvöld}}{{\textipa{[{a}{ð}{f}{au}{}{\r{g}}{a}{\textsubring{d}}{a}{x}{s}{k\textsuperscript{h}}{v}{\ae}{l}{\textsubring{d}}]}}{\color{darkgreen}{\small{ n}}}{\small{ (-s, -)}}\foreignlanguage{czech}{{ večer Štědrého dne}}}
+\entry{{að·fanga··dag|ur}}{{\textipa{[{a}{ð}{f}{au}{}{\r{g}}{a}{\textsubring{d}}{a}{\textbabygamma}{\textscy}{r}]}}{\color{darkgreen}{\small{ m}}}{\small{ (-s, -ar)}}\foreignlanguage{czech}{{ Štědrý den}} $\triangleright$ {\textit{\textbf{ Aðfangadagurinn er 24. desember.}}}{\textit{\foreignlanguage{czech}{ Štědrý den je 24. prosince.}}}}
+\entry{{að·fara··|nótt}}{{\textipa{[{a}{ð}{f}{a}{r}{a}{n}{ou}{h}{\textsubring{d}}]}}{\color{darkgreen}{\small{ f}}}{\small{ (-nætur, -nætur)}}\foreignlanguage{czech}{{ předešlá noc}} $\triangleright$ {\textit{\textbf{ aðfaranótt mánudags}}}}
+\entry{{að··ferð}}{{\textipa{[{a}{ð}{f}{\textepsilon}{r}{ð}]}}{\color{darkgreen}{\small{ f}}}{\small{ (-ar, -ir)}}{\textit{ (verklag)}}\foreignlanguage{czech}{{ postup, metoda}} $\triangleright$ {\textit{\textbf{ mín aðferð}}}}
+\entry{{að·ferða··fræði}}{{\textipa{[{a}{ð}{f}{\textepsilon}{r}{ð}{a}{f}{r}{a}{i}{ð}{\textsci}]}}{\color{darkgreen}{\small{ f}}}{\small{ indecl}}\foreignlanguage{czech}{{ metodologie}}}
+\entry{{að··finnsl|a}}{{\textipa{[{a}{ð}{f}{\textsci}{n}{s}{\textsubring{d}}{l}{a}]}}{\color{darkgreen}{\small{ f}}}{\small{ (-u, -ur)}}{\textit{ (umvöndun)}}\foreignlanguage{czech}{{ kritika, výtka}}}
+\entry{{að··flug}}{{\textipa{[{a}{ð}{f}{l}{\textscy}{\textbabygamma}]}}{\color{darkgreen}{\small{ n}}}{\small{ (-s, -)}}\foreignlanguage{czech}{{\footnotesize{ let.}}}\foreignlanguage{czech}{{ přistávací manévry}}}
+\entry{{að·flutnings··|gjald}}{{\textipa{[{a}{ð}{f}{l}{\textscy}{h}{\textsubring{d}}{n}{i}{}{s}{\r{\textObardotlessj}}{a}{l}{\textsubring{d}}]}}{\color{darkgreen}{\small{ n}}}{\small{ (-gjalds, -gjöld)}}\foreignlanguage{czech}{{ dovozní clo}}}
+\entry{{að··flutning|ur}}{{\textipa{[{a}{ð}{f}{l}{\textscy}{h}{\textsubring{d}}{n}{i}{}{\r{g}}{\textscy}{r}]}}{\color{darkgreen}{\small{ m}}}{\small{ (-s, -ar)}}\foreignlanguage{czech}{{ import, dovoz}}}
+\entry{{að··fluttur}}{{\textipa{[{a}{ð}{f}{l}{\textscy}{h}{\textsubring{d}}{\textscy}{r}]}}{\color{darkgreen}{\small{ adj}}}{\textit{ (innfluttur)}}\foreignlanguage{czech}{{ dovozový, importovaný}}}
+\entry{{að·fram··kominn}}{{\textipa{[{a}{ð}{f}{r}{a}{m}{k\textsuperscript{h}}{\textopeno}{m}{\textsci}{n}]}}{\color{darkgreen}{\small{ adj}}}\foreignlanguage{czech}{{ polomrtvý, více mrtvý než živý}}}
+\entry{{að··föng}}{{\textipa{[{a}{ð}{f}{\ae i}{}{\r{g}}]}}{\color{darkgreen}{\small{ n}}}{\small{ pl}}{ 1.}\foreignlanguage{czech}{{ ???}} $\triangleright$ {\textit{\textbf{ aðfangabók}}}{ 2.}\foreignlanguage{czech}{{\footnotesize{ ekon.}}}\foreignlanguage{czech}{{ potřeby, pomocný materiál}},}
+\entry{{að··|för}}{{\textipa{[{a}{ð}{f}{\ae}{r}]}}{\color{darkgreen}{\small{ f}}}{\small{ (-farar, -farir)}}{ 1.}{\textit{ (árás)}}\foreignlanguage{czech}{{ útok, napadení}}{\textsl{\textbf{ aðför að e-m}}}\foreignlanguage{czech}{{ útok na (koho)}},{ 2.}{\textit{ (atferli)}}\foreignlanguage{czech}{{ (za)chování}} $\triangleright$ {\textit{\textbf{ ljótar aðfarir}}}{\textit{\foreignlanguage{czech}{ nepěkné zachování}}},}
+\entry{{að·gangs··eyri|r}}{{\textipa{[{a}{ð}{\r{g}}{au}{}{s}{ei}{r}{\textsci}{r}]}}{\color{darkgreen}{\small{ m}}}{\small{ (-s)}}\foreignlanguage{czech}{{ vstupné, vstupní poplatek}}}
+\entry{{að·gangs··harður}}{{\textipa{[{a}{ð}{\r{g}}{au}{}{s}{h}{a}{r}{ð}{\textscy}{r}]}}{\color{darkgreen}{\small{ adj}}}{\textit{ (ýtinn)}}\foreignlanguage{czech}{{ ctižádostivý, ambiciózní}}}
+\entry{{að·gangs··kort}}{{\textipa{[{a}{ð}{\r{g}}{au}{}{s}{k\textsuperscript{h}}{\textopeno}{\textsubring{r}}{\textsubring{d}}]}}{\color{darkgreen}{\small{ n}}}{\small{ (-s, -)}}\foreignlanguage{czech}{{ vstupenka}}}
+\entry{{að··gang|ur}}{{\textipa{[{a}{ð}{\r{g}}{au}{}{\r{g}}{\textscy}{r}]}}{\color{darkgreen}{\small{ m}}}{\small{ (-s, -ar)}}\foreignlanguage{czech}{{ vstup, přístup}} $\triangleright$ {\textit{\textbf{ fá frjálsan aðgang að gögnunum}}}{\textit{\foreignlanguage{czech}{ mít volný přístup k materiálům}}}}
+\entry{{að··gát}}{{\textipa{[{a}{ð}{\r{g}}{au}{\textsubring{d}}]}}{\color{darkgreen}{\small{ f}}}{\small{ (-ar)}}{\textit{ (aðgæsla)}}\foreignlanguage{czech}{{ opatrnost, obezřetnost}} $\triangleright$ {\textit{\textbf{ sýna fulla aðgát}}}}
+\entry{{að··gengi}}{{\textipa{[{a}{ð}{\r{\textObardotlessj}}{ei}{\textltailn}{\r{\textObardotlessj}}{\textsci}]}}{\color{darkgreen}{\small{ n}}}{\small{ (-s)}}{\textit{ (aðgangur)}}\foreignlanguage{czech}{{ vstup, přístup}}}
+\entry{{að·gengi··legur}}{{\textipa{[{a}{ð}{\r{\textObardotlessj}}{ei}{\textltailn}{\r{\textObardotlessj}}{\textsci}{l}{\textepsilon}{\textbabygamma}{\textscy}{r}]}}{\color{darkgreen}{\small{ adj}}}{ 1.}\foreignlanguage{czech}{{ přístupný (vchod ap.)}} $\triangleright$ {\textit{\textbf{ aðgengilegur staður}}}{ 3.}{\textit{ (sanngjarn)}}\foreignlanguage{czech}{{ přijatelný, přípustný, akceptovatelný}} $\triangleright$ {\textit{\textbf{ aðgengilegt tilboð}}},{ 2.}{\textit{ (auðnotaður)}}\foreignlanguage{czech}{{ přístupný (myšlenka ap.), snadno pochopitelný}} $\triangleright$ {\textit{\textbf{ aðgengilegir skilmálar}}},}
+\entry{{að··gerð}}{{\textipa{[{a}{ð}{\r{\textObardotlessj}}{\textepsilon}{r}{ð}]}}{\color{darkgreen}{\small{ f}}}{\small{ (-ar, -ir)}}{ 1.}{\textit{ (ráðstafanir)}}\foreignlanguage{czech}{{ opatření, krok}}{ 2.}{\textit{ (viðgerð)}}\foreignlanguage{czech}{{ oprava}},{ 3.}\foreignlanguage{czech}{{ operace, chirurgický zákrok}} $\triangleright$ {\textit{\textbf{ Nonni litli fór í mikla aðgerð vegna hjartagalla.}}},{ 4.}{\textit{ (framkvæmd)}}\foreignlanguage{czech}{{ operace, akce, zásah}},{ 5.}\foreignlanguage{czech}{{ zpracování ryb}} $\triangleright$ {\textit{\textbf{ Margir unnu í aðgerð í frystihúsinu.}}}{\textit{\foreignlanguage{czech}{ Hodně lidí pracovalo při zpracování ryb v mrazírně.}}},}
+\entry{{að·gerða··laus}}{{\textipa{[{a}{ð}{\r{\textObardotlessj}}{\textepsilon}{r}{ð}{a}{l}{\ae i}{s}]}}{\color{darkgreen}{\small{ adj}}}{\textit{ (afskiptahægur)}}\foreignlanguage{czech}{{ pasivní, nečinný}} $\triangleright$ {\textit{\textbf{ standa þarna aðgerðalaus}}}}
+\entry{{að·gerða··leysi}}{{\textipa{[{a}{ð}{\r{\textObardotlessj}}{\textepsilon}{r}{ð}{a}{l}{ei}{s}{\textsci}]}}{\color{darkgreen}{\small{ n}}}{\small{ (-s)}}\foreignlanguage{czech}{{ nečinnost}}}
+\entry{{að·gerða··lítill}}{{\textipa{[{a}{ð}{\r{\textObardotlessj}}{\textepsilon}{r}{ð}{a}{l}{i}{\textsubring{d}}{\textsci}{\textsubring{d}}{\textsubring{l}}]}}{\color{darkgreen}{\small{ adj}}}\foreignlanguage{czech}{{ nečinný, záhalčivý}}}
+\entry{{að··greining}}{{\textipa{[{a}{ð}{\r{g}}{r}{ei}{n}{i}{}{\r{g}}]}}{\color{darkgreen}{\small{ f}}}{\small{ (-ar, -ar)}}\foreignlanguage{czech}{{ odlišení, rozlišení}}}
+\entry{{að··gæsl|a}}{{\textipa{[{a}{ð}{\r{\textObardotlessj}}{a}{i}{s}{\textsubring{d}}{l}{a}]}}{\color{darkgreen}{\small{ f}}}{\small{ (-u)}}{\textit{ (eftirlit)}}\foreignlanguage{czech}{{ opatrnost, obezřetnost}} $\triangleright$ {\textit{\textbf{ sýna miklu aðgæslu}}}{\textit{ (óaðgæsla)}}}
+\entry{{að··gæt|a}}{{\textipa{[{a}{ð}{\r{\textObardotlessj}}{a}{i}{\textsubring{d}}{a}]}}{\color{darkgreen}{\small{ v}}}{\small{ (-ti, -t)}}{\small{ acc}}{\textit{ (gefa gaum að)}}\foreignlanguage{czech}{{ prozkoumat, ověřit, zjistit}} $\triangleright$ {\textit{\textbf{ aðgæta hvort gluggarnir eru lokaðir}}}{\textit{\foreignlanguage{czech}{ zjistit zda-li jsou zavřená okna}}}}
+\entry{{að··gætinn}}{{\textipa{[{a}{ð}{\r{\textObardotlessj}}{a}{i}{\textsubring{d}}{\textsci}{n}]}}{\color{darkgreen}{\small{ adj}}}\foreignlanguage{czech}{{ opatrný, obezřetný}}}
+\entry{{að··gætni}}{{\textipa{[{a}{ð}{\r{\textObardotlessj}}{a}{i}{h}{\textsubring{d}}{n}{\textsci}]}}{\color{darkgreen}{\small{ f}}}{\small{ indecl}}{\textit{ (aðgát)}}\foreignlanguage{czech}{{ opatrnost}}}
+\entry{{að·göngu··mið|i}}{{\textipa{[{a}{ð}{\r{g}}{\ae i}{}{\r{g}}{\textscy}{m}{\textsci}{ð}{\textsci}]}}{\color{darkgreen}{\small{ m}}}{\small{ (-a, -ar)}}\foreignlanguage{czech}{{ vstupenka}} $\triangleright$ {\textit{\textbf{ aðgöngumiði að sýningunni}}}{\textit{\foreignlanguage{czech}{ vstupenka na výstavu}}}}
+\entry{{að··haf|ast}}{{\textipa{[{a}{\textlengthmark}{\texttheta}{a}{v}{a}{s}{\textsubring{d}}]}}{\color{darkgreen}{\small{ v}}}{\small{ (-ðist, -st)}}{\small{ refl}}\foreignlanguage{czech}{{ udělat, dělat}} $\triangleright$ {\textit{\textbf{ aðhafast ekkert á kvöldin}}}{\textit{\foreignlanguage{czech}{ nic večír nedělat}}}}
+\entry{{að··hald}}{{\textipa{[{a}{\textlengthmark}{\texttheta}{a}{l}{\textsubring{d}}]}}{\color{darkgreen}{\small{ n}}}{\small{ (-s)}}{ 1.}{\textit{ (stuðningur)}}\foreignlanguage{czech}{{ podpora, pomoc}}{ 2.}{\textit{ (það að halda aftur af sér)}}\foreignlanguage{czech}{{ omezení (jídla ap.), držení se zpět}} $\triangleright$ {\textit{\textbf{ Ég er í aðhaldi.}}}{\textit{\foreignlanguage{czech}{ Omezuju se (v jídle ap.).}}},{ 3.}{\textit{ (eftirlit)}}\foreignlanguage{czech}{{ dohled, dozor}},{ 4.}{\textit{ (girðing)}}\foreignlanguage{czech}{{ oplocení}},}
+\entry{{að··hlát|ur}}{{\textipa{[{a}{ð}{\textsubring{l}}{au}{\textsubring{d}}{\textscy}{r}]}}{\color{darkgreen}{\small{ m}}}{\small{ (-urs/-rar, -rar)}}\foreignlanguage{czech}{{ výsměch, posměch}} $\triangleright$ {\textit{\textbf{ verða að aðhlátri}}}}
+\entry{{að·hláturs··efni}}{{\textipa{[{a}{ð}{\textsubring{l}}{au}{\textsubring{d}}{\textscy}{\textsubring{r}}{s}{\textepsilon}{\textsubring{b}}{n}{\textsci}]}}{\color{darkgreen}{\small{ n}}}{\small{ (-s)}}\foreignlanguage{czech}{{ předmět výsměchu}}}
+\entry{{að··hlynning}}{{\textipa{[{a}{ð}{\textsubring{l}}{\textsci}{n}{i}{}{\r{g}}]}}{\color{darkgreen}{\small{ f}}}{\small{ (-ar)}}\foreignlanguage{czech}{{ péče, ošetřování}} $\triangleright$ {\textit{\textbf{ veita sjúklingnum aðhlynningu}}}}
+\entry{{að··hyll|ast}}{{\textipa{[{a}{\textlengthmark}{\texttheta}{\textsci}{\textsubring{d}}{l}{a}{s}{\textsubring{d}}]}}{\color{darkgreen}{\small{ v}}}{\small{ (-tist, -st)}}{\small{ refl acc}}{ 1.}\foreignlanguage{czech}{{ schvalovat, schválit}} $\triangleright$ {\textit{\textbf{ aðhyllast stefnu flokksins}}}{\textit{\foreignlanguage{czech}{ schvalovat směr strany}}}{ 2.}\foreignlanguage{czech}{{ vyznávat (víru)}} $\triangleright$ {\textit{\textbf{ aðhyllast lúterstrú}}}{\textit{\foreignlanguage{czech}{ vyznávat luteránskou víru}}},}
+\entry{{að··hæf|a}}{{\textipa{[{a}{\textlengthmark}{\texttheta}{a}{i}{v}{a}]}}{\color{darkgreen}{\small{ v}}}{\small{ (-ði, -t)}}{\small{ acc}}{\textit{ (aðlaga)}}\foreignlanguage{czech}{{ přizpůsobit, adaptovat}}{\textsl{\textbf{ aðhæfa e-ð að e-u}}}\foreignlanguage{czech}{{ přizpůsobit (co čemu)}},}
+\entry{{aðild}}{{\textipa{[{a}{\textlengthmark}{ð}{\textsci}{l}{\textsubring{d}}]}}{\color{darkgreen}{\small{ f}}}{\small{ (-ar)}}\foreignlanguage{czech}{{ účast, členství, zapojení}} $\triangleright$ {\textit{\textbf{ aðild að félaginu}}}}
+\entry{{aðildar··fé·|lag}}{{\textipa{[{a}{ð}{\textsci}{l}{\textsubring{d}}{a}{\textsubring{r}}{f}{j}{\textepsilon}{l}{a}{\textbabygamma}]}}{\color{darkgreen}{\small{ n}}}{\small{ (-lags, -lög)}}\foreignlanguage{czech}{{ ???}}}
+\entry{{aðildar··ríki}}{{\textipa{[{a}{ð}{\textsci}{l}{\textsubring{d}}{a}{r}{i}{\r{\textObardotlessj}}{\textsci}]}}{\color{darkgreen}{\small{ n}}}{\small{ (-s, -)}}\foreignlanguage{czech}{{ členská země}}}
+\entry{{aðil|i}}{{\textipa{[{a}{\textlengthmark}{ð}{\textsci}{l}{\textsci}]}}{\color{darkgreen}{\small{ m}}}{\small{ (-a/-ja, -ar/-jar)}}\foreignlanguage{czech}{{ osoba, jednací strana}}}
+\entry{{að··kallandi}}{{\textipa{[{a}{ð}{k\textsuperscript{h}}{a}{\textsubring{d}}{l}{a}{n}{\textsubring{d}}{\textsci}]}}{\color{darkgreen}{\small{ adj}}}{\small{ indecl}}\foreignlanguage{czech}{{ naléhavý, urgentní}} $\triangleright$ {\textit{\textbf{ aðkallandi verkefni}}}}
+\entry{{að··|kast}}{{\textipa{[{a}{ð}{k\textsuperscript{h}}{a}{s}{\textsubring{d}}]}}{\color{darkgreen}{\small{ n}}}{\small{ (-kasts, -köst)}}\foreignlanguage{czech}{{ jízlivé poznámky, posměšky}}{\textsl{\textbf{ verða fyrir aðkasti}}}\foreignlanguage{czech}{{ být zesměšňován}},}
+\entry{{að··kenning}}{{\textipa{[{a}{ð}{c\textsuperscript{h}}{\textepsilon}{n}{i}{}{\r{g}}]}}{\color{darkgreen}{\small{ f}}}{\small{ (-ar)}}{\textit{ (snertur)}}\foreignlanguage{czech}{{ náběh, náznak}} $\triangleright$ {\textit{\textbf{ fá aðkenningu af slagi}}}{\textit{\foreignlanguage{czech}{ dostat náběh na mrtvici}}}}
+\entry{{að··keyptur}}{{\textipa{[{a}{ð}{c\textsuperscript{h}}{ei}{f}{\textsubring{d}}{\textscy}{r}]}}{\color{darkgreen}{\small{ adj}}}\foreignlanguage{czech}{{ koupený jinde (zboží ap.)}} $\triangleright$ {\textit{\textbf{ aðkeyptur varningur}}}}
+\entry{{að··kom|a}}{{\textipa{[{a}{ð}{k\textsuperscript{h}}{\textopeno}{m}{a}]}}{\color{darkgreen}{\small{ f}}}{\small{ (-u)}}{ 1.}{\textit{ (nálgun)}}\foreignlanguage{czech}{{ přiblížení, přístup}} $\triangleright$ {\textit{\textbf{ 
+}}}{ 2.}{\textit{ (viðtaka)}}\foreignlanguage{czech}{{ uvítání, přivítání}},{ 3.}{\textsl{\textbf{ ljót aðkoma}}}\foreignlanguage{czech}{{ příšerný pohled}},}
+\entry{{að·komu··|maður}}{{\textipa{[{a}{ð}{k\textsuperscript{h}}{\textopeno}{m}{\textscy}{m}{a}{ð}{\textscy}{r}]}}{\color{darkgreen}{\small{ m}}}{\small{ (-manns, -menn)}}\foreignlanguage{czech}{{ cizinec, přespolní}}}
+\entry{{að··krepptur}}{{\textipa{[{a}{ð}{k\textsuperscript{h}}{r}{\textepsilon}{f}{\textsubring{d}}{\textscy}{r}]}}{\color{darkgreen}{\small{ adj}}}{ 1.}{\textit{ (inniluktur)}}\foreignlanguage{czech}{{ uzavřený}} $\triangleright$ {\textit{\textbf{ aðkrepptur dalur}}}{\textit{\foreignlanguage{czech}{ uzavřené údolí}}}{ 2.}{\textit{ (þröngur)}}\foreignlanguage{czech}{{ stísněný, úzký}},{ 3.}\foreignlanguage{czech}{{ sklíčený, skleslý}},}
+\entry{{að··laðandi}}{{\textipa{[{a}{ð}{l}{a}{ð}{a}{n}{\textsubring{d}}{\textsci}]}}{\color{darkgreen}{\small{ adj}}}{\small{ indecl}}\foreignlanguage{czech}{{ přitažlivý, atraktivní, vábivý, čarovný}} $\triangleright$ {\textit{\textbf{ aðlaðandi stúlka}}}{\textit{\foreignlanguage{czech}{ přitažlivá dívka}}}}
+\entry{{að··lag|a}}{{\textipa{[{a}{ð}{l}{a}{\textbabygamma}{a}]}}{\color{darkgreen}{\small{ v}}}{\small{ (-aði)}}{\small{ acc}}\foreignlanguage{czech}{{ přizpůsobit, adaptovat}} $\triangleright$ {\textit{\textbf{ aðlaga framleiðsluna nýjum kröfum}}}{\textit{\foreignlanguage{czech}{ přizpůsobit výrobu novým požadavkům}}}{\textsl{\textbf{ aðlaga sig e-u}}}\foreignlanguage{czech}{{ přizpůsobit se (čemu)}} $\triangleright$ {\textit{\textbf{ aðlaga sig aðstæðum}}}{\textit{\foreignlanguage{czech}{ přizpůsobit se situaci}}},{\textsl{\textbf{ aðlagast}}}{\footnotesize{ refl}}\foreignlanguage{czech}{{ přizpůsobit se}} $\triangleright$ {\textit{\textbf{ aðlagast hópnum}}}{\textit{\foreignlanguage{czech}{ přizpůsobit se skupině}}},}
+\entry{{að··leiðsl|a}}{{\textipa{[{a}{ð}{l}{ei}{ð}{s}{\textsubring{d}}{l}{a}]}}{\color{darkgreen}{\small{ f}}}{\small{ (-u)}}\foreignlanguage{czech}{{\footnotesize{ filos.}}}\foreignlanguage{czech}{{ indukce}}}
+\entry{{að··|lögun}}{{\textipa{[{a}{ð}{l}{\ae}{\textbabygamma}{\textscy}{n}]}}{\color{darkgreen}{\small{ f}}}{\small{ (-lögunar, -laganir)}}\foreignlanguage{czech}{{ přizpůsobení, adaptace}} $\triangleright$ {\textit{\textbf{ aðlögun að nýjum siðum}}}{\textit{\foreignlanguage{czech}{ přizpůsobení se novým zvykům}}}{\textsl{\textbf{ aðlögun að nýju loftalagi}}}\foreignlanguage{czech}{{ aklimatizace (na jiné podnebí ap.)}},}
+\entry{{að··njótandi}}{{\textipa{[{a}{ð}{n}{j}{ou}{\textsubring{d}}{a}{n}{\textsubring{d}}{\textsci}]}}{\color{darkgreen}{\small{ adj}}}{\small{ indecl}}{\textsl{\textbf{ verða e-s aðnjótandi}}}\foreignlanguage{czech}{{ těšit se z (čeho), účastnící se (čeho)}} $\triangleright$ {\textit{\textbf{ verða þeirrar gleði aðnjótandi}}}}
+\entry{{að··rennsli}}{{\textipa{[{a}{ð}{r}{\textepsilon}{n}{s}{\textsubring{d}}{l}{\textsci}]}}{\color{darkgreen}{\small{ n}}}{\small{ (-s, -)}}\foreignlanguage{czech}{{ přítok}} $\triangleright$ {\textit{\textbf{ aðrennsli vatnsins}}}{\textit{\foreignlanguage{czech}{ přítok jezera}}}}
+\entry{{að··setur}}{{\textipa{[{a}{ð}{s}{\textepsilon}{\textsubring{d}}{\textscy}{r}]}}{\color{darkgreen}{\small{ n}}}{\small{ (-s, -)}}\foreignlanguage{czech}{{ sídlo, rezidence}} $\triangleright$ {\textit{\textbf{ Stofnunin hefur aðsetur í borginni.}}}{\textit{\foreignlanguage{czech}{ Instituce sídlí ve městě.}}}}
+\entry{{að··sig}}{{\textipa{[{a}{ð}{s}{\textsci}{\textbabygamma}]}}{\color{darkgreen}{\small{ n}}}{\small{ (-s)}}{\textsl{\textbf{ vera í aðsigi}}}\foreignlanguage{czech}{{ blížit se rychle}}}
+\entry{{að··skil|ja}}{{\textipa{[{a}{ð}{s}{\r{\textObardotlessj}}{\textsci}{l}{j}{a}]}}{\color{darkgreen}{\small{ v}}}{\small{ (acc) (-di, -ið)}}\foreignlanguage{czech}{{ rozdělit, separovat}} $\triangleright$ {\textit{\textbf{ Systkinin voru aðskilin á unga aldri og sjást nú loks eftir tuttugu ár.}}}}
+\entry{{að·skiljan··legur}}{{\textipa{[{a}{ð}{s}{\r{\textObardotlessj}}{\textsci}{l}{j}{a}{n}{l}{\textepsilon}{\textbabygamma}{\textscy}{r}]}}{\color{darkgreen}{\small{ adj}}}{ 1.}\foreignlanguage{czech}{{ oddělitelný}}{ 2.}{\textit{ (mismunandi)}}\foreignlanguage{czech}{{ různorodý, různý}},}
+\entry{{að·skilnaðar··stefn|a}}{{\textipa{[{a}{ð}{s}{\r{\textObardotlessj}}{\textsci}{l}{n}{a}{ð}{a}{\textsubring{r}}{s}{\textsubring{d}}{\textepsilon}{\textsubring{b}}{n}{a}]}}{\color{darkgreen}{\small{ f}}}{\small{ (-u)}}\foreignlanguage{czech}{{ apartheid, segregace}}}
+\entry{{að··skilnað|ur}}{{\textipa{[{a}{ð}{s}{\r{\textObardotlessj}}{\textsci}{l}{n}{a}{ð}{\textscy}{r}]}}{\color{darkgreen}{\small{ m}}}{\small{ (-ar)}}\foreignlanguage{czech}{{ odloučení, separace}} $\triangleright$ {\textit{\textbf{ aðskilnaður frá ástvinum}}}}
+\entry{{að··skorinn}}{{\textipa{[{a}{ð}{s}{\r{g}}{\textopeno}{r}{\textsci}{n}]}}{\color{darkgreen}{\small{ adj}}}\foreignlanguage{czech}{{ přiléhavý (oblek ap.)}} $\triangleright$ {\textit{\textbf{ aðskorinn kjóll}}}}
+\entry{{aðskota··dýr}}{{\textipa{[{a}{ð}{s}{\r{g}}{\textopeno}{\textsubring{d}}{a}{\textsubring{d}}{i}{r}]}}{\color{darkgreen}{\small{ n}}}{\small{ (-s, -)}}\foreignlanguage{czech}{{ vetřelec, nevítaný host}}}
+\entry{{aðskota··hlut|ur}}{{\textipa{[{a}{ð}{s}{\r{g}}{\textopeno}{\textsubring{d}}{a}{\textsubring{l}}{\textscy}{\textsubring{d}}{\textscy}{r}]}}{\color{darkgreen}{\small{ m}}}{\small{ (-ar, -ir)}}\foreignlanguage{czech}{{ cizí předmět (smítko v oku ap.)}} $\triangleright$ {\textit{\textbf{ aðskotahlutur í auga}}}}
+\entry{{að··sog}}{{\textipa{[{a}{ð}{s}{\textopeno}{\textbabygamma}]}}{\color{darkgreen}{\small{ n}}}{\small{ (-s)}}\foreignlanguage{czech}{{ ???}}}
+\entry{{að··sókn}}{{\textipa{[{a}{ð}{s}{ou}{h}{\r{g}}{\textsubring{n}}]}}{\color{darkgreen}{\small{ f}}}{\small{ (-ar)}}\foreignlanguage{czech}{{ návštěvnost, počet návštěvníků, účast}} $\triangleright$ {\textit{\textbf{ Það er mikil aðsókn að sýningunni.}}}}
+\entry{{aðsóps··mikill}}{{\textipa{[{a}{ð}{s}{ou}{\textsubring{b}}{s}{m}{\textsci}{\r{\textObardotlessj}}{\textsci}{\textsubring{d}}{\textsubring{l}}]}}{\color{darkgreen}{\small{ adj}}}{\textit{ (skörulegur)}}\foreignlanguage{czech}{{ působivý, impozantní}}}
+\entry{{að··spurður}}{{\textipa{[{a}{ð}{s}{\textsubring{b}}{\textscy}{r}{ð}{\textscy}{r}]}}{\color{darkgreen}{\small{ adj}}}\foreignlanguage{czech}{{ tázaný, dotazovaný}} $\triangleright$ {\textit{\textbf{ aðspurður svaraði hann ...}}}}
+\entry{{að··staða}}{{\textipa{[{a}{ð}{s}{\textsubring{d}}{a}{ð}{a}]}}{\color{darkgreen}{\small{ f}}}{\small{ (aðstöðu)}}\foreignlanguage{czech}{{ podmínky, situace}} $\triangleright$ {\textit{\textbf{ góð aðstaða}}}{\textit{\foreignlanguage{czech}{ dobrá situace}}}}
+\entry{{að··stand|andi}}{{\textipa{[{a}{ð}{s}{\textsubring{d}}{a}{n}{\textsubring{d}}{a}{n}{\textsubring{d}}{\textsci}]}}{\color{darkgreen}{\small{ m}}}{\small{ (-anda, -endur)}}{ 1.}\foreignlanguage{czech}{{ mužský příbuzný}}{ 2.}\foreignlanguage{czech}{{ podporovatel, přívrženec, mecenáš}} $\triangleright$ {\textit{\textbf{ aðstandendur sýningarinnar}}},}
+\entry{{að··stoð}}{{\textipa{[{a}{ð}{s}{\textsubring{d}}{\textopeno}{\texttheta}]}}{\color{darkgreen}{\small{ f}}}{\small{ (-ar)}}{\textit{ (hjálp)}}\foreignlanguage{czech}{{ (malá) pomoc}} $\triangleright$ {\textit{\textbf{ Aðstoð lögreglunnar var mikils virði.}}}{\textit{\foreignlanguage{czech}{ Pomoc policie měla velkou hodnotu.}}}}
+\entry{{að··stoð|a}}{{\textipa{[{a}{ð}{s}{\textsubring{d}}{\textopeno}{ð}{a}]}}{\color{darkgreen}{\small{ v}}}{\small{ (-aði)}}{\small{ acc}}{\textit{ (hjálpa)}}\foreignlanguage{czech}{{ pomoct, pomáhat, asistovat}} $\triangleright$ {\textit{\textbf{ Get ég aðstoðað þig?}}}{\textit{\foreignlanguage{czech}{ Čím Vám mohu posloužit? Můžu Ti pomoct?}}}}
+\entry{{að·stoðar··for·stjór|i}}{{\textipa{[{a}{ð}{s}{\textsubring{d}}{\textopeno}{ð}{a}{\textsubring{r}}{f}{\textopeno}{\textsubring{r}}{s}{\textsubring{d}}{j}{ou}{r}{\textsci}]}}{\color{darkgreen}{\small{ m}}}{\small{ (-a, -ar)}}\foreignlanguage{czech}{{ zástupce ředitele}}}
+\entry{{að·stoðar··|maður}}{{\textipa{[{a}{ð}{s}{\textsubring{d}}{\textopeno}{ð}{a}{r}{m}{a}{ð}{\textscy}{r}]}}{\color{darkgreen}{\small{ m}}}{\small{ (-manns, -menn)}}\foreignlanguage{czech}{{ asistent, pomocník}}}
+\entry{{að··streymi}}{{\textipa{[{a}{ð}{s}{\textsubring{d}}{r}{ei}{m}{\textsci}]}}{\color{darkgreen}{\small{ n}}}{\small{ (-s)}}\foreignlanguage{czech}{{ přítok, tok (vody, lidí ap.)}}}
+\entry{{að··stæður}}{{\textipa{[{a}{ð}{s}{\textsubring{d}}{a}{i}{ð}{\textscy}{r}]}}{\color{darkgreen}{\small{ f}}}{\small{ pl}}{\textit{ (kringumstæður)}}\foreignlanguage{czech}{{ podmínky, okolnosti}}}
+\entry{{að·stöðu··|gjald}}{{\textipa{[{a}{ð}{s}{\textsubring{d}}{\ae}{ð}{\textscy}{\r{\textObardotlessj}}{a}{l}{\textsubring{d}}]}}{\color{darkgreen}{\small{ n}}}{\small{ (-gjalds, -gjöld)}}\foreignlanguage{czech}{{\footnotesize{ ekon.}}}\foreignlanguage{czech}{{ daň z nákladů}}}
+\entry{{að··súg|ur}}{{\textipa{[{a}{ð}{s}{u}{\textscy}{r}]}}{\color{darkgreen}{\small{ m}}}{\small{ (-s)}}{\textit{ (ráðast á e-n)}}{\textsl{\textbf{ gera aðsúg að e-m}}}\foreignlanguage{czech}{{ napadnout, přepadnout (koho)}}}
+\entry{{að··svif}}{{\textipa{[{a}{ð}{s}{v}{\textsci}{f}]}}{\color{darkgreen}{\small{ n}}}{\small{ (-s)}}\foreignlanguage{czech}{{ malátnost, mdloby}} $\triangleright$ {\textit{\textbf{ fá aðsvif}}}}
+\entry{{að··var|a}}{{\textipa{[{a}{ð}{v}{a}{r}{a}]}}{\color{darkgreen}{\small{ v}}}{\small{ (-aði)}}{\small{ acc}}\foreignlanguage{czech}{{ varovat}} $\triangleright$ {\textit{\textbf{ Pabbi aðvarar börnin.}}}{\textit{\foreignlanguage{czech}{ Táta varuje děti.}}}}
+\entry{{að··venta}}{{\textipa{[{a}{ð}{v}{\textepsilon}{\textsubring{n}}{\textsubring{d}}{a}]}}{\color{darkgreen}{\small{ f}}}{\small{ (-u)}}\foreignlanguage{czech}{{ Advent}}}
+\entry{{að··vífandi}}{{\textipa{[{a}{ð}{v}{i}{v}{a}{n}{\textsubring{d}}{\textsci}]}}{\color{darkgreen}{\small{ adj}}}{\small{ indecl}}\foreignlanguage{czech}{{ blížící se, nadcházející (často náhodně)}}}
+\entry{{að··|vörun}}{{\textipa{[{a}{ð}{v}{\ae}{r}{\textscy}{n}]}}{\color{darkgreen}{\small{ f}}}{\small{ (-vörunar, -varanir)}}\foreignlanguage{czech}{{ výstraha,  varování}} $\triangleright$ {\textit{\textbf{ aðvörun um hættu}}}}
+\entry{{að··þrengdur}}{{\textipa{[{a}{ð}{\texttheta}{r}{\textepsilon}{}{\textsubring{d}}{\textscy}{r}]}}{\color{darkgreen}{\small{ adj}}}\foreignlanguage{czech}{{ v těžké situaci, pod silným (psychickým) tlakem}}}
+\entry{{af}}{{\textipa{[{a}{\textlengthmark}{f}]}}{\color{darkgreen}{\small{ prep/ adv}}}{\small{ dat}}{ 1.}\foreignlanguage{czech}{{ z, od}}{\footnotesize {\foreignlanguage{czech}{ (o pohybu z nějakého místa)}}}{\textsl{\textbf{ fara af stað}}}\foreignlanguage{czech}{{ vyrazit}},{\textsl{\textbf{ koma af fundi}}}\foreignlanguage{czech}{{ přijít ze schůze}},{\textsl{\textbf{ taka af sér skóna}}}\foreignlanguage{czech}{{ sundat si boty}},{\textsl{\textbf{ vakna af svefni}}}\foreignlanguage{czech}{{ probudit se ze spánku}},{ 2.}\foreignlanguage{czech}{{ po}}{\footnotesize {\foreignlanguage{czech}{ (o čase)}}},{\textsl{\textbf{ vera af barnsaldri}}}\foreignlanguage{czech}{{ vyrůst z dětského věku}},{\textsl{\textbf{ af dagsetri}}}\foreignlanguage{czech}{{ po západu slunce}},{\textsl{\textbf{ hver af öðrum}}}\foreignlanguage{czech}{{ jeden po druhém}},{\textit{ (strax)}}{\textsl{\textbf{ af stundu}}}\foreignlanguage{czech}{{ hned}},{ 3.}{\footnotesize {\foreignlanguage{czech}{ (o důvodu, příčině)}}},{\textsl{\textbf{ gera e-ð af skyldurækni}}}\foreignlanguage{czech}{{ dělat (co) svědomitě}},{\textsl{\textbf{ af hverju?}}}\foreignlanguage{czech}{{ proč}},{\textsl{\textbf{ af því, af því að}}}\foreignlanguage{czech}{{ protože}} $\triangleright$ {\textit{\textbf{ Hann tekur lýsi af því að hann vill ekki fá kvef.}}}{\textit{\foreignlanguage{czech}{ Bere rybí olej, protože nechce nastydnout.}}},{ 4.}{\footnotesize {\foreignlanguage{czech}{ (o přemístění (čeho), části (čeho))}}},{\textsl{\textbf{ hluti af þessu}}}\foreignlanguage{czech}{{ část čeho}},{\textsl{\textbf{ kominn af góðu fólki}}}\foreignlanguage{czech}{{ být z dobré rodiny}},{\textsl{\textbf{ kaupa e-ð af e-m}}}\foreignlanguage{czech}{{ koupit (co) od (koho)}},{ 5.}{\footnotesize {\foreignlanguage{czech}{ (o původci děje)}}} $\triangleright$ {\textit{\textbf{ Greinin er samin af henni.}}}{\textit{\foreignlanguage{czech}{ Napsala ten článek.}}},{\textit{ (því er lokið)}}{\textsl{\textbf{ það er af}}}\foreignlanguage{czech}{{ ???}},{\textsl{\textbf{ það er af og frá}}}\foreignlanguage{czech}{{ to je vyloučené}},{ 6.}{\footnotesize {\foreignlanguage{czech}{ (v ustálených spojeních)}}},{\textit{ (stundum)}}{\textsl{\textbf{ af og til}}}\foreignlanguage{czech}{{ občas, někdy}},}
+\entry{{afa··|bróðir}}{{\textipa{[{a}{\textlengthmark}{v}{a}{\textsubring{b}}{r}{ou}{ð}{\textsci}{r}]}}{\color{darkgreen}{\small{ m}}}{\small{ (-bróður, -bræður)}}\foreignlanguage{czech}{{ prastrýc}}}
+\entry{{afar}}{{\textipa{[{a}{\textlengthmark}{v}{a}{r}]}}{\color{darkgreen}{\small{ adv}}}{\textit{ (mjög)}}\foreignlanguage{czech}{{ velmi, hodně}}}
+\entry{{afar··kostir}}{{\textipa{[{a}{v}{a}{\textsubring{r}}{k\textsuperscript{h}}{\textopeno}{s}{\textsubring{d}}{\textsci}{r}]}}{\color{darkgreen}{\small{ m}}}{\small{ pl}}\foreignlanguage{czech}{{ těžké podmínky}} $\triangleright$ {\textit{\textbf{ setja honum afarkosti}}}}
+\entry{{afa··syst|ir}}{{\textipa{[{a}{\textlengthmark}{v}{a}{s}{\textsci}{s}{\textsubring{d}}{\textsci}{r}]}}{\color{darkgreen}{\small{ f}}}{\small{ (-ur, -ur)}}\foreignlanguage{czech}{{ prateta}}}
+\entry{{af··bak|a}}{{\textipa{[{a}{f}{\textsubring{b}}{a}{\r{g}}{a}]}}{\color{darkgreen}{\small{ v}}}{\small{ (-aði)}}{\small{ acc}}\foreignlanguage{czech}{{ překroutit, zkomolit (význam ap.)}} $\triangleright$ {\textit{\textbf{ afbaka ummæli hennar}}}}
+\entry{{af··boð|a}}{{\textipa{[{a}{f}{\textsubring{b}}{\textopeno}{ð}{a}]}}{\color{darkgreen}{\small{ v}}}{\small{ (-aði)}}{\small{ acc}}{\textit{ (aflýsa)}}\foreignlanguage{czech}{{ zrušit, odvolat, odhlásit}} $\triangleright$ {\textit{\textbf{ afboða samkomuna}}}}
+\entry{{af··borg|un}}{{\textipa{[{a}{f}{\textsubring{b}}{\textopeno}{r}{\r{g}}{\textscy}{n}]}}{\color{darkgreen}{\small{ f}}}{\small{ (-unar, -anir)}}\foreignlanguage{czech}{{ půjčka}} $\triangleright$ {\textit{\textbf{ kaupa e-ð á (með) afborgunum}}}\foreignlanguage{czech}{{\footnotesize{ ekon}}}\foreignlanguage{czech}{{ amortizace}},}
+\entry{{af·borgunar··tím|i}}{{\textipa{[{a}{f}{\textsubring{b}}{\textopeno}{\textsubring{r}}{\r{g}}{\textscy}{n}{a}{r}{t\textsuperscript{h}}{i}{m}{\textsci}]}}{\color{darkgreen}{\small{ m}}}{\small{ (-a)}}\foreignlanguage{czech}{{\footnotesize{ ekon.}}}\foreignlanguage{czech}{{ doba amortizace}}}
+\entry{{af··brigði}}{{\textipa{[{a}{f}{\textsubring{b}}{r}{\textsci}{\textbabygamma}{ð}{\textsci}]}}{\color{darkgreen}{\small{ n}}}{\small{ (-s, -)}}{ 1.}{\textit{ (útgáfa)}}\foreignlanguage{czech}{{ varianta, obměna}} $\triangleright$ {\textit{\textbf{ Sagan er þekkt í tveimur afbrigđum.}}}{\textsl{\textbf{ með afbrigðum}}}\foreignlanguage{czech}{{ velmi, opravdu}} $\triangleright$ {\textit{\textbf{ Myndin er með afbrigðum skemmtileg.}}},{ 2.}{\textit{ (undantekning)}}\foreignlanguage{czech}{{ vyjímka, abnormalita}} $\triangleright$ {\textit{\textbf{ afbrigði frá þingsköpum}}},}
+\entry{{af·brigði··legur}}{{\textipa{[{a}{f}{\textsubring{b}}{r}{\textsci}{\textbabygamma}{ð}{\textsci}{l}{\textepsilon}{\textbabygamma}{\textscy}{r}]}}{\color{darkgreen}{\small{ adj}}}{ 1.}\foreignlanguage{czech}{{ abnormální, anomální}} $\triangleright$ {\textit{\textbf{ afbrigðileg kynhegðun}}}{ 2.}\foreignlanguage{czech}{{ neobvyklý, nepravidelný}} $\triangleright$ {\textit{\textbf{ afbrigðilegar aðstæður}}},}
+\entry{{af··brot}}{{\textipa{[{a}{f}{\textsubring{b}}{r}{\textopeno}{\textsubring{d}}]}}{\color{darkgreen}{\small{ n}}}{\small{ (-s, -)}}\foreignlanguage{czech}{{ delikvence, přestupek; zločin}} $\triangleright$ {\textit{\textbf{ fremja alvarlegt afbrot}}}}
+\entry{{af·brota··|maður}}{{\textipa{[{a}{f}{\textsubring{b}}{r}{\textopeno}{\textsubring{d}}{a}{m}{a}{ð}{\textscy}{r}]}}{\color{darkgreen}{\small{ m}}}{\small{ (-manns, -menn)}}\foreignlanguage{czech}{{ delikvent, recidivista}}}
+\entry{{af··brýði}}{{\textipa{[{a}{f}{\textsubring{b}}{r}{i}{ð}{\textsci}]}}{\color{darkgreen}{\small{ f}}}{\small{ indecl}}\foreignlanguage{czech}{{ žárlivost}}}
+\entry{{af·brýði··|samur}}{{\textipa{[{a}{f}{\textsubring{b}}{r}{i}{ð}{\textsci}{s}{a}{m}{\textscy}{r}]}}{\color{darkgreen}{\small{ adj}}}{\small{ (f -söm)}}\foreignlanguage{czech}{{ žárlivý}}}
+\entry{{af·brýði··semi}}{{\textipa{[{a}{f}{\textsubring{b}}{r}{i}{ð}{\textsci}{s}{\textepsilon}{m}{\textsci}]}}{\color{darkgreen}{\small{ f}}}{\small{ indecl}}\foreignlanguage{czech}{{ žárlivost}} $\triangleright$ {\textit{\textbf{ finna til afbrýðisemi gagnvart honum}}}}
+\entry{{af··|bökun}}{{\textipa{[{a}{f}{\textsubring{b}}{\ae}{\r{g}}{\textscy}{n}]}}{\color{darkgreen}{\small{ f}}}{\small{ (-bökunar, -bakanir)}}\foreignlanguage{czech}{{ překroucení, zkomolení}}}
+\entry{{af··dal|ur}}{{\textipa{[{a}{f}{\textsubring{d}}{a}{l}{\textscy}{r}]}}{\color{darkgreen}{\small{ m}}}{\small{ (-s, -ir)}}\foreignlanguage{czech}{{ vedlejší údolí (vycházející z hlavního údolí)}}}
+\entry{{af·dráttar··laus}}{{\textipa{[{a}{f}{\textsubring{d}}{r}{au}{h}{\textsubring{d}}{a}{r}{l}{\ae i}{s}]}}{\color{darkgreen}{\small{ adj}}}\foreignlanguage{czech}{{ bezpodmínečný, naprostý}}}
+\entry{{af··drep}}{{\textipa{[{a}{f}{\textsubring{d}}{r}{\textepsilon}{\textsubring{b}}]}}{\color{darkgreen}{\small{ n}}}{\small{ (-s, -)}}{\textit{ (skjól)}}\foreignlanguage{czech}{{ úkryt, útočiště}}}
+\entry{{af··drif}}{{\textipa{[{a}{f}{\textsubring{d}}{r}{\textsci}{f}]}}{\color{darkgreen}{\small{ n}}}{\small{ pl}}{ 1.}{\textit{ (forlög)}}\foreignlanguage{czech}{{ osud}} $\triangleright$ {\textit{\textbf{ óttast um afdrif fjallgöngumannanna}}}{ 2.}{\textit{ (úrslit)}}\foreignlanguage{czech}{{ výsledek}},}
+\entry{{af·drifa··ríkur}}{{\textipa{[{a}{f}{\textsubring{d}}{r}{\textsci}{v}{a}{r}{i}{\r{g}}{\textscy}{r}]}}{\color{darkgreen}{\small{ adj}}}\foreignlanguage{czech}{{ osudový, s velkými následky}} $\triangleright$ {\textit{\textbf{ afdrifarík ákvörðun}}}}
+\entry{{af··dæmi}}{{\textipa{[{a}{f}{\textsubring{d}}{a}{i}{m}{\textsci}]}}{\color{darkgreen}{\small{ n}}}{\small{ (-s, -)}}{\textsl{\textbf{ með afdæmum}}}\foreignlanguage{czech}{{ mimořádně}}}
+\entry{{af··ferm|a}}{{\textipa{[{a}{f}{f}{\textepsilon}{r}{m}{a}]}}{\color{darkgreen}{\small{ v}}}{\small{ (-di, -t)}}{\small{ acc}}\foreignlanguage{czech}{{ vyložit, složit, vylodit}} $\triangleright$ {\textit{\textbf{ Björgunarsveitarmenn afferma gáminn.}}}{\textit{\foreignlanguage{czech}{ Záchranáři vykládají kontejner.}}}{\textit{ (ferma)}}}
+\entry{{af··|flytja}}{{\textipa{[{a}{f}{f}{l}{\textsci}{\textsubring{d}}{j}{a}]}}{\color{darkgreen}{\small{ v}}}{\small{ (-flutti, -flutt)}}{\small{ acc}}{\textit{ (rangfæra)}}\foreignlanguage{czech}{{ překroutit, zkomolit}}}
+\entry{{af··föll}}{{\textipa{[{a}{f}{f}{\ae}{\textsubring{d}}{\textsubring{l}}]}}{\color{darkgreen}{\small{ n}}}{\small{ pl}}{ 1.}{\textit{ (afsláttur)}}\foreignlanguage{czech}{{ sleva}}{ 2.}{\textit{ (tap)}}\foreignlanguage{czech}{{ úbytek}},}
+\entry{{af··|gamall}}{{\textipa{[{a}{f}{\r{g}}{a}{m}{a}{\textsubring{d}}{\textsubring{l}}]}}{\color{darkgreen}{\small{ adj}}}{\small{ (f -gömul)}}\foreignlanguage{czech}{{ velmi starý}}}
+\entry{{af··gang|ur}}{{\textipa{[{a}{f}{\r{g}}{au}{}{\r{g}}{\textscy}{r}]}}{\color{darkgreen}{\small{ m}}}{\small{ (-s, -ar)}}\foreignlanguage{czech}{{ zbytek}} $\triangleright$ {\textit{\textbf{ Það er afgangur af matnum.}}}{\textit{\foreignlanguage{czech}{ Zbylo jídlo.}}}}
+\entry{{af··gerandi}}{{\textipa{[{a}{f}{\r{\textObardotlessj}}{\textepsilon}{r}{a}{n}{\textsubring{d}}{\textsci}]}}{\color{darkgreen}{\small{ adj}}}{\small{ indecl}}\foreignlanguage{czech}{{ přesvědčivý}} $\triangleright$ {\textit{\textbf{ afgerandi svar}}}}
+\entry{{af··gir|ða}}{{\textipa{[{a}{f}{\r{\textObardotlessj}}{\textsci}{r}{ð}{a}]}}{\color{darkgreen}{\small{ v}}}{\small{ (-ti, -t)}}{\small{ acc}}{ 1.}\foreignlanguage{czech}{{ ohradit, obehnat (plotem ap.)}} $\triangleright$ {\textit{\textbf{ afgirða tún}}}{ 2.}\foreignlanguage{czech}{{ odříznout (přerušit spojení)}} $\triangleright$ {\textit{\textbf{ Dalurinn er afgirtur á vetrum vegna snjóa.}}},}
+\entry{{af··glap|i}}{{\textipa{[{a}{f}{\r{g}}{l}{a}{\textsubring{b}}{\textsci}]}}{\color{darkgreen}{\small{ m}}}{\small{ (-a, -ar)}}{\textit{ (bjálfi)}}\foreignlanguage{czech}{{ blázen, hlupák}}}
+\entry{{af··glöp}}{{\textipa{[{a}{f}{\r{g}}{l}{\ae}{\textsubring{b}}]}}{\color{darkgreen}{\small{ n}}}{\small{ pl}}\foreignlanguage{czech}{{ pošetilost, trapas}} $\triangleright$ {\textit{\textbf{ Henni hafa orðið á hroðaleg afglöp.}}}}
+\entry{{af··grei|ða}}{{\textipa{[{a}{f}{\r{g}}{r}{ei}{ð}{a}]}}{\color{darkgreen}{\small{ v}}}{\small{ (-ddi, -tt)}}{\small{ acc}}{ 1.}{\textit{ (þjóna)}}\foreignlanguage{czech}{{ obsluhovat, obsloužit, prodávat (v obchodě ap.)}} $\triangleright$ {\textit{\textbf{ afgreiða viðskiptavin}}}{\textit{\foreignlanguage{czech}{ obsloužit zákazníka}}}{ 2.}{\textit{ (senda)}}\foreignlanguage{czech}{{ odbavit, připravit k vydání}} $\triangleright$ {\textit{\textbf{ afgreiða skip í höfn}}}{\textit{\foreignlanguage{czech}{ odbavit loď v přístavu}}},{ 3.}\foreignlanguage{czech}{{ rozhodnout, určit}} $\triangleright$ {\textit{\textbf{ afgreiða mál}}}{\textit{\foreignlanguage{czech}{ rozhodnout záležitost}}},}
+\entry{{af··greiðsl|a}}{{\textipa{[{a}{f}{\r{g}}{r}{ei}{ð}{s}{\textsubring{d}}{l}{a}]}}{\color{darkgreen}{\small{ f}}}{\small{ (-u, -ur)}}{ 1.}{\textit{ (\textsuperscript{1}þjónusta)}}\foreignlanguage{czech}{{ služba, servis}} $\triangleright$ {\textit{\textbf{ afgreiðsla á pöntunum}}}{ 2.}\foreignlanguage{czech}{{ expedice (zboží ap.)}} $\triangleright$ {\textit{\textbf{ póstafgreiðsla, bensínaafgreiðsla}}},}
+\entry{{af·greiðslu··frest|ur}}{{\textipa{[{a}{f}{\r{g}}{r}{ei}{ð}{s}{\textsubring{d}}{l}{\textscy}{f}{r}{\textepsilon}{s}{\textsubring{d}}{\textscy}{r}]}}{\color{darkgreen}{\small{ m}}}{\small{ (-s, -ir)}}\foreignlanguage{czech}{{ doba dodání}}}
+\entry{{af·greiðslu··|kona}}{{\textipa{[{a}{f}{\r{g}}{r}{ei}{ð}{s}{\textsubring{d}}{l}{\textscy}{k\textsuperscript{h}}{\textopeno}{n}{a}]}}{\color{darkgreen}{\small{ f}}}{\small{ (-u, -ur)}}\foreignlanguage{czech}{{ prodavačka}}}
+\entry{{af·greiðslu··|maður}}{{\textipa{[{a}{f}{\r{g}}{r}{ei}{ð}{s}{\textsubring{d}}{l}{\textscy}{m}{a}{ð}{\textscy}{r}]}}{\color{darkgreen}{\small{ m}}}{\small{ (-manns, -menn)}}\foreignlanguage{czech}{{ prodavač}}}
+\entry{{af·greiðslu··stúlk|a}}{{\textipa{[{a}{f}{\r{g}}{r}{ei}{ð}{s}{\textsubring{d}}{l}{\textscy}{s}{\textsubring{d}}{u}{\textsubring{l}}{\r{g}}{a}]}}{\color{darkgreen}{\small{ f}}}{\small{ (-u, -ur)}}\foreignlanguage{czech}{{ prodavačka}}}
+\entry{{af··hend|a}}{{\textipa{[{a}{\textlengthmark}{f}{\textepsilon}{n}{\textsubring{d}}{a}]}}{\color{darkgreen}{\small{ v}}}{\small{ (-ti, -t)}}{\small{ acc}}{ 1.}\foreignlanguage{czech}{{ předat, odevzdat}} $\triangleright$ {\textit{\textbf{ Skólastjórinn afhenti nemendum verðlaun fyrir góðan námsárangur.}}}{\textit{\foreignlanguage{czech}{ Ŕeditel předal žákům ocenění za dobré školní výsledky.}}}{ 2.}\foreignlanguage{czech}{{ doručit, dodat}} $\triangleright$ {\textit{\textbf{ afhenda honum bréfið}}}{\textit{\foreignlanguage{czech}{ doručit mu dopis}}},}
+\entry{{af··hending}}{{\textipa{[{a}{\textlengthmark}{f}{\textepsilon}{n}{\textsubring{d}}{i}{}{\r{g}}]}}{\color{darkgreen}{\small{ f}}}{\small{ (-ar)}}\foreignlanguage{czech}{{ dodání, doručení}}}
+\entry{{af·hendingar··dag|ur}}{{\textipa{[{a}{\textlengthmark}{f}{\textepsilon}{n}{\textsubring{d}}{i}{}{\r{g}}{a}{r}{\textsubring{d}}{a}{\textbabygamma}{\textscy}{r}]}}{\color{darkgreen}{\small{ m}}}{\small{ (-s, -ar)}}\foreignlanguage{czech}{{ datum doručení}}}
+\entry{{af··hjúp|a}}{{\textipa{[{a}{f}{\c{c}}{u}{\textsubring{b}}{a}]}}{\color{darkgreen}{\small{ v}}}{\small{ (-aði)}}{\small{ acc}}\foreignlanguage{czech}{{ odhalit, odkrýt}} $\triangleright$ {\textit{\textbf{ afhjúpa misferli}}}}
+\entry{{af··hjúp|un}}{{\textipa{[{a}{f}{\c{c}}{u}{\textsubring{b}}{\textscy}{n}]}}{\color{darkgreen}{\small{ f}}}{\small{ (-unar)}}\foreignlanguage{czech}{{ odhalení, odkrytí}}}
+\entry{{af··hroð}}{{\textipa{[{a}{f}{\textsubring{r}}{\textopeno}{\texttheta}]}}{\color{darkgreen}{\small{ n}}}{\small{ (-s)}}{\textit{ (tjón)}}\foreignlanguage{czech}{{ škoda, ztráta}} $\triangleright$ {\textit{\textbf{ gjalda afhroð}}}}
+\entry{{af··huga}}{{\textipa{[{a}{\textlengthmark}{f}{\textscy}{\textbabygamma}{a}]}}{\color{darkgreen}{\small{ adj}}}{\small{ indecl (dat)}}{\textit{ (missa áhuga á e-u)}}{\textsl{\textbf{ verða e-u afhuga}}}\foreignlanguage{czech}{{ ztratit zájem o (co)}} $\triangleright$ {\textit{\textbf{ verða starfinu afhuga}}}}
+\entry{{af··hý|ða}}{{\textipa{[{a}{\textlengthmark}{f}{i}{ð}{a}]}}{\color{darkgreen}{\small{ v}}}{\small{ (-ddi, -tt)}}{\small{ acc}}{\textit{ (flysja)}}\foreignlanguage{czech}{{ oloupat, oškrabat}} $\triangleright$ {\textit{\textbf{ afhýða kartöflur}}}{\textit{\foreignlanguage{czech}{ oloupat brambory}}}}
+\entry{{af|i}}{{\textipa{[{a}{\textlengthmark}{v}{\textsci}]}}{\color{darkgreen}{\small{ m}}}{\small{ (-a, -ar)}}\foreignlanguage{czech}{{ dědeček, děda}} $\triangleright$ {\textit{\textbf{ Palli á tvo afa.}}}{\textit{\foreignlanguage{czech}{ Palli má dva dědečky.}}}}
+\entry{{af··kast|a}}{{\textipa{[{a}{f}{k\textsuperscript{h}}{a}{s}{\textsubring{d}}{a}]}}{\color{darkgreen}{\small{ v}}}{\small{ (-aði)}}{\small{ dat}}\foreignlanguage{czech}{{ provést, udělat}} $\triangleright$ {\textit{\textbf{ afkasta miklu}}}}
+\entry{{af·kasta··get|a}}{{\textipa{[{a}{f}{k\textsuperscript{h}}{a}{s}{\textsubring{d}}{a}{\r{\textObardotlessj}}{\textepsilon}{\textsubring{d}}{a}]}}{\color{darkgreen}{\small{ f}}}{\small{ (-u)}}\foreignlanguage{czech}{{ produktivita}}}
+\entry{{af·kasta··|maður}}{{\textipa{[{a}{f}{k\textsuperscript{h}}{a}{s}{\textsubring{d}}{a}{m}{a}{ð}{\textscy}{r}]}}{\color{darkgreen}{\small{ m}}}{\small{ (-manns, -menn)}}\foreignlanguage{czech}{{ pilný, usilovný pracovník}}}
+\entry{{af·kasta··mikill}}{{\textipa{[{a}{f}{k\textsuperscript{h}}{a}{s}{\textsubring{d}}{a}{m}{\textsci}{\r{\textObardotlessj}}{\textsci}{\textsubring{d}}{\textsubring{l}}]}}{\color{darkgreen}{\small{ adj}}}\foreignlanguage{czech}{{ výkonný, efektivní, produktivní}} $\triangleright$ {\textit{\textbf{ afkastamikill listamaður}}}}
+\entry{{af·kára··legur}}{{\textipa{[{a}{f}{k\textsuperscript{h}}{au}{r}{a}{l}{\textepsilon}{\textbabygamma}{\textscy}{r}]}}{\color{darkgreen}{\small{ adj}}}{\textit{ (hlægilegur)}}\foreignlanguage{czech}{{ bizarní, prapodivný}} $\triangleright$ {\textit{\textbf{ afkáralegur hugmynd}}}}
+\entry{{af··kim|i}}{{\textipa{[{a}{f}{c\textsuperscript{h}}{\textsci}{m}{\textsci}]}}{\color{darkgreen}{\small{ m}}}{\small{ (-a, -ar)}}{\textit{ (skot)}}\foreignlanguage{czech}{{ kout, koutek}}}
+\entry{{af··klæ|ða}}{{\textipa{[{a}{f}{k\textsuperscript{h}}{l}{a}{i}{ð}{a}]}}{\color{darkgreen}{\small{ v}}}{\small{ (-ddi, -tt)}}{\small{ acc}}{\textit{ (fara úr)}}\foreignlanguage{czech}{{ sundat, svléknout}} $\triangleright$ {\textit{\textbf{ afklæða sig}}}{\textit{ (klæða)}}}
+\entry{{af··kom|a}}{{\textipa{[{a}{f}{k\textsuperscript{h}}{\textopeno}{m}{a}]}}{\color{darkgreen}{\small{ f}}}{\small{ (-u)}}{ 1.}{\textit{ (arður)}}\foreignlanguage{czech}{{ zisk, výnos}} $\triangleright$ {\textit{\textbf{ reyna að tryggja afkomu fyrirtækisins með víðtækum ráðstöfunum.}}}{ 2.}{\textit{ (efnahagur)}}\foreignlanguage{czech}{{ finanční postavení}},}
+\entry{{af··kom|andi}}{{\textipa{[{a}{f}{k\textsuperscript{h}}{\textopeno}{m}{a}{n}{\textsubring{d}}{\textsci}]}}{\color{darkgreen}{\small{ m}}}{\small{ (-anda, -endur)}}\foreignlanguage{czech}{{ potomek}}}
+\entry{{af··kvæmi}}{{\textipa{[{a}{f}{k\textsuperscript{h}}{v}{a}{i}{m}{\textsci}]}}{\color{darkgreen}{\small{ n}}}{\small{ (-s, -)}}{ 1.}\foreignlanguage{czech}{{ dítě, potomek}}{ 2.}{\textit{ (afsprengi)}}\foreignlanguage{czech}{{ potomek, mládě}} $\triangleright$ {\textit{\textbf{ Sum dýr eiga mörg afkvæmi.}}}{\textit{\foreignlanguage{czech}{ Některá zvířata mají hodně mláďat.}}},}
+\entry{{af··köst}}{{\textipa{[{a}{f}{k\textsuperscript{h}}{\ae}{s}{\textsubring{d}}]}}{\color{darkgreen}{\small{ n}}}{\small{ pl}}\foreignlanguage{czech}{{ výkon, produktivita}} $\triangleright$ {\textit{\textbf{ Afköstin aukast.}}}{\textit{\foreignlanguage{czech}{ Výkon se zvětšuje.}}}}
+\entry{{afl}}{{\textipa{[{a}{\textsubring{b}}{\textsubring{l}}]}}{\color{darkgreen}{\small{ n}}}{\small{ (afls, öfl)}}{ 1.}\foreignlanguage{czech}{{ (lidská) síla, elán, potence}} $\triangleright$ {\textit{\textbf{ margra manna afl}}}{\textit{\foreignlanguage{czech}{ síla mnoha lidí}}}{ 2.}{\textit{ (ofbeldi)}}\foreignlanguage{czech}{{ síla, násilí}} $\triangleright$ {\textit{\textbf{ taka e-ð með afli}}}{\textit{\foreignlanguage{czech}{ vzít si (co) silou}}},{ 3.}{\textit{ (kraftur)}}\foreignlanguage{czech}{{ síla, energie}} $\triangleright$ {\textit{\textbf{ öfl náttúrunnar}}}{\textit{\foreignlanguage{czech}{ síly přírody}}},{ 4.}{\textit{ (gildi)}}\foreignlanguage{czech}{{ platnost}},{ 5.}\foreignlanguage{czech}{{\footnotesize{ fyz.}}}\foreignlanguage{czech}{{ výkon}},}
+\entry{{afl.}}{{\color{darkgreen}{\small{ zkr}}}{\textsl{\textbf{ afleiddur}}}\foreignlanguage{czech}{{ odvozený}}}
+\entry{{afla}}{{\textipa{[{a}{\textsubring{b}}{l}{a}]}}{\color{darkgreen}{\small{ v}}}{\small{ (gen) (-aði)}}{ 1.}{\textit{ (fiska)}}\foreignlanguage{czech}{{ rybařit, chytat/lovit ryby}} $\triangleright$ {\textit{\textbf{ Bátarnir hafa aflað vel að undanförnu.}}}{ 2.}{\textsl{\textbf{ afla sér e-s}}}\foreignlanguage{czech}{{ pořídit si (co), získat (co)}} $\triangleright$ {\textit{\textbf{ afla sér þekkingar}}},}
+\entry{{afla··brest|ur}}{{\textipa{[{a}{\textsubring{b}}{l}{a}{\textsubring{b}}{r}{\textepsilon}{s}{\textsubring{d}}{\textscy}{r}]}}{\color{darkgreen}{\small{ m}}}{\small{ (-s)}}\foreignlanguage{czech}{{ žádný úlovek (ryb ap.)}}}
+\entry{{\textsuperscript{1}}{af··|laga}}{{\textipa{[{a}{f}{l}{a}{\textbabygamma}{a}]}}{\color{darkgreen}{\small{ f}}}{\small{ (-lögu, -lögur)}}\foreignlanguage{czech}{{ zásoba}} $\triangleright$ {\textit{\textbf{ eiga e-ð aflögu}}}}
+\entry{{\textsuperscript{2}}{af··lag|a}}{{\textipa{[{a}{f}{l}{a}{\textbabygamma}{a}]}}{\color{darkgreen}{\small{ v}}}{\small{ (-aði)}}{\textit{ (bæla)}}\foreignlanguage{czech}{{ zkazit, pokazit}} $\triangleright$ {\textit{\textbf{ aflaga hárgreiðsluna}}}}
+\entry{{afla··|mark}}{{\textipa{[{a}{\textsubring{b}}{l}{a}{m}{a}{\textsubring{r}}{\r{g}}]}}{\color{darkgreen}{\small{ n}}}{\small{ (-marks, -mörk)}}\foreignlanguage{czech}{{ lovné kvóty}}}
+\entry{{af··|langur}}{{\textipa{[{a}{f}{l}{au}{}{\r{g}}{\textscy}{r}]}}{\color{darkgreen}{\small{ adj}}}{\small{ (f -löng)}}\foreignlanguage{czech}{{ obdélníkový}}}
+\entry{{af··lausn}}{{\textipa{[{a}{f}{l}{\ae i}{s}{\textsubring{d}}{\textsubring{n}}]}}{\color{darkgreen}{\small{ f}}}{\small{ (-ar)}}\foreignlanguage{czech}{{ rozhřešení}}}
+\entry{{af··lát}}{{\textipa{[{a}{f}{l}{au}{\textsubring{d}}]}}{\color{darkgreen}{\small{ n}}}{\small{ (-s, -)}}{\textit{ (hlé)}}\foreignlanguage{czech}{{ přestávka, pauza}}{\textsl{\textbf{ án afláts}}}\foreignlanguage{czech}{{ neustále, nepřetržitě}},}
+\entry{{af··|leggja}}{{\textipa{[{a}{f}{l}{\textepsilon}{\r{\textObardotlessj}}{a}]}}{\color{darkgreen}{\small{ v}}}{\small{ (-lagði, -lagt)}}{\small{ acc}}\foreignlanguage{czech}{{ přestat (s čím), opustit (od čeho)}}{\textsl{\textbf{ afleggja vana}}}\foreignlanguage{czech}{{ opustit zvyk}},}
+\entry{{af··leggjar|i}}{{\textipa{[{a}{f}{l}{\textepsilon}{\r{\textObardotlessj}}{a}{r}{\textsci}]}}{\color{darkgreen}{\small{ m}}}{\small{ (-a, -ar)}}{ 1.}\foreignlanguage{czech}{{ postranní cesta}}{ 2.}{\textit{ (græðlingur)}}\foreignlanguage{czech}{{\footnotesize{ bot.}}}\foreignlanguage{czech}{{ řízek, odřezek (od rostliny)}},}
+\entry{{af··leiddur}}{{\textipa{[{a}{f}{l}{ei}{\textsubring{d}}{\textscy}{r}]}}{\color{darkgreen}{\small{ adj}}}\foreignlanguage{czech}{{ odvozený}}{\textsl{\textbf{ afleitt orð}}}\foreignlanguage{czech}{{\footnotesize{ jaz.}}}\foreignlanguage{czech}{{ odvozené slovo}},}
+\entry{{af··leiðing}}{{\textipa{[{a}{f}{l}{ei}{ð}{i}{}{\r{g}}]}}{\color{darkgreen}{\small{ f}}}{\small{ (-ar, -ar)}}{\textit{ (árangur)}}\foreignlanguage{czech}{{ důsledek, následek}} $\triangleright$ {\textit{\textbf{ orsök og afleiðing}}}}
+\entry{{af·leiðingar··setning}}{{\textipa{[{a}{f}{l}{ei}{ð}{i}{}{\r{g}}{a}{\textsubring{r}}{s}{\textepsilon}{h}{\textsubring{d}}{n}{i}{}{\r{g}}]}}{\color{darkgreen}{\small{ f}}}{\small{ (-ar, -ar)}}\foreignlanguage{czech}{{\footnotesize{ jaz.}}}\foreignlanguage{czech}{{ vedlejší věta příslovečná účelová}}}
+\entry{{af·leiðingar··tenging}}{{\textipa{[{a}{f}{l}{ei}{ð}{i}{}{\r{g}}{a}{\textsubring{r}}{t\textsuperscript{h}}{ei}{\textltailn}{\r{\textObardotlessj}}{i}{}{\r{g}}]}}{\color{darkgreen}{\small{ f}}}{\small{ (-ar, -ar)}}\foreignlanguage{czech}{{\footnotesize{ jaz.}}}\foreignlanguage{czech}{{ spojka účelová}}}
+\entry{{af··leiðsl|a}}{{\textipa{[{a}{f}{l}{ei}{ð}{s}{\textsubring{d}}{l}{a}]}}{\color{darkgreen}{\small{ f}}}{\small{ (-u)}}{ 1.}\foreignlanguage{czech}{{\footnotesize{ filos.}}}\foreignlanguage{czech}{{ dedukce}}{ 2.}\foreignlanguage{czech}{{\footnotesize{ jaz.}}}\foreignlanguage{czech}{{ derivace, odvozování}},}
+\entry{{af··leit|ur}}{{\textipa{[{a}{f}{l}{ei}{\textsubring{d}}{\textscy}{r}]}}{\color{darkgreen}{\small{ adj}}}{\textit{ (slæmur)}}\foreignlanguage{czech}{{ špatný, nedobrý}} $\triangleright$ {\textit{\textbf{ vera afleitur bílstjóri}}}{\textit{\foreignlanguage{czech}{ nebýt dobrým řidičem}}}}
+\entry{{af··leysing}}{{\textipa{[{a}{f}{l}{ei}{s}{i}{}{\r{g}}]}}{\color{darkgreen}{\small{ f}}}{\small{ (-ar, -ar)}}\foreignlanguage{czech}{{ náhrada, vystřídání}}{\textsl{\textbf{ vinna í afleysingum}}}\foreignlanguage{czech}{{ pracovat na výpomoc}},}
+\entry{{af··lé|tta}}{{\textipa{[{a}{f}{l}{j}{\textepsilon}{h}{\textsubring{d}}{a}]}}{\color{darkgreen}{\small{ v}}}{\small{ (-tti, -tt)}}{\textit{ (frelsa)}}\foreignlanguage{czech}{{ ulevit, ulehčit}}}
+\entry{{afl··gjaf|i}}{{\textipa{[{a}{\textsubring{b}}{\textsubring{l}}{\r{\textObardotlessj}}{a}{v}{\textsci}]}}{\color{darkgreen}{\small{ m}}}{\small{ (-a, -ar)}}\foreignlanguage{czech}{{ zdroj (energie)}}}
+\entry{{afl|i}}{{\textipa{[{a}{\textsubring{b}}{l}{\textsci}]}}{\color{darkgreen}{\small{ m}}}{\small{ (-a)}}{ 1.}{\textit{ (afrakstur)}}\foreignlanguage{czech}{{ užitek, prospěch}}{ 4.}{\textit{ (fjöldi)}}\foreignlanguage{czech}{{ množství}} $\triangleright$ {\textit{\textbf{ liðsafli}}}{\textit{\foreignlanguage{czech}{ množství lidí}}},{ 3.}\foreignlanguage{czech}{{ úlovek (rybaření)}} $\triangleright$ {\textit{\textbf{ verka aflann}}}{\textit{\foreignlanguage{czech}{ konzervovat úlovek}}},{ 2.}{\textit{ (birgðir)}}\foreignlanguage{czech}{{ zásoby}},}
+\entry{{af··lóga}}{{\textipa{[{a}{f}{l}{ou}{a}]}}{\color{darkgreen}{\small{ adj}}}{\small{ indecl}}\foreignlanguage{czech}{{ sešlý, vetchý}} $\triangleright$ {\textit{\textbf{ aflóga hross}}}}
+\entry{{afl·rauna··|maður}}{{\textipa{[{a}{\textsubring{b}}{\textsubring{l}}{r}{\ae i}{n}{a}{m}{a}{ð}{\textscy}{r}]}}{\color{darkgreen}{\small{ m}}}{\small{ (-manns, -menn)}}\foreignlanguage{czech}{{ silák, vzpěrač}}}
+\entry{{afls··mun|ur}}{{\textipa{[{a}{\textsubring{b}}{\textsubring{l}}{s}{m}{\textscy}{n}{\textscy}{r}]}}{\color{darkgreen}{\small{ m}}}{\small{ (-ar)}}\foreignlanguage{czech}{{ rozdíl v síle}} $\triangleright$ {\textit{\textbf{ neyta aflsmunar}}}}
+\entry{{afl··vak|i}}{{\textipa{[{a}{\textsubring{b}}{\textsubring{l}}{v}{a}{\r{\textObardotlessj}}{\textsci}]}}{\color{darkgreen}{\small{ m}}}{\small{ (-a, -ar)}}\foreignlanguage{czech}{{ hnací síla, motiv}}}
+\entry{{af··lýs|a}}{{\textipa{[{a}{f}{l}{i}{s}{a}]}}{\color{darkgreen}{\small{ v}}}{\small{ (-ti, -t)}}{\small{ dat}}{\textit{ (afboða)}}\foreignlanguage{czech}{{ odvolat, zrušit}} $\triangleright$ {\textit{\textbf{ aflýsa fundinum}}}}
+\entry{{af·lögu··fær}}{{\textipa{[{a}{f}{l}{\ae}{\textbabygamma}{\textscy}{f}{a}{i}{r}]}}{\color{darkgreen}{\small{ adj}}}\foreignlanguage{czech}{{ štědrý}} $\triangleright$ {\textit{\textbf{ vera aflögufær}}}}
+\entry{{af··mark|a}}{{\textipa{[{a}{f}{m}{a}{\textsubring{r}}{\r{g}}{a}]}}{\color{darkgreen}{\small{ v}}}{\small{ (-aði)}}{ 1.}{\textit{ (setja takmörk)}}\foreignlanguage{czech}{{ ohraničit, vytyčit}}{ 2.}{\textit{ (skilgreina)}}\foreignlanguage{czech}{{ vymezit, definovat}} $\triangleright$ {\textit{\textbf{ afmarka hugtök}}}{\textit{\foreignlanguage{czech}{ definovat koncept}}},}
+\entry{{af··má}}{{\textipa{[{a}{f}{m}{au}]}}{\color{darkgreen}{\small{ v}}}{\small{ (-ði, -ð)}}{\small{ acc}}{ 1.}{\textit{ (þurrka út)}}\foreignlanguage{czech}{{ vymazat, zničit, zahladit (stopy ap.)}} $\triangleright$ {\textit{\textbf{ afmá verksummerki}}}{ 2.}{\textit{ (drepa)}}\foreignlanguage{czech}{{ zabít}} $\triangleright$ {\textit{\textbf{ afmá stjúpu sína}}},}
+\entry{{af·máan··legur}}{{\textipa{[{a}{f}{m}{au}{a}{n}{l}{\textepsilon}{\textbabygamma}{\textscy}{r}]}}{\color{darkgreen}{\small{ adj}}}\foreignlanguage{czech}{{ smazatelný, odstranitelný}}}
+\entry{{af··mynd|a}}{{\textipa{[{a}{f}{m}{\textsci}{n}{\textsubring{d}}{a}]}}{\color{darkgreen}{\small{ v}}}{\small{ (-aði)}}{\small{ acc}}{\textit{ (afskræma)}}\foreignlanguage{czech}{{ znetvořit, zohyzdit}} $\triangleright$ {\textit{\textbf{ afmynda e-n}}}}
+\entry{{af··myndaður}}{{\textipa{[{a}{f}{m}{\textsci}{n}{\textsubring{d}}{a}{ð}{\textscy}{r}]}}{\color{darkgreen}{\small{ adj}}}\foreignlanguage{czech}{{ znetvořený, zohyzdění}} $\triangleright$ {\textit{\textbf{ vera afmyndaður í framan}}}}
+\entry{{af··mynd|un}}{{\textipa{[{a}{f}{m}{\textsci}{n}{\textsubring{d}}{\textscy}{n}]}}{\color{darkgreen}{\small{ f}}}{\small{ (-unar, -anir)}}\foreignlanguage{czech}{{ znetvoření, zohyzdění}}}
+\entry{{af··mæli}}{{\textipa{[{a}{f}{m}{a}{i}{l}{\textsci}]}}{\color{darkgreen}{\small{ n}}}{\small{ (-s, -)}}{\textit{ (fæðingardagur)}}\foreignlanguage{czech}{{ narozeniny}} $\triangleright$ {\textit{\textbf{ Palli á afmæli.}}}{\textit{\foreignlanguage{czech}{ Palli má narozeniny.}}}}
+\entry{{af·mælis··|barn}}{{\textipa{[{a}{f}{m}{a}{i}{l}{\textsci}{s}{\textsubring{b}}{a}{r}{\textsubring{d}}{\textsubring{n}}]}}{\color{darkgreen}{\small{ n}}}{\small{ (-barns, -börn)}}\foreignlanguage{czech}{{ narozeninový oslavenec}}}
+\entry{{af·mælis··dag|ur}}{{\textipa{[{a}{f}{m}{a}{i}{l}{\textsci}{s}{\textsubring{d}}{a}{\textbabygamma}{\textscy}{r}]}}{\color{darkgreen}{\small{ m}}}{\small{ (-s, -ar)}}\foreignlanguage{czech}{{ narozeninový den}}}
+\entry{{af·mælis··|gjöf}}{{\textipa{[{a}{f}{m}{a}{i}{l}{\textsci}{s}{\r{\textObardotlessj}}{\ae}{f}]}}{\color{darkgreen}{\small{ f}}}{\small{ (-gjafar, -gjafir)}}\foreignlanguage{czech}{{ narozeninový dárek}} $\triangleright$ {\textit{\textbf{ fá afmælisgjöf frá henni}}}}
+\entry{{af·mælis··veisl|a}}{{\textipa{[{a}{f}{m}{a}{i}{l}{\textsci}{s}{v}{ei}{s}{\textsubring{d}}{l}{a}]}}{\color{darkgreen}{\small{ f}}}{\small{ (-u, -ur)}}\foreignlanguage{czech}{{ narozeninová oslava}}}
+\entry{{af··nám}}{{\textipa{[{a}{f}{n}{au}{m}]}}{\color{darkgreen}{\small{ n}}}{\small{ (-s)}}\foreignlanguage{czech}{{ zrušení, odvolání}} $\triangleright$ {\textit{\textbf{ afnám laga}}}}
+\entry{{af··neit|a}}{{\textipa{[{a}{f}{n}{ei}{\textsubring{d}}{a}]}}{\color{darkgreen}{\small{ v}}}{\small{ (-aði)}}{\small{ dat}}{ 1.}{\textit{ (hafna)}}\foreignlanguage{czech}{{ popřít, odmítnout}} $\triangleright$ {\textit{\textbf{ afneita þessum ásökunum}}}{ 2.}\foreignlanguage{czech}{{ zříci se}} $\triangleright$ {\textit{\textbf{ afneita guði}}},}
+\entry{{af··neit|un}}{{\textipa{[{a}{f}{n}{ei}{\textsubring{d}}{\textscy}{n}]}}{\color{darkgreen}{\small{ f}}}{\small{ (-unar, -anir)}}\foreignlanguage{czech}{{ odřeknutí se, vzdání se}} $\triangleright$ {\textit{\textbf{ trúarafneitun}}}}
+\entry{{af··|nema}}{{\textipa{[{a}{f}{n}{\textepsilon}{m}{a}]}}{\color{darkgreen}{\small{ v}}}{\small{ (-nem, -nam, -námum, -numið)}}{\small{ acc}}{\textit{ (fella niður)}}\foreignlanguage{czech}{{ zrušit, odvolat, prohlásit za neplatné (zákon ap.)}} $\triangleright$ {\textit{\textbf{ afnema regluna}}}}
+\entry{{af··not}}{{\textipa{[{a}{f}{n}{\textopeno}{\textsubring{d}}]}}{\color{darkgreen}{\small{ n}}}{\small{ pl}}{\textit{ (gagn)}}\foreignlanguage{czech}{{ využití, užitek}} $\triangleright$ {\textit{\textbf{ afnot af húsinu}}}}
+\entry{{af·nota··|gjald}}{{\textipa{[{a}{f}{n}{\textopeno}{\textsubring{d}}{a}{\r{\textObardotlessj}}{a}{l}{\textsubring{d}}]}}{\color{darkgreen}{\small{ n}}}{\small{ (-gjalds, -gjöld)}}\foreignlanguage{czech}{{\footnotesize{ ekon.}}}\foreignlanguage{czech}{{ poplatek za licenci}}}
+\entry{{af·nota··rétt|ur}}{{\textipa{[{a}{f}{n}{\textopeno}{\textsubring{d}}{a}{r}{j}{\textepsilon}{h}{\textsubring{d}}{\textscy}{r}]}}{\color{darkgreen}{\small{ m}}}{\small{ (-ar)}}\foreignlanguage{czech}{{ užívací právo}}}
+\entry{{af··pant|a}}{{\textipa{[{a}{f}{p\textsuperscript{h}}{a}{\textsubring{n}}{\textsubring{d}}{a}]}}{\color{darkgreen}{\small{ v}}}{\small{ (-aði)}}{\small{ acc}}\foreignlanguage{czech}{{ zrušit (objednávku ap.)}} $\triangleright$ {\textit{\textbf{ afpanta gistinguna}}}{\textit{\foreignlanguage{czech}{ zrušit ubytování}}}}
+\entry{{af··plán|a}}{{\textipa{[{a}{f}{p\textsuperscript{h}}{l}{au}{n}{a}]}}{\color{darkgreen}{\small{ v}}}{\small{ (-aði)}}{\small{ acc}}\foreignlanguage{czech}{{ odpykat, odčinit}} $\triangleright$ {\textit{\textbf{ afplána þungan fangelsisdóm}}}}
+\entry{{af··rakstur}}{{\textipa{[{a}{f}{r}{a}{x}{s}{\textsubring{d}}{\textscy}{r}]}}{\color{darkgreen}{\small{ m}}}{\small{ (-s)}}{ 1.}{\textit{ (framleiðsla)}}\foreignlanguage{czech}{{ výrobek, produkt}}{ 2.}{\textit{ (hagnaður)}}\foreignlanguage{czech}{{ výnos, zisk}},}
+\entry{{af··|ráða}}{{\textipa{[{a}{f}{r}{au}{ð}{a}]}}{\color{darkgreen}{\small{ v}}}{\small{ (-ræð, -réði, -réðum, -ráðið )}}{\small{ acc}}\foreignlanguage{czech}{{ rozhodnout (se), učinit rozhodnutí}}}
+\entry{{af··rek}}{{\textipa{[{a}{f}{r}{\textepsilon}{\r{g}}]}}{\color{darkgreen}{\small{ n}}}{\small{ ( -s, -)}}\foreignlanguage{czech}{{ úsilí, výkon}} $\triangleright$ {\textit{\textbf{ vinna mikið afrek}}}}
+\entry{{af·reks··verk}}{{\textipa{[{a}{f}{r}{\textepsilon}{\r{g}}{s}{v}{\textepsilon}{\textsubring{r}}{\r{g}}]}}{\color{darkgreen}{\small{ n}}}{\small{ ( -s, -)}}\foreignlanguage{czech}{{ hrdinský čin}}}
+\entry{{af··rétt}}{{\textipa{[{a}{f}{r}{j}{\textepsilon}{h}{\textsubring{d}}]}}{\color{darkgreen}{\small{ m}}}{\small{ (-ar, -ir)}}\foreignlanguage{czech}{{ horská pastva/ pastvina}}}
+\entry{{af··réttar|i}}{{\textipa{[{a}{f}{r}{j}{\textepsilon}{h}{\textsubring{d}}{a}{r}{\textsci}]}}{\color{darkgreen}{\small{ m}}}{\small{ (-a, -ar)}}\foreignlanguage{czech}{{ posilující prostředek}}}
+\entry{{af··rétt|ur}}{{\textipa{[{a}{f}{r}{j}{\textepsilon}{h}{\textsubring{d}}{\textscy}{r}]}}{\color{darkgreen}{\small{ m}}}{\small{ (-ar, -ir)}} $\rightarrow$       afrétt}
+\entry{{af··rit}}{{\textipa{[{a}{f}{r}{\textsci}{\textsubring{d}}]}}{\color{darkgreen}{\small{ n}}}{\small{ ( -s, -)}}{ 1.}\foreignlanguage{czech}{{ kopie}} $\triangleright$ {\textit{\textbf{ afrit af skjalinu}}}{ 2.}\foreignlanguage{czech}{{ opis, přepis}},}
+\entry{{af··rit|a}}{{\textipa{[{a}{f}{r}{\textsci}{\textsubring{d}}{a}]}}{\color{darkgreen}{\small{ v}}}{\small{ (-aði)}}{\small{ acc}}{ 1.}{\textit{ (taka afrit)}}\foreignlanguage{czech}{{ opsat, přepsat (dopis ap.)}} $\triangleright$ {\textit{\textbf{ afrita bréf}}}{\textit{\foreignlanguage{czech}{ přepsat dopis}}}{\textsl{\textbf{ afrita til öryggis}}}\foreignlanguage{czech}{{\footnotesize{ poč.}}}\foreignlanguage{czech}{{ (za)zálohovat}},{ 2.}\foreignlanguage{czech}{{\footnotesize{ poč.}}}\foreignlanguage{czech}{{ (z)kopírovat (soubor ap.)}} $\triangleright$ {\textit{\textbf{ Hann afritar valinn texta.}}}{\textit{\foreignlanguage{czech}{ Kopíruje vybraný text.}}},}
+\entry{{Afrík|a}}{{\textipa{[{a}{v}{r}{i}{\r{g}}{a}]}}{\color{darkgreen}{\small{ f}}}{\small{ (-u)}}\foreignlanguage{czech}{{\footnotesize{ geog.}}}\foreignlanguage{czech}{{ Afrika}} $\triangleright$ {\textit{\textbf{ Í Afríku búa Afríkumenn.}}}{\textit{\foreignlanguage{czech}{ V Africe žijí Afričané.}}}}
+\entry{{Afríku··|maður}}{{\textipa{[{a}{v}{r}{i}{\r{g}}{\textscy}{m}{a}{ð}{\textscy}{r}]}}{\color{darkgreen}{\small{ m}}}{\small{ (-manns, -menn)}}\foreignlanguage{czech}{{ Afričan}}}
+\entry{{af··ræk|ja}}{{\textipa{[{a}{f}{r}{a}{i}{\r{\textObardotlessj}}{a}]}}{\color{darkgreen}{\small{ v}}}{\small{ (-ti, -t)}}{\small{ acc}}\foreignlanguage{czech}{{ zanedbat, opomenout}} $\triangleright$ {\textit{\textbf{ afrækja starfið}}}}
+\entry{{af··röddun}}{{\textipa{[{a}{f}{r}{\ae}{\textsubring{d}}{\textscy}{n}]}}{\color{darkgreen}{\small{ f}}}{\small{ (-ar)}}\foreignlanguage{czech}{{\footnotesize{ jaz.}}}\foreignlanguage{czech}{{ ???}}}
+\entry{{af··sak|a}}{{\textipa{[{a}{f}{s}{a}{\r{g}}{a}]}}{\color{darkgreen}{\small{ v}}}{\small{ (-aði)}}{\small{ acc}}{\textit{ (biðjast afsökunar)}}\foreignlanguage{czech}{{ omluvit, omlouvat}} $\triangleright$ {\textit{\textbf{ afsaka hegðun hans}}}{\textit{\foreignlanguage{czech}{ omluvit jeho chování}}}{\textsl{\textbf{ afsaka sig}}}\foreignlanguage{czech}{{ omluvit se}},{\textsl{\textbf{ afsakið!}}}\foreignlanguage{czech}{{ promiň! promiňte! pardon!}},}
+\entry{{af·sakan··legur}}{{\textipa{[{a}{f}{s}{a}{\r{g}}{a}{n}{l}{\textepsilon}{\textbabygamma}{\textscy}{r}]}}{\color{darkgreen}{\small{ adj}}}\foreignlanguage{czech}{{ omluvitelný}}}
+\entry{{af··|sal}}{{\textipa{[{a}{f}{s}{a}{\textsubring{l}}]}}{\color{darkgreen}{\small{ n}}}{\small{ (-sals, -söl)}}\foreignlanguage{czech}{{\footnotesize{ ekon.}}}\foreignlanguage{czech}{{ doklad (majetkový), vlastnická listina}} $\triangleright$ {\textit{\textbf{ afsal á eigninni}}}}
+\entry{{af··sal|a}}{{\textipa{[{a}{f}{s}{a}{l}{a}]}}{\color{darkgreen}{\small{ v}}}{\small{ (-aði)}}{\textit{ (fórna)}}{\textsl{\textbf{ afsala sér}}}\foreignlanguage{czech}{{ vzdát se, zříci se}} $\triangleright$ {\textit{\textbf{ afsala öllum réttindum
+}}}}
+\entry{{af··sann|a}}{{\textipa{[{a}{f}{s}{a}{n}{a}]}}{\color{darkgreen}{\small{ v}}}{\small{ (-aði)}}{\textit{ (hrekja)}}\foreignlanguage{czech}{{ vyvrátit (tvrzení ap.), dokázat nesprávnost}} $\triangleright$ {\textit{\textbf{ Þessi vitneskja afsannar kenningu hans.
+}}}}
+\entry{{af··|segja}}{{\textipa{[{a}{f}{s}{ei}{j}{a}]}}{\color{darkgreen}{\small{ v}}}{\small{ (-sagði, -sagt)}}{\small{ acc}}{\textit{ (neita)}}\foreignlanguage{czech}{{ odmítnout}}}
+\entry{{af·skap··lega}}{{\textipa{[{a}{f}{s}{\r{g}}{a}{\textsubring{b}}{l}{\textepsilon}{\textbabygamma}{a}]}}{\color{darkgreen}{\small{ adv}}}\foreignlanguage{czech}{{ velmi, extrémně}}}
+\entry{{af·skap··legur}}{{\textipa{[{a}{f}{s}{\r{g}}{a}{\textsubring{b}}{l}{\textepsilon}{\textbabygamma}{\textscy}{r}]}}{\color{darkgreen}{\small{ adj}}}{\textit{ (ofsalegur)}}\foreignlanguage{czech}{{ skvělý, nádherný}}}
+\entry{{af··skekktur}}{{\textipa{[{a}{f}{s}{\r{\textObardotlessj}}{\textepsilon}{x}{\textsubring{d}}{\textscy}{r}]}}{\color{darkgreen}{\small{ adj}}}\foreignlanguage{czech}{{ odlehlý, izolovaný}}}
+\entry{{af·skipta··laus}}{{\textipa{[{a}{f}{s}{\r{\textObardotlessj}}{\textsci}{f}{\textsubring{d}}{a}{l}{\ae i}{s}]}}{\color{darkgreen}{\small{ adj}}}\foreignlanguage{czech}{{ lhostejný, netečný}} $\triangleright$ {\textit{\textbf{ vera afskiptalaus um málið}}}}
+\entry{{af·skipta··leysi}}{{\textipa{[{a}{f}{s}{\r{\textObardotlessj}}{\textsci}{f}{\textsubring{d}}{a}{l}{ei}{s}{\textsci}]}}{\color{darkgreen}{\small{ n}}}{\small{ (-s)}}\foreignlanguage{czech}{{ lhostejnost, pasivita}}}
+\entry{{af·skipta··|samur}}{{\textipa{[{a}{f}{s}{\r{\textObardotlessj}}{\textsci}{f}{\textsubring{d}}{a}{s}{a}{m}{\textscy}{r}]}}{\color{darkgreen}{\small{ adj}}}{\small{ (f -söm)}}\foreignlanguage{czech}{{ vlezlý, dotěrný}}{\textit{ (fáskiptinn)}}}
+\entry{{af·skipta··semi}}{{\textipa{[{a}{f}{s}{\r{\textObardotlessj}}{\textsci}{f}{\textsubring{d}}{a}{s}{\textepsilon}{m}{\textsci}]}}{\color{darkgreen}{\small{ f}}}{\small{ indecl}}\foreignlanguage{czech}{{ vlezlost}}}
+\entry{{af··skipti}}{{\textipa{[{a}{f}{s}{\r{\textObardotlessj}}{\textsci}{f}{\textsubring{d}}{\textsci}]}}{\color{darkgreen}{\small{ n}}}{\small{ pl}}{\textit{ (þátttaka)}}\foreignlanguage{czech}{{ zapojení, angažování, účastnění}} $\triangleright$ {\textit{\textbf{ hafa engin afskipti af málinu
+}}}}
+\entry{{af··skipt|ur}}{{\textipa{[{a}{f}{s}{\r{\textObardotlessj}}{\textsci}{f}{\textsubring{d}}{\textscy}{r}]}}{\color{darkgreen}{\small{ adj}}}\foreignlanguage{czech}{{ opomíjený, přehlížený}}}
+\entry{{af··skrif|a}}{{\textipa{[{a}{f}{s}{\r{g}}{r}{\textsci}{v}{a}]}}{\color{darkgreen}{\small{ v}}}{\small{ (-aði)}}{\small{ acc}}{ 1.}{\textit{ (afrita)}}\foreignlanguage{czech}{{ kopírovat, přepsat}}{ 2.}{\textit{ (fyrna)}}\foreignlanguage{czech}{{\footnotesize{ ekon.}}}\foreignlanguage{czech}{{ znehodnotit, devalvovat}},{ 3.}\foreignlanguage{czech}{{ odepsat (vyloučit ze seznamu ap.)}},}
+\entry{{af··skrift}}{{\textipa{[{a}{f}{s}{\r{g}}{r}{\textsci}{f}{\textsubring{d}}]}}{\color{darkgreen}{\small{ f}}}{\small{ (-ar, -ir)}}{ 1.}\foreignlanguage{czech}{{ kopie, přepis}}{ 2.}\foreignlanguage{czech}{{\footnotesize{ ekon.}}}\foreignlanguage{czech}{{ odpis, amortizace}},}
+\entry{{af··skræm|a}}{{\textipa{[{a}{f}{s}{\r{g}}{r}{a}{i}{m}{a}]}}{\color{darkgreen}{\small{ v}}}{\small{ (-di, -t)}}{\small{ acc}}\foreignlanguage{czech}{{ znetvořit, zohyzdit, zohavit}} $\triangleright$ {\textit{\textbf{ afskræma listaverkið}}}}
+\entry{{af··skræmi}}{{\textipa{[{a}{f}{s}{\r{g}}{r}{a}{i}{m}{\textsci}]}}{\color{darkgreen}{\small{ n}}}{\small{ ( -s, -)}}{ 1.}{\textit{ (\textsuperscript{1}herfa)}}\foreignlanguage{czech}{{ ošklivý obraz nebo člověk}}{ 2.}{\textit{ (skrípamynd)}}\foreignlanguage{czech}{{ karikatura}},}
+\entry{{af··skræming}}{{\textipa{[{a}{f}{s}{\r{g}}{r}{a}{i}{m}{i}{}{\r{g}}]}}{\color{darkgreen}{\small{ f}}}{\small{ (-ar, -ar)}}{\textit{ (afmyndun)}}\foreignlanguage{czech}{{ znetvoření, zohyzdění, zohavení}}}
+\entry{{af··|slappaður}}{{\textipa{[{a}{f}{s}{\textsubring{d}}{l}{a}{h}{\textsubring{b}}{a}{ð}{\textscy}{r}]}}{\color{darkgreen}{\small{ adj}}}{\small{ (f -slöppuð)}}\foreignlanguage{czech}{{\footnotesize{ neform.}}}\foreignlanguage{czech}{{ uvolněný, v pohodě}}}
+\entry{{af··slátt|ur}}{{\textipa{[{a}{f}{s}{\textsubring{d}}{l}{au}{h}{\textsubring{d}}{\textscy}{r}]}}{\color{darkgreen}{\small{ m}}}{\small{ (-ar)}}\foreignlanguage{czech}{{\footnotesize{ ekon}}}\foreignlanguage{czech}{{ sleva}} $\triangleright$ {\textit{\textbf{ kaupa e-ð með afslætti}}}}
+\entry{{af··slöpp|un}}{{\textipa{[{a}{f}{s}{\textsubring{d}}{l}{\ae}{h}{\textsubring{b}}{\textscy}{n}]}}{\color{darkgreen}{\small{ f}}}{\small{ (-ar)}}\foreignlanguage{czech}{{\footnotesize{ neform.}}}\foreignlanguage{czech}{{ uvolnění, odpočinek, relaxace}}}
+\entry{{af··sprengi}}{{\textipa{[{a}{f}{s}{\textsubring{b}}{r}{ei}{\textltailn}{\r{\textObardotlessj}}{\textsci}]}}{\color{darkgreen}{\small{ n}}}{\small{ ( -s, -)}}{\textit{ (afkvæmi)}}\foreignlanguage{czech}{{ potomek}}}
+\entry{{af··spurn}}{{\textipa{[{a}{f}{s}{\textsubring{b}}{\textscy}{r}{\textsubring{d}}{\textsubring{n}}]}}{\color{darkgreen}{\small{ f}}}{\small{ (-ar)}}{\textit{ (umtal)}}\foreignlanguage{czech}{{ pověst, doslech, povídá se}}{\textsl{\textbf{ þekkja e-n af afspurn}}}\foreignlanguage{czech}{{ znát (koho) z doslechu}},}
+\entry{{af··|staða}}{{\textipa{[{a}{f}{s}{\textsubring{d}}{a}{ð}{a}]}}{\color{darkgreen}{\small{ f}}}{\small{ (-stöðu)}}{ 1.}{\textit{ (viðhorf)}}\foreignlanguage{czech}{{ postoj}} $\triangleright$ {\textit{\textbf{ afstaða til hugmyndar hennar}}}{\textit{\foreignlanguage{czech}{ postoj k jejím myšlenkám}}}{ 2.}{\textit{ (lega)}}\foreignlanguage{czech}{{ poloha, umístění}} $\triangleright$ {\textit{\textbf{ innbyrðis afstaða landanna}}}{\textit{\foreignlanguage{czech}{ vzájemná poloha zemí}}},{\textsl{\textbf{ taka afstöðu til e-s}}}\foreignlanguage{czech}{{ zaujmout k (vůči) (čemu) postoj}},}
+\entry{{afstrakt}}{{\textipa{[{a}{f}{s}{\textsubring{d}}{r}{a}{x}{\textsubring{d}}]}}{\color{darkgreen}{\small{ adj}}}{\small{ indecl}}\foreignlanguage{czech}{{ abstraktní}}}
+\entry{{afstrakt··list}}{{\textipa{[{a}{f}{s}{\textsubring{d}}{r}{a}{x}{\textsubring{d}}{l}{\textsci}{s}{\textsubring{d}}]}}{\color{darkgreen}{\small{ f}}}{\small{ (-ar)}}\foreignlanguage{czech}{{ abstraktní umění}}}
+\entry{{af··stýr|a}}{{\textipa{[{a}{f}{s}{\textsubring{d}}{i}{r}{a}]}}{\color{darkgreen}{\small{ v}}}{\small{ (-ði, -t)}}{\small{ dat}}\foreignlanguage{czech}{{ předcházet, předejít, zabránit}} $\triangleright$ {\textit{\textbf{ afstýra slysi}}}}
+\entry{{af··stæða}}{{\textipa{[{a}{f}{s}{\textsubring{d}}{a}{i}{ð}{a}]}}{\color{darkgreen}{\small{ f}}}{\small{ (-u, -ur)}}\foreignlanguage{czech}{{ ???}}}
+\entry{{af··stæði}}{{\textipa{[{a}{f}{s}{\textsubring{d}}{a}{i}{ð}{\textsci}]}}{\color{darkgreen}{\small{ n}}}{\small{ (-s)}}\foreignlanguage{czech}{{ relativita}}}
+\entry{{af·stæðis··kenning}}{{\textipa{[{a}{f}{s}{\textsubring{d}}{a}{i}{ð}{\textsci}{s}{c\textsuperscript{h}}{\textepsilon}{n}{i}{}{\r{g}}]}}{\color{darkgreen}{\small{ f}}}{\small{ (-ar)}}\foreignlanguage{czech}{{\footnotesize{ fyz.}}}\foreignlanguage{czech}{{ teorie relativity}}}
+\entry{{af··stæður}}{{\textipa{[{a}{f}{s}{\textsubring{d}}{a}{i}{ð}{\textscy}{r}]}}{\color{darkgreen}{\small{ adj}}}{\textit{ (viðmiðaður)}}\foreignlanguage{czech}{{ relativní}}}
+\entry{{af··svar}}{{\textipa{[{a}{f}{s}{v}{a}{r}]}}{\color{darkgreen}{\small{ n}}}{\small{ (-s)}}{\textit{ (neitun)}}\foreignlanguage{czech}{{ odmítnutí, odepření, odřeknutí}} $\triangleright$ {\textit{\textbf{ veita honum afsvar við beiðninni}}}}
+\entry{{af··|sögn}}{{\textipa{[{a}{f}{s}{\ae}{\r{g}}{\textsubring{n}}]}}{\color{darkgreen}{\small{ f}}}{\small{ (-sagnar, -sagnir)}}{ 1.}{\textit{ (neitun)}}\foreignlanguage{czech}{{ odmítnutí, neuznání}}{ 2.}\foreignlanguage{czech}{{ abdikace, vzdání se (úřadu ap.)}} $\triangleright$ {\textit{\textbf{ afsögn starfs}}},}
+\entry{{af··|sökun}}{{\textipa{[{a}{f}{s}{\ae}{\r{g}}{\textscy}{n}]}}{\color{darkgreen}{\small{ f}}}{\small{ (-sökunar, -sakanir)}}{\textit{ (fyrirgefning)}}\foreignlanguage{czech}{{ omluva}} $\triangleright$ {\textit{\textbf{ biðjast kurteislega afsökunar á gerðum sínum}}}{\textit{\foreignlanguage{czech}{ omluvit se zdvořile za své činy}}}{\textsl{\textbf{ biðjast afsökunar}}}{\footnotesize{ refl}}\foreignlanguage{czech}{{ omluvit se}} $\triangleright$ {\textit{\textbf{ Hann baðst afsökunar.}}}{\textit{\foreignlanguage{czech}{ Omluvil se.}}},}
+\entry{{af··|sönnun}}{{\textipa{[{a}{f}{s}{\ae}{n}{\textscy}{n}]}}{\color{darkgreen}{\small{ f}}}{\small{ (-sönnunar, -sannanir)}}\foreignlanguage{czech}{{ popření, vyvrácení}}}
+\entry{{\textsuperscript{1}}{af··|taka}}{{\textipa{[{a}{f}{t\textsuperscript{h}}{a}{\r{g}}{a}]}}{\color{darkgreen}{\small{ f}}}{\small{ (-töku, -tökur)}}{\textit{ (líflát)}}\foreignlanguage{czech}{{ poprava}} $\triangleright$ {\textit{\textbf{ aftakan fór fram við sólarupprás.}}}}
+\entry{{\textsuperscript{2}}{af··|taka}}{{\textipa{[{a}{f}{t\textsuperscript{h}}{a}{\r{g}}{a}]}}{\color{darkgreen}{\small{ v}}}{\small{ (-tek, -tók, -tókum, -tekið)}}{\small{ acc}}{ 1.}{\textit{ (afnema)}}\foreignlanguage{czech}{{ zrušit, prohlásit za neplatné}} $\triangleright$ {\textit{\textbf{ aftaka lög}}}{ 2.}{\textit{ (þverneita)}}\foreignlanguage{czech}{{ (rázně) popřít, zapřít}} $\triangleright$ {\textit{\textbf{ aftaka með öllu að}}},{ 3.}{\textit{ (taka af lífi)}}\foreignlanguage{czech}{{\footnotesize{ zast.}}}\foreignlanguage{czech}{{ popravit}} $\triangleright$ {\textit{\textbf{ aftaka e-n}}},}
+\entry{{aftan}}{{\textipa{[{a}{f}{\textsubring{d}}{a}{n}]}}{\color{darkgreen}{\small{ prep/ adv}}}{\small{ gen}}{ 1.}{\textit{ (að baki)}}\foreignlanguage{czech}{{ za (čím) (místně)}}{ 2.}{\textit{ (á eftir e-u)}}\foreignlanguage{czech}{{ za (čím) (časově), po (čem)}},{ 3.}{\textit{ (að aftanverðu)}}\foreignlanguage{czech}{{ zezadu, vzadu, na zadní části (čeho)}},{\textsl{\textbf{ fyrir aftan, aftan við}}}{\footnotesize{ acc}}\foreignlanguage{czech}{{ (vzadu) za}} $\triangleright$ {\textit{\textbf{ Fyrir aftan húsið er bílskúr.}}}{\textit{\foreignlanguage{czech}{ (Vzadu) za domem je garáž.}}},}
+\entry{{aftan··verður}}{{\textipa{[{a}{f}{\textsubring{d}}{a}{n}{}{s}{u}{p}{}{v}{}{}{s}{u}{p}{}{v}{\textepsilon}{r}{ð}{\textscy}{r}]}}{\color{darkgreen}{\small{ adj}}}\foreignlanguage{czech}{{ týkající se zadní části, zadní}}}
+\entry{{aftari}}{{\textipa{[{a}{f}{\textsubring{d}}{a}{r}{\textsci}]}}{\color{darkgreen}{\small{ adj}}}{\small{ comp}}\foreignlanguage{czech}{{ ten druhý, druhý v pořadí (ze dvou)}}{\textit{ (fremri)}}}
+\entry{{af··teng|ja}}{{\textipa{[{a}{f}{t\textsuperscript{h}}{ei}{\textltailn}{\r{\textObardotlessj}}{a}]}}{\color{darkgreen}{\small{ v}}}{\small{ (-di, -t)}}{\small{ acc}}\foreignlanguage{czech}{{ odpojit}}}
+\entry{{aftr|a}}{{\textipa{[{a}{f}{\textsubring{d}}{r}{a}]}}{\color{darkgreen}{\small{ v}}}{\small{ (-aði)}}{\small{ dat}}{\textit{ (hindra)}}\foreignlanguage{czech}{{ (za)bránit, odradit, zastavit}} $\triangleright$ {\textit{\textbf{ Það getur ekkert aftrað mér frá því að fara í ferðina.}}}}
+\entry{{aftur}}{{\textipa{[{a}{f}{\textsubring{d}}{\textscy}{r}]}}{\color{darkgreen}{\small{ adv}}}{ 1.}\foreignlanguage{czech}{{ zpátky, nazpátek, zpět}}{\textsl{\textbf{ ganga aftur á bak}}}\foreignlanguage{czech}{{ jít po zpátku}},{\textsl{\textbf{ líta aftur}}}\foreignlanguage{czech}{{ podívat se nazpátek}},{\textsl{\textbf{ ganga fram og aftur}}}\foreignlanguage{czech}{{ chodit sem a tam}},{\textsl{\textbf{ láta e-ð aftur}}}\foreignlanguage{czech}{{ dát (co) nazpátek}},{ 2.}{\textit{ (á ný)}}\foreignlanguage{czech}{{ znovu, zas(e)}} $\triangleright$ {\textit{\textbf{ aftur og aftur}}}{\textit{\foreignlanguage{czech}{ zas a zas}}},{ 3.}{\textit{ (í staðinn)}}\foreignlanguage{czech}{{ na místo (čeho), v náhradě za (co)}} $\triangleright$ {\textit{\textbf{ bæta e-m aftur tjón hans}}},{ 4.}{\footnotesize {\foreignlanguage{czech}{ (o něčem (polo)zapomenutém)}}},{\textsl{\textbf{ Hvað heitir hann nú aftur?}}}\foreignlanguage{czech}{{ Jak že se jmenuje? Jak se vlastně jmenuje?}},{ 5.}{\footnotesize {\foreignlanguage{czech}{ (o zavírání)}}},{\textsl{\textbf{ Hurðin er aftur.}}}\foreignlanguage{czech}{{ Dveře jsou zavřené.}},{\textsl{\textbf{ Láttu aftur hurðina!}}}\foreignlanguage{czech}{{ Zavři dveře!}},{ 6.}{\footnotesize {\foreignlanguage{czech}{ (s různými prep)}}},{\textsl{\textbf{ fara aftur í}}}\foreignlanguage{czech}{{ jet vzadu (na zadním sedadle)}},{\textsl{\textbf{ verða aftur úr}}}\foreignlanguage{czech}{{ nestíhat, být pozadu}},{\textsl{\textbf{ aftur úr því}}}\foreignlanguage{czech}{{ po (čem) (časově)}},}
+\entry{{aftur··beygður}}{{\textipa{[{a}{f}{\textsubring{d}}{\textscy}{r}{\textsubring{b}}{ei}{\textbabygamma}{ð}{\textscy}{r}]}}{\color{darkgreen}{\small{ adj}}}\foreignlanguage{czech}{{ zvratný}}{\textsl{\textbf{ afturbeygð sögn}}}\foreignlanguage{czech}{{\footnotesize{ jaz.}}}\foreignlanguage{czech}{{ zvratné sloveso}} $\triangleright$ {\textit{\textbf{ (klæða sig)}}},{\textsl{\textbf{ afturbeygt fornafn}}}\foreignlanguage{czech}{{\footnotesize{ jaz.}}}\foreignlanguage{czech}{{ zvratné zájmeno}} $\triangleright$ {\textit{\textbf{ (sig)}}},{\textsl{\textbf{ afturbeygt eignarfornafn}}}\foreignlanguage{czech}{{\footnotesize{ jaz.}}}\foreignlanguage{czech}{{ zvratné zájmeno přivlastňovací}} $\triangleright$ {\textit{\textbf{ (sinn)}}},}
+\entry{{aftur··|fótur}}{{\textipa{[{a}{f}{\textsubring{d}}{\textscy}{\textsubring{r}}{f}{ou}{\textsubring{d}}{\textscy}{r}]}}{\color{darkgreen}{\small{ m}}}{\small{ (-fótar, -fætur)}}\foreignlanguage{czech}{{ zadní nohy (zvláště u čtyřnohých živočichů)}}{\textsl{\textbf{ það kemur á afturfótunum út úr e-m}}}\foreignlanguage{czech}{{ leze to z (koho) jako z chlupaté deky}},}
+\entry{{aftur··|för}}{{\textipa{[{a}{f}{\textsubring{d}}{\textscy}{\textsubring{r}}{f}{\ae}{r}]}}{\color{darkgreen}{\small{ f}}}{\small{ (-farar)}}{ 1.}{\textit{ (afturferð)}}\foreignlanguage{czech}{{ cesta zpět, zpáteční cesta}}{ 2.}{\textit{ (hnignun)}}\foreignlanguage{czech}{{ pokles, úpadek, sestup; zhoršení (zdraví ap.)}},}
+\entry{{aftur··|ganga}}{{\textipa{[{a}{f}{\textsubring{d}}{\textscy}{r}{\r{g}}{au}{}{\r{g}}{a}]}}{\color{darkgreen}{\small{ f}}}{\small{ (-göngu, -göngur)}}{\textit{ (draugur)}}\foreignlanguage{czech}{{\footnotesize{ pov.}}}\foreignlanguage{czech}{{ duch, zjevení}} $\triangleright$ {\textit{\textbf{ Þjóðsögur segja frá afturgöngum.}}}{\textit{\foreignlanguage{czech}{ Lidové pověsti vyprávějí o duchách.}}}}
+\entry{{aftur··hlut|i}}{{\textipa{[{a}{f}{\textsubring{d}}{\textscy}{\textsubring{r}}{\textsubring{l}}{\textscy}{\textsubring{d}}{\textsci}]}}{\color{darkgreen}{\small{ m}}}{\small{ (-a, -ar)}}{ 1.}\foreignlanguage{czech}{{ zadní část}}{ 2.}\foreignlanguage{czech}{{ zadek (u čtyřnohého zvířete včetně dvou zadních nohou)}},}
+\entry{{aftur··hvarf}}{{\textipa{[{a}{f}{\textsubring{d}}{\textscy}{r}{k\textsuperscript{h}}{v}{a}{r}{v}]}}{\color{darkgreen}{\small{ n}}}{\small{ (-s)}}\foreignlanguage{czech}{{ obrat (v názoru ap.), návrat (k víře ap.)}}}
+\entry{{aftur··kall|a}}{{\textipa{[{a}{f}{\textsubring{d}}{\textscy}{\textsubring{r}}{k\textsuperscript{h}}{a}{\textsubring{d}}{l}{a}]}}{\color{darkgreen}{\small{ v}}}{\small{ (-aði)}}{\small{ acc}}{\textit{ (rifta)}}\foreignlanguage{czech}{{ zrušit, odvolat, anulovat}} $\triangleright$ {\textit{\textbf{ afturkalla ákvörðun sína}}}{\textit{\foreignlanguage{czech}{ zrušit své rozhodnutí}}}}
+\entry{{aftur··kipp|ur}}{{\textipa{[{a}{f}{\textsubring{d}}{\textscy}{\textsubring{r}}{c\textsuperscript{h}}{\textsci}{h}{\textsubring{b}}{\textscy}{r}]}}{\color{darkgreen}{\small{ m}}}{\small{ (-s)}}{ 1.}\foreignlanguage{czech}{{ zpětné trhnutí, škubnutí zpět}}{ 2.}{\textit{ (stöðvun)}}\foreignlanguage{czech}{{ zastavení, přerušení}} $\triangleright$ {\textit{\textbf{ afturkippur vexti}}},{ 3.}{\textit{ (hik)}}\foreignlanguage{czech}{{ (za)váhání, rozpaky}} $\triangleright$ {\textit{\textbf{ Þá kom afturkippur á mig.}}},}
+\entry{{aftur··kræfur}}{{\textipa{[{a}{f}{\textsubring{d}}{\textscy}{\textsubring{r}}{k\textsuperscript{h}}{r}{a}{i}{v}{\textscy}{r}]}}{\color{darkgreen}{\small{ adj}}}\foreignlanguage{czech}{{ reklamovatelný}}}
+\entry{{aftur··|köllun}}{{\textipa{[{a}{f}{\textsubring{d}}{\textscy}{\textsubring{r}}{k\textsuperscript{h}}{\ae}{\textsubring{d}}{l}{\textscy}{n}]}}{\color{darkgreen}{\small{ f}}}{\small{ (-köllunar, -kallanir)}}\foreignlanguage{czech}{{ odvolání, zrušení}} $\triangleright$ {\textit{\textbf{ afturköllun leyfis}}}}
+\entry{{aftur··ljós}}{{\textipa{[{a}{f}{\textsubring{d}}{\textscy}{r}{l}{j}{ou}{s}]}}{\color{darkgreen}{\small{ n}}}{\small{ (-s, -)}}\foreignlanguage{czech}{{ zadní světla}}}
+\entry{{aftur··reka}}{{\textipa{[{a}{f}{\textsubring{d}}{\textscy}{r}{\textepsilon}{\r{g}}{a}]}}{\color{darkgreen}{\small{ adj}}}{\small{ indecl}}{\textsl{\textbf{ gera e-n afturreka}}}\foreignlanguage{czech}{{ zamítnout (komu) přístup, poslat (koho) pryč bez vyslyšení}}}
+\entry{{aftur··sæti}}{{\textipa{[{a}{f}{\textsubring{d}}{\textscy}{\textsubring{r}}{s}{a}{i}{\textsubring{d}}{\textsci}]}}{\color{darkgreen}{\small{ n}}}{\small{ ( -s, -)}}\foreignlanguage{czech}{{ zadní sedadlo}}}
+\entry{{aftur··virkur}}{{\textipa{[{a}{f}{\textsubring{d}}{\textscy}{r}{v}{\textsci}{\textsubring{r}}{\r{g}}{\textscy}{r}]}}{\color{darkgreen}{\small{ adj}}}\foreignlanguage{czech}{{ retroaktivní, mající zpětný účinek}}}
+\entry{{af··undinn}}{{\textipa{[{a}{\textlengthmark}{f}{\textscy}{n}{\textsubring{d}}{\textsci}{n}]}}{\color{darkgreen}{\small{ adj}}}{\textit{ (önugur)}}\foreignlanguage{czech}{{ mrzutý, nevrlý}}}
+\entry{{afurð}}{{\textipa{[{a}{\textlengthmark}{v}{\textscy}{r}{ð}]}}{\color{darkgreen}{\small{ f}}}{\small{ (-ar, -ir)}}{\textit{ (framleiðsla)}}\foreignlanguage{czech}{{ výrobek, (zemědělský) produkt}} $\triangleright$ {\textit{\textbf{ framleiða verðmætar afurðir úr timbrinu}}}}
+\entry{{afurða··lán}}{{\textipa{[{a}{\textlengthmark}{v}{\textscy}{r}{ð}{a}{l}{au}{n}]}}{\color{darkgreen}{\small{ n}}}{\small{ ( -s, -)}}\foreignlanguage{czech}{{ ??}}}
+\entry{{af·vega··leiddur}}{{\textipa{[{a}{f}{v}{\textlengthmark}{\textepsilon}{\textbabygamma}{a}{l}{ei}{\textsubring{d}}{\textscy}{r}]}}{\color{darkgreen}{\small{ adj}}}\foreignlanguage{czech}{{ zcestný, zavádějící; zvrácený}} $\triangleright$ {\textit{\textbf{ afvegaleiddar stúlkur}}}}
+\entry{{af·vega··lei|ða}}{{\textipa{[{a}{f}{v}{\textlengthmark}{\textepsilon}{\textbabygamma}{a}{l}{ei}{ð}{a}]}}{\color{darkgreen}{\small{ v}}}{\small{ (-ddi, -tt)}}{\small{ acc}}\foreignlanguage{czech}{{ zavést na zcestí, uvést v omyl, svést na nesprávnou cestu}}}
+\entry{{af··vikinn}}{{\textipa{[{a}{f}{v}{\textlengthmark}{\textsci}{\r{\textObardotlessj}}{\textsci}{n}]}}{\color{darkgreen}{\small{ adj}}}\foreignlanguage{czech}{{ odlehlý, vzdálený, izolovaný (o místě ap.)}}}
+\entry{{af··vopn|a}}{{\textipa{[{a}{f}{v}{\textlengthmark}{\textopeno}{h}{\textsubring{b}}{n}{a}]}}{\color{darkgreen}{\small{ v}}}{\small{ (-aði)}}\foreignlanguage{czech}{{ odzbrojit}} $\triangleright$ {\textit{\textbf{ afvopna hann}}}{\textit{\foreignlanguage{czech}{ odzbrojit ho}}}}
+\entry{{af··vopnun}}{{\textipa{[{a}{f}{v}{\textlengthmark}{\textopeno}{h}{\textsubring{b}}{n}{\textscy}{n}]}}{\color{darkgreen}{\small{ f}}}{\small{ (-ar)}}\foreignlanguage{czech}{{ odzbrojení}}}
+\entry{{af··vötnun}}{{\textipa{[{a}{f}{v}{\textlengthmark}{\ae}{h}{\textsubring{d}}{n}{\textscy}{n}]}}{\color{darkgreen}{\small{ f}}}{\small{ (-ar)}}\foreignlanguage{czech}{{ odvodnění, vysušení (ryby ap.)}}}
+\entry{{af··þakk|a}}{{\textipa{[{a}{f}{\texttheta}{a}{h}{\r{g}}{a}]}}{\color{darkgreen}{\small{ v}}}{\small{ (-aði)}}{\small{ acc}}{\textit{ (hafna)}}\foreignlanguage{czech}{{ odmítnout, nepřijmout}} $\triangleright$ {\textit{\textbf{ afþakka gjöfina kurteislega}}}}
+\entry{{af··þreying}}{{\textipa{[{a}{f}{\texttheta}{r}{ei}{i}{}{\r{g}}]}}{\color{darkgreen}{\small{ f}}}{\small{ (-ar)}}\foreignlanguage{czech}{{ pobavení, zábava}} $\triangleright$ {\textit{\textbf{ horfa á sjónvarpið sér til afþreyingar}}}}
+\entry{{af··æt|a}}{{\textipa{[{a}{\textlengthmark}{f}{a}{i}{\textsubring{d}}{a}]}}{\color{darkgreen}{\small{ f}}}{\small{ (-u, -ur)}}\foreignlanguage{czech}{{ parazit}}}
+\entry{{ag|a}}{{\textipa{[{a}{\textlengthmark}{\textbabygamma}{a}]}}{\color{darkgreen}{\small{ v}}}{\small{ (-aði)}}{\small{ acc}}{\textit{ (temja)}}\foreignlanguage{czech}{{ ukáznit, potrestat (disciplinárně)}} $\triangleright$ {\textit{\textbf{ aga börnin}}}}
+\entry{{aga··laus}}{{\textipa{[{a}{\textlengthmark}{\textbabygamma}{a}{l}{\ae i}{s}]}}{\color{darkgreen}{\small{ adj}}}\foreignlanguage{czech}{{ neukázněný, nevychovaný}}}
+\entry{{aga··legur}}{{\textipa{[{a}{\textlengthmark}{\textbabygamma}{a}{l}{\textepsilon}{\textbabygamma}{\textscy}{r}]}}{\color{darkgreen}{\small{ adj}}}{\textit{ (hrikalegur)}}\foreignlanguage{czech}{{ příšerný, hrozný}}}
+\entry{{aga··leysi}}{{\textipa{[{a}{\textlengthmark}{\textbabygamma}{a}{l}{ei}{s}{\textsci}]}}{\color{darkgreen}{\small{ n}}}{\small{ (-s)}}\foreignlanguage{czech}{{ neukázněnost, nekázeň}}}
+\entry{{ag|i}}{{\textipa{[{a}{i}{j}{\textlengthmark}{\textsci}]}}{\color{darkgreen}{\small{ m}}}{\small{ (-a)}}\foreignlanguage{czech}{{ kázeň, ukázněnost, disciplína}} $\triangleright$ {\textit{\textbf{ reyna að halda aga}}}}
+\entry{{agn}}{{\textipa{[{a}{\r{g}}{\textsubring{n}}]}}{\color{darkgreen}{\small{ n}}}{\small{ (-s)}}{\textit{ (beita)}}\foreignlanguage{czech}{{ návnada, vnadidlo}}}
+\entry{{agn··dofa}}{{\textipa{[{a}{\r{g}}{\textsubring{n}}{\textsubring{d}}{\textopeno}{v}{a}]}}{\color{darkgreen}{\small{ adj}}}{\small{ indecl}}{\textit{ (forviða)}}\foreignlanguage{czech}{{ ohromený, vyjevený}}}
+\entry{{agn··hnú|i}}{{\textipa{[{a}{\r{g}}{\textsubring{n}}{\textsubring{n}}{u}{\textsci}]}}{\color{darkgreen}{\small{ m}}}{\small{ (-a, -ar)}} $\rightarrow$       agnúi}
+\entry{{agnú|i}}{{\textipa{[{a}{\r{g}}{n}{u}{\textsci}]}}{\color{darkgreen}{\small{ m}}}{\small{ (-a, -ar)}}{ 1.}\foreignlanguage{czech}{{ úlovek na háčku (rybaření)}}{ 2.}{\textit{ (smástrákur)}}\foreignlanguage{czech}{{ malý kluk}},{ 3.}{\textit{ (tormerki)}}\foreignlanguage{czech}{{ překážky, potíže}},{ 4.}{\textit{ (ímugustur)}}\foreignlanguage{czech}{{ odpor, nechuť}} $\triangleright$ {\textit{\textbf{ hafa agnúa á e-m}}},}
+\entry{{agúrk|a}}{{\textipa{[{a}{\textlengthmark}{\textbabygamma}{u}{\textsubring{r}}{\r{g}}{a}]}}{\color{darkgreen}{\small{ f}}}{\small{ (-u, -ur)}}\foreignlanguage{czech}{{\footnotesize{ bot.}}}\foreignlanguage{czech}{{ okurka}}{\textit{ Cucumis sativus}}\par\begin{center}\setlength\fboxsep{0pt}\setlength\fboxrule{0.5pt}\fbox{\includegraphics[height=6cm]{ds_image_agurka_0_2.jpg}}\end{center}\par\begin{center}\footnotesize {Autor: Stephen Ausmus Licence: Public Domain}\end{center}}
+\entry{{aka}}{{\textipa{[{a}{\textlengthmark}{\r{g}}{a}]}}{\color{darkgreen}{\small{ v}}}{\small{ (ek, ók, ókum, ekið)}}{\small{ dat}}{ 1.}{\textit{ (keyra)}}\foreignlanguage{czech}{{ řídit (auto ap.)}} $\triangleright$ {\textit{\textbf{ Hann lærði ungur að aka dráttarvél.}}}{\textit{\foreignlanguage{czech}{ Naučil se řídit traktor, když byl mladý.}}}{ 2.}{\textit{ (róta)}}\foreignlanguage{czech}{{ shromažďovat, hromadit (peníze ap.)}} $\triangleright$ {\textit{\textbf{ aka saman peningum}}}{\textit{\foreignlanguage{czech}{ hromadit peníze}}},{ 3.}{\textit{ (hreyfa hægt)}}\foreignlanguage{czech}{{ (pomalu) hýbat se}} $\triangleright$ {\textit{\textbf{ aka sér í herðunum}}},}
+\entry{{ak··braut}}{{\textipa{[{a}{\textlengthmark}{\r{g}}{\textsubring{b}}{r}{\ae i}{\textsubring{d}}]}}{\color{darkgreen}{\small{ f}}}{\small{ (-ar, -ir)}}\foreignlanguage{czech}{{ vozovka}}}
+\entry{{akkeri}}{{\textipa{[{a}{h}{\r{\textObardotlessj}}{\textepsilon}{r}{\textsci}]}}{\color{darkgreen}{\small{ n}}}{\small{ (-s, -)}}\foreignlanguage{czech}{{\footnotesize{ nám.}}}\foreignlanguage{czech}{{ kotva}} $\triangleright$ {\textit{\textbf{ leggjast við akkeri}}}}
+\entry{{akkorð}}{{\textipa{[{a}{h}{\r{g}}{\textopeno}{r}{ð}]}}{\color{darkgreen}{\small{ n}}}{\small{ (-s)}}{\textit{ (ákvæðisvinna)}}\foreignlanguage{czech}{{ úkolová práce}} $\triangleright$ {\textit{\textbf{ vinna upp á akkorð}}}}
+\entry{{akkúrat}}{{\textipa{[{a}{h}{\r{g}}{u}{r}{a}{\textsubring{d}}]}}{\color{darkgreen}{\small{ adj}}}{\small{ indecl}}\foreignlanguage{czech}{{ přesný, doslovný}}}
+\entry{{ak··rein}}{{\textipa{[{a}{\textlengthmark}{\r{g}}{r}{ei}{n}]}}{\color{darkgreen}{\small{ f}}}{\small{ (-ar, -ar)}}\foreignlanguage{czech}{{ jízdní pruh}}}
+\entry{{akstur}}{{\textipa{[{a}{x}{s}{\textsubring{d}}{\textscy}{r}]}}{\color{darkgreen}{\small{ m}}}{\small{ (-s)}}\foreignlanguage{czech}{{ jízda (autem ap.)}}}
+\entry{{ak|ur}}{{\textipa{[{a}{\textlengthmark}{\r{g}}{\textscy}{r}]}}{\color{darkgreen}{\small{ m}}}{\small{ (-urs, -rar)}}{\textit{ (ekra)}}\foreignlanguage{czech}{{ pole}}}
+\entry{{Akur··eyr|i}}{{\textipa{[{a}{\textlengthmark}{\r{g}}{\textscy}{r}{ei}{r}{\textsci}]}}{\color{darkgreen}{\small{ f}}}{\small{ (-ar)}}\foreignlanguage{czech}{{\footnotesize{ geog.}}}\foreignlanguage{czech}{{ Akureyri}}\par\begin{center}\setlength\fboxsep{0pt}\setlength\fboxrule{0.5pt}\fbox{\includegraphics[width=6cm]{ds_image_akureyri_0_1.jpg}}\end{center}\par\begin{center}\footnotesize {Autor: hvalur.org Licence: CC Unported Licence}\end{center}}
+\entry{{akur··hæn|a}}{{\textipa{[{a}{\textlengthmark}{\r{g}}{\textscy}{r}{h}{a}{i}{n}{a}]}}{\color{darkgreen}{\small{ f}}}{\small{ (-u, -ur)}}\foreignlanguage{czech}{{\footnotesize{ zool.}}}\foreignlanguage{czech}{{ koroptev, koroptev polní}}{\textit{ Perdix perdix}}\par\begin{center}\setlength\fboxsep{0pt}\setlength\fboxrule{0.5pt}\fbox{\includegraphics[width=6cm]{117600.jpg}}\end{center}\par\begin{center}\footnotesize {Autor: Došlý Martin Licence: COPYRIGHT/PD}\end{center}}
+\entry{{akur··yrkj|a}}{{\textipa{[{a}{\textlengthmark}{\r{g}}{\textscy}{r}{\textsci}{\textsubring{r}}{\r{\textObardotlessj}}{a}]}}{\color{darkgreen}{\small{ f}}}{\small{ (-u)}}{\textit{ (kornyrkja)}}\foreignlanguage{czech}{{\footnotesize{ zem.}}}\foreignlanguage{czech}{{ zemedělství}}}
+\entry{{al-}}{{\color{darkgreen}{\small{ predp}}}\foreignlanguage{czech}{{ naprosto, úplně}}}
+\entry{{ala}}{{\textipa{[{a}{\textlengthmark}{l}{a}]}}{\color{darkgreen}{\small{ v}}}{\small{ (el, ól, ólum, alið)}}{\small{ acc}}{ 1.}{\textit{ (fæða)}}\foreignlanguage{czech}{{ (po)rodit}} $\triangleright$ {\textit{\textbf{ ala barn}}}{\textit{\foreignlanguage{czech}{ porodit dítě}}}{\textit{ (\textsuperscript{1}fóstra)}}{\textsl{\textbf{ ala upp}}}\foreignlanguage{czech}{{ vychovávat}} $\triangleright$ {\textit{\textbf{ ala upp barn}}}{\textit{\foreignlanguage{czech}{ vychovávat dítě}}},{\textsl{\textbf{ alast upp}}}{\footnotesize{ refl}}\foreignlanguage{czech}{{ vyrůstat}} $\triangleright$ {\textit{\textbf{ alast upp í sveitinni}}}{\textit{\foreignlanguage{czech}{ vyrůstat na venkově}}},{ 2.}{\textit{ (næra á mat)}}\foreignlanguage{czech}{{ živit, krmit}} $\triangleright$ {\textit{\textbf{ ala á mjólk}}}{\textit{\foreignlanguage{czech}{ krmit mlékem}}},}
+\entry{{albatros}}{{\textipa{[{a}{l}{\textsubring{b}}{a}{\textsubring{d}}{r}{\textopeno}{s}]}}{\color{darkgreen}{\small{ m}}}{\small{ (-s, -ar)}} $\rightarrow$       albatrosi}
+\entry{{albatros|i}}{{\textipa{[{a}{l}{\textsubring{b}}{a}{\textsubring{d}}{r}{\textopeno}{s}{\textsci}]}}{\color{darkgreen}{\small{ m}}}{\small{ (-a, -ar)}}\foreignlanguage{czech}{{\footnotesize{ zool.}}}\foreignlanguage{czech}{{ albatros}}{\textit{ Diomedeidae}}\par\begin{center}\setlength\fboxsep{0pt}\setlength\fboxrule{0.5pt}\fbox{\includegraphics[width=6cm]{20754.jpg}}\end{center}\par\begin{center}\footnotesize {Autor: U.S. Fish and Wildlife Service Licence: PD}\end{center}}
+\entry{{al··búinn}}{{\textipa{[{a}{\textsubring{l}}{\textsubring{b}}{u}{\textsci}{n}]}}{\color{darkgreen}{\small{ adj}}}{ 1.}\foreignlanguage{czech}{{ připravený, přichystaný, oblečený}}{ 2.}{\textit{ (reiðubúinn)}}\foreignlanguage{czech}{{ ochotný (k čemu)}},}
+\entry{{albúm}}{{\textipa{[{a}{l}{\textsubring{b}}{u}{m}]}}{\color{darkgreen}{\small{ n}}}{\small{ (-s, -)}}\foreignlanguage{czech}{{ album}}}
+\entry{{alda}}{{\textipa{[{a}{l}{\textsubring{d}}{a}]}}{\color{darkgreen}{\small{ f}}}{\small{ (öldu, öldur)}}{ 1.}{\textit{ (bylgja)}}\foreignlanguage{czech}{{ vlna (na vodě ap.)}} $\triangleright$ {\textit{\textbf{ Á sjónum eru stórar öldur.}}}{\textit{\foreignlanguage{czech}{ Na moři jsou velké vlny.}}}{ 2.}\foreignlanguage{czech}{{ nerovnost na zemi, zvlnění (kopce ap.)}},}
+\entry{{alda··mót}}{{\textipa{[{a}{l}{\textsubring{d}}{a}{m}{ou}{\textsubring{d}}]}}{\color{darkgreen}{\small{ n}}}{\small{ pl}}\foreignlanguage{czech}{{ přelom století}} $\triangleright$ {\textit{\textbf{ Þetta gerðist um aldamótin 1900.}}}{\textit{\foreignlanguage{czech}{ Stalo se to na přelomu 19. století.}}}}
+\entry{{aldar··afmæli}}{{\textipa{[{a}{l}{\textsubring{d}}{a}{r}{a}{v}{m}{a}{i}{l}{\textsci}]}}{\color{darkgreen}{\small{ n}}}{\small{ (-s, -)}}\foreignlanguage{czech}{{ výročí stých narozenin}}}
+\entry{{aldeilis}}{{\textipa{[{a}{l}{\textsubring{d}}{ei}{l}{\textsci}{s}]}}{\color{darkgreen}{\small{ adv}}}{\textit{ (alveg)}}\foreignlanguage{czech}{{ naprosto, úplně}}}
+\entry{{aldin}}{{\textipa{[{a}{l}{\textsubring{d}}{\textsci}{n}]}}{\color{darkgreen}{\small{ n}}}{\small{ (-s, -)}}\foreignlanguage{czech}{{\footnotesize{ bot.}}}\foreignlanguage{czech}{{ plod}} $\triangleright$ {\textit{\textbf{ Tréð ber aldin.}}}{\textit{\foreignlanguage{czech}{ Strom nosí ovoce.}}}}
+\entry{{aldin··bori}}{{\textipa{[{a}{l}{\textsubring{d}}{\textsci}{n}{\textsubring{b}}{\textopeno}{r}{\textsci}]}}{\color{darkgreen}{\small{ m}}}{\small{ (-a, -ar)}}\foreignlanguage{czech}{{\footnotesize{ zool.}}}\foreignlanguage{czech}{{ chroust}}{\textit{ Melolontha melolontha}}\par\begin{center}\setlength\fboxsep{0pt}\setlength\fboxrule{0.5pt}\fbox{\includegraphics[width=6cm]{10048.jpg}}\end{center}\par\begin{center}\footnotesize {Autor: Krejčík Stanislav Licence: COPYRIGHT/CC-BY}\end{center}}
+\entry{{aldin··garð|ur}}{{\textipa{[{a}{l}{\textsubring{d}}{\textsci}{n}{\r{g}}{a}{r}{ð}{\textscy}{r}]}}{\color{darkgreen}{\small{ m}}}{\small{ (-s, -ar)}}\foreignlanguage{czech}{{ ovocný sad}}}
+\entry{{aldin··tré}}{{\textipa{[{a}{l}{\textsubring{d}}{\textsci}{n}{t\textsuperscript{h}}{r}{j}{\textepsilon}]}}{\color{darkgreen}{\small{ n}}}{\small{ (-s, -)}}\foreignlanguage{czech}{{\footnotesize{ bot.}}}\foreignlanguage{czech}{{ ovocný strom}}}
+\entry{{aldraður}}{{\textipa{[{a}{l}{\textsubring{d}}{r}{a}{ð}{\textscy}{r}]}}{\color{darkgreen}{\small{ adj}}}{\small{ (f öldruð)}}{\textit{ (gamall)}}\foreignlanguage{czech}{{ starý, v letech}}}
+\entry{{aldrei}}{{\textipa{[{a}{l}{\textsubring{d}}{r}{ei}]}}{\color{darkgreen}{\small{ adv}}}\foreignlanguage{czech}{{ nikdy}} $\triangleright$ {\textit{\textbf{ Óli kemur aldrei of seint.}}}{\textit{\foreignlanguage{czech}{ Oli nechodí nikdy pozdě.}}}{\textsl{\textbf{ það er aldrei}}}\foreignlanguage{czech}{{ to je vynikající}},}
+\entry{{ald|ur}}{{\textipa{[{a}{l}{\textsubring{d}}{\textscy}{r}]}}{\color{darkgreen}{\small{ m}}}{\small{ (-urs, -rar)}}{ 1.}\foreignlanguage{czech}{{ věk (počet let)}} $\triangleright$ {\textit{\textbf{ reyna að ákvarða aldur hans}}}{\textsl{\textbf{ vera á aldur við e-n}}}\foreignlanguage{czech}{{ být stejně starý jako (kdo)}},{\textsl{\textbf{ vera á besta aldri}}}\foreignlanguage{czech}{{ být v nejlepších letech}},{ 2.}{\textit{ (elli)}}\foreignlanguage{czech}{{ stáří}} $\triangleright$ {\textit{\textbf{ vera við aldur}}},{ 3.}{\textit{ (tími)}}\foreignlanguage{czech}{{ čas}},{\textsl{\textbf{ um (í) langan aldur}}}\foreignlanguage{czech}{{ dlouho, dlouhý čas}},}
+\entry{{aldurs··forset|i}}{{\textipa{[{a}{l}{\textsubring{d}}{\textscy}{\textsubring{r}}{s}{f}{\textopeno}{\textsubring{r}}{s}{\textepsilon}{\textsubring{d}}{\textsci}]}}{\color{darkgreen}{\small{ m}}}{\small{ (-a, -ar)}}\foreignlanguage{czech}{{ nejstarší člen (v organizaci ap.)}} $\triangleright$ {\textit{\textbf{ aldursforseti alþingis}}}}
+\entry{{aldurs··hóp|ur}}{{\textipa{[{a}{l}{\textsubring{d}}{\textscy}{\textsubring{r}}{s}{h}{ou}{\textsubring{b}}{\textscy}{r}]}}{\color{darkgreen}{\small{ m}}}{\small{ (-s, -ar)}}{\textit{ (aldursflokkur)}}\foreignlanguage{czech}{{ věková skupina}}}
+\entry{{aldurs··mun|ur}}{{\textipa{[{a}{l}{\textsubring{d}}{\textscy}{\textsubring{r}}{s}{m}{\textscy}{n}{\textscy}{r}]}}{\color{darkgreen}{\small{ m}}}{\small{ (-ar, -ir)}}\foreignlanguage{czech}{{ věkový rozdíl}}}
+\entry{{aldurs··skeið}}{{\textipa{[{a}{l}{\textsubring{d}}{\textscy}{\textsubring{r}}{s}{\r{\textObardotlessj}}{ei}{\texttheta}]}}{\color{darkgreen}{\small{ n}}}{\small{ ( -s, -)}}\foreignlanguage{czech}{{ časové období určitého věku}}}
+\entry{{aldurs··tak·|mark}}{{\textipa{[{a}{l}{\textsubring{d}}{\textscy}{\textsubring{r}}{s}{t\textsuperscript{h}}{a}{\r{g}}{m}{a}{\textsubring{r}}{\r{g}}]}}{\color{darkgreen}{\small{ n}}}{\small{ (-marks, -mörk)}}\foreignlanguage{czech}{{ věková hranice}}}
+\entry{{al··efli}}{{\textipa{[{a}{\textlengthmark}{\textsubring{l}}{\textepsilon}{\textsubring{b}}{l}{\textsci}]}}{\color{darkgreen}{\small{ n}}}{\small{ (-s)}}{\textit{ (kraftur)}}\foreignlanguage{czech}{{ všechna síla}}{\textsl{\textbf{ af alefli}}}\foreignlanguage{czech}{{ ze všech sil}},}
+\entry{{al··eig|a}}{{\textipa{[{a}{\textlengthmark}{\textsubring{l}}{ei}{\textbabygamma}{a}]}}{\color{darkgreen}{\small{ f}}}{\small{ (-u)}}\foreignlanguage{czech}{{ veškerý majetek}} $\triangleright$ {\textit{\textbf{ Þetta er aleiga mín.}}}}
+\entry{{aleinn}}{{\textipa{[{a}{\textlengthmark}{l}{ei}{\textsubring{d}}{\textsubring{n}}]}}{\color{darkgreen}{\small{ adj}}}\foreignlanguage{czech}{{ samotný, sám}}}
+\entry{{al··elda}}{{\textipa{[{a}{\textlengthmark}{\textsubring{l}}{\textepsilon}{l}{\textsubring{d}}{a}]}}{\color{darkgreen}{\small{ adj}}}{\small{ indecl}}\foreignlanguage{czech}{{ hořící, celý v ohni}} $\triangleright$ {\textit{\textbf{ Húsið var alelda.}}}}
+\entry{{al··farið}}{{\textipa{[{a}{\textsubring{l}}{f}{a}{r}{\textsci}{\texttheta}]}}{\color{darkgreen}{\small{ adv}}}{ 1.}\foreignlanguage{czech}{{ nadobro, napořád}} $\triangleright$ {\textit{\textbf{ Hann er kominn alfarið.}}}{\textit{\foreignlanguage{czech}{ Nadobro odešel.}}}{ 2.}{\textit{ (alveg)}}\foreignlanguage{czech}{{ úplně, naprosto}},}
+\entry{{al··farin|n}}{{\textipa{[{a}{\textsubring{l}}{f}{a}{r}{\textsci}{n}]}}{\color{darkgreen}{\small{ adj}}}{ 1.}\foreignlanguage{czech}{{ na dobro odešlý (člověk ap.)}}{ 2.}\foreignlanguage{czech}{{ (o cestě) často chozený (po které se často chodí)}},}
+\entry{{al·fræði··|bók}}{{\textipa{[{a}{\textsubring{l}}{f}{r}{a}{i}{ð}{\textsci}{\textsubring{b}}{ou}{\r{g}}]}}{\color{darkgreen}{\small{ f}}}{\small{ (-bókar, -bækur)}}\foreignlanguage{czech}{{ encyklopedie}}}
+\entry{{alg.}}{{\color{darkgreen}{\small{ zkr}}}{\textsl{\textbf{ algengur}}}\foreignlanguage{czech}{{ běžný}}}
+\entry{{al··gáður}}{{\textipa{[{a}{\textsubring{l}}{\r{g}}{au}{ð}{\textscy}{r}]}}{\color{darkgreen}{\small{ adj}}}{\textit{ (ódrukkinn)}}\foreignlanguage{czech}{{ střízlivý, při plném vědomí}}}
+\entry{{al··gengur}}{{\textipa{[{a}{\textsubring{l}}{\r{\textObardotlessj}}{ei}{}{\r{g}}{\textscy}{r}]}}{\color{darkgreen}{\small{ adj}}}{\textit{ (tíður)}}\foreignlanguage{czech}{{ obvyklý, častý, běžný}} $\triangleright$ {\textit{\textbf{ Sóleyjar eru algengar.}}}{\textit{\foreignlanguage{czech}{ Pryskyřičníky se běžně vyskytují.}}}}
+\entry{{alger}}{{\textipa{[{a}{l}{\r{\textObardotlessj}}{\textepsilon}{r}]}}{\color{darkgreen}{\small{ adj}}}{ 1.}{\textit{ (einber)}}\foreignlanguage{czech}{{ úplný, naprostý, absolutní, vyložený, vyslovený}} $\triangleright$ {\textit{\textbf{ Maðurinn er alger asni.}}}{ 2.}{\textit{ (algerður)}}\foreignlanguage{czech}{{ hotový, dokončený}},}
+\entry{{alger··lega}}{{\textipa{[{a}{l}{\r{\textObardotlessj}}{\textepsilon}{r}{l}{\textepsilon}{\textbabygamma}{a}]}}{\color{darkgreen}{\small{ adv}}}\foreignlanguage{czech}{{ zcela, úplně, dočista, naprosto}}}
+\entry{{alger··legur}}{{\textipa{[{a}{l}{\r{\textObardotlessj}}{\textepsilon}{r}{l}{\textepsilon}{\textbabygamma}{\textscy}{r}]}}{\color{darkgreen}{\small{ adj}}}{\textit{ (fullkominn)}}\foreignlanguage{czech}{{ naprostý, absolutní, úplný}}}
+\entry{{al··gildur}}{{\textipa{[{a}{\textsubring{l}}{\r{\textObardotlessj}}{\textsci}{l}{\textsubring{d}}{\textscy}{r}]}}{\color{darkgreen}{\small{ adj}}}\foreignlanguage{czech}{{ obecný, univerzální}}}
+\entry{{algjör}}{{\textipa{[{a}{l}{\r{\textObardotlessj}}{\ae}{r}]}}{\color{darkgreen}{\small{ adj}}} $\rightarrow$       alger}
+\entry{{algjör··lega}}{{\textipa{[{a}{l}{\r{\textObardotlessj}}{\ae}{r}{l}{\textepsilon}{\textbabygamma}{a}]}}{\color{darkgreen}{\small{ adv}}} $\rightarrow$       algerlega}
+\entry{{al·gyðis··trú}}{{\textipa{[{a}{\textsubring{l}}{\r{\textObardotlessj}}{\textsci}{ð}{\textsci}{s}{t\textsuperscript{h}}{r}{u}]}}{\color{darkgreen}{\small{ f}}}{\small{ (-ar)}}\foreignlanguage{czech}{{\footnotesize{ náb.}}}\foreignlanguage{czech}{{ panteismus}}}
+\entry{{al··heill}}{{\textipa{[{a}{\textlengthmark}{\textsubring{l}}{}{h}{ei}{\textsubring{d}}{\textsubring{l}}]}}{\color{darkgreen}{\small{ adj}}}{ 1.}{\textit{ (óskemmdur)}}\foreignlanguage{czech}{{ nepoškozený, nerozbitý, celý}}{ 2.}\foreignlanguage{czech}{{ zcela zdravý}},}
+\entry{{al··heim|ur}}{{\textipa{[{a}{\textlengthmark}{\textsubring{l}}{}{h}{ei}{m}{\textscy}{r}]}}{\color{darkgreen}{\small{ m}}}{\small{ (-s)}}{\textit{ (geimur)}}\foreignlanguage{czech}{{\footnotesize{ astro.}}}\foreignlanguage{czech}{{ vesmír, kosmos}}\par\begin{center}\setlength\fboxsep{0pt}\setlength\fboxrule{0.5pt}\fbox{\includegraphics[width=6cm]{ds_image_alheimur_0_1.jpg}}\end{center}\par\begin{center}\footnotesize {Autor: NASA, ESA, and R. Massey (California Institute of Technology) Licence: Public Domain}\end{center}}
+\entry{{al··hliða}}{{\textipa{[{a}{\textsubring{l}}{\textsci}{ð}{a}]}}{\color{darkgreen}{\small{ adj}}}{\small{ indecl}}{\textit{ (fjölhæfur)}}\foreignlanguage{czech}{{ všestranný, mnohostranný (umělec ap.)}} $\triangleright$ {\textit{\textbf{ vera alhliða leikari}}}}
+\entry{{al··hug|ur}}{{\textipa{[{a}{\textlengthmark}{\textsubring{l}}{}{h}{\textscy}{\textbabygamma}{\textscy}{r}]}}{\color{darkgreen}{\small{ m}}}{\small{ (-ar)}}\foreignlanguage{czech}{{ upřímná myšlenka}}{\textsl{\textbf{ óska e-s af alhug}}}\foreignlanguage{czech}{{ přát si (co) celým srdcem}},}
+\entry{{al··hæf|a}}{{\textipa{[{a}{\textlengthmark}{\textsubring{l}}{}{h}{a}{i}{v}{a}]}}{\color{darkgreen}{\small{ v}}}{\small{ (-ði, -t)}}\foreignlanguage{czech}{{ zevšeobecnit, zobecnit, generalizovat}}}
+\entry{{al··hæfing}}{{\textipa{[{a}{\textlengthmark}{\textsubring{l}}{}{h}{a}{i}{v}{i}{}{\r{g}}]}}{\color{darkgreen}{\small{ f}}}{\small{ (-ar, -ar)}}\foreignlanguage{czech}{{ zevšeobecnění, zobecnění}}}
+\entry{{ali··fugl}}{{\textipa{[{a}{\textlengthmark}{l}{\textsci}{f}{\textscy}{\r{g}}{\textsubring{l}}]}}{\color{darkgreen}{\small{ m}}}{\small{ (-s, -ar)}}\foreignlanguage{czech}{{\footnotesize{ zem.}}}\foreignlanguage{czech}{{ drůbež (pěstované pro maso a vejce)}}}
+\entry{{alin}}{{\textipa{[{a}{\textlengthmark}{l}{\textsci}{n}]}}{\color{darkgreen}{\small{ f}}}{\small{ (álnar, álnir)}}\foreignlanguage{czech}{{\footnotesize{ hist.}}}\foreignlanguage{czech}{{ loket (délková míra)}}{\textit{ (eignir)}}{\textsl{\textbf{ álnir}}}{\footnotesize{ pl}}\foreignlanguage{czech}{{ majetek, bohatství}},{\textit{ (verða efnaður)}}{\textsl{\textbf{ komast í álnir}}}{\footnotesize{ přen.}}\foreignlanguage{czech}{{ přijít k penězům}},}
+\entry{{alk|i}}{{\textipa{[{a}{\textsubring{l}}{\r{\textObardotlessj}}{\textsci}]}}{\color{darkgreen}{\small{ m}}}{\small{ (-a, -ar)}}\foreignlanguage{czech}{{\footnotesize{ neform.}}}\foreignlanguage{czech}{{ alkoholik}}}
+\entry{{al··kominn}}{{\textipa{[{a}{\textsubring{l}}{k\textsuperscript{h}}{\textopeno}{m}{\textsci}{n}]}}{\color{darkgreen}{\small{ adj}}}\foreignlanguage{czech}{{ přišlý na pořád (o člověku ap.)}}}
+\entry{{alkóhólist|i}}{{\textipa{[{a}{\textsubring{l}}{\r{g}}{ou}{ou}{l}{\textsci}{s}{\textsubring{d}}{\textsci}]}}{\color{darkgreen}{\small{ m}}}{\small{ (-a, -ar)}}\foreignlanguage{czech}{{ alkoholik}}}
+\entry{{al··kunnur}}{{\textipa{[{a}{\textsubring{l}}{k\textsuperscript{h}}{\textscy}{n}{\textscy}{r}]}}{\color{darkgreen}{\small{ adj}}}{\textit{ (alþekktur)}}\foreignlanguage{czech}{{ všeobecně známý}}}
+\entry{{alla··vega}}{{\textipa{[{a}{\textsubring{d}}{l}{a}{v}{\textepsilon}{\textbabygamma}{a}]}}{\color{darkgreen}{\small{ adv}}}{ 1.}{\textit{ (á allan hátt)}}\foreignlanguage{czech}{{ jakýmkoliv způsobem}}{ 2.}{\textit{ (að minnsta kosti)}}\foreignlanguage{czech}{{\footnotesize{ neform.}}}\foreignlanguage{czech}{{ alespoň, aspoň}},{ 3.}\foreignlanguage{czech}{{ v každém případě}},}
+\entry{{alla··vegana}}{{\textipa{[{a}{\textsubring{d}}{l}{a}{v}{\textepsilon}{\textbabygamma}{a}{n}{a}]}}{\color{darkgreen}{\small{ adv}}} $\rightarrow$       allavega}
+\entry{{all··mikill}}{{\textipa{[{a}{\textsubring{d}}{\textsubring{l}}{m}{\textsci}{\r{\textObardotlessj}}{\textsci}{\textsubring{d}}{\textsubring{l}}]}}{\color{darkgreen}{\small{ adj}}}\foreignlanguage{czech}{{ značný, velký}}}
+\entry{{allra··handa}}{{\textipa{[{a}{\textsubring{d}}{l}{r}{a}{h}{a}{n}{\textsubring{d}}{a}]}}{\color{darkgreen}{\small{ adj}}}{\small{ indecl}}{\textit{ (margvíslegur)}}\foreignlanguage{czech}{{ různorodý, rozmanitý}}}
+\entry{{alls}}{{\textipa{[{a}{l}{s}]}}{\color{darkgreen}{\small{ adv}}}{ 1.}{\textit{ (samtals)}}\foreignlanguage{czech}{{ vcelku, celkem}} $\triangleright$ {\textit{\textbf{ Í pokanum voru alls 10 epli.}}}{\textit{\foreignlanguage{czech}{ V sáčku bylo celkem 10 jablek.}}}{ 2.}{\textit{ (algerlega)}}\foreignlanguage{czech}{{ vyloženě, vysloveně, zcela}} $\triangleright$ {\textit{\textbf{ alls ónógur}}}{\textit{\foreignlanguage{czech}{ zcela nedostačující}}},{\textit{ (engan veginn)}}{\textsl{\textbf{ alls ekki}}}\foreignlanguage{czech}{{ vůbec, ani trochu}},}
+\entry{{alls··ber}}{{\textipa{[{a}{l}{s}{\textsubring{b}}{\textepsilon}{r}]}}{\color{darkgreen}{\small{ adj}}}{\textit{ (kviknakinn)}}\foreignlanguage{czech}{{ dočista nahý, úplně nahý}}}
+\entry{{alls··konar}}{{\textipa{[{a}{l}{s}{k\textsuperscript{h}}{\textopeno}{n}{a}{r}]}}{\color{darkgreen}{\small{ adj}}}{\small{ indecl}}\foreignlanguage{czech}{{ různorodý, různý}}}
+\entry{{alls··laus}}{{\textipa{[{a}{l}{s}{l}{\ae i}{s}]}}{\color{darkgreen}{\small{ adj}}}\foreignlanguage{czech}{{ strádající, (jsoucí) na mizině}}}
+\entry{{alls··ráðandi}}{{\textipa{[{a}{l}{s}{r}{au}{ð}{a}{n}{\textsubring{d}}{\textsci}]}}{\color{darkgreen}{\small{ adj}}}{\small{ indecl}}\foreignlanguage{czech}{{ vládnoucí všemu}}}
+\entry{{alls··staðar}}{{\textipa{[{a}{l}{s}{\textsubring{d}}{a}{ð}{a}{r}]}}{\color{darkgreen}{\small{ adv}}}{\textit{ (hvar sem er)}}\foreignlanguage{czech}{{ všude}}{\textit{ (hvergi)}}}
+\entry{{all··stór}}{{\textipa{[{a}{\textsubring{d}}{\textsubring{l}}{s}{\textsubring{d}}{ou}{r}]}}{\color{darkgreen}{\small{ adj}}}\foreignlanguage{czech}{{ značný, pořádný, slušný}}}
+\entry{{allt}}{{\textipa{[{a}{\textsubring{l}}{\textsubring{d}}]}}{\color{darkgreen}{\small{ adv}}}{\textsl{\textbf{ allt í einu}}}\foreignlanguage{czech}{{ najednou, náhle, znenadání  }} $\triangleright$ {\textit{\textbf{ Óveðrið brast á allt í einu. }}}{\textit{\foreignlanguage{czech}{ Bouře z ničeho nic propukla.}}}{\textit{ (samtals)}}{\textsl{\textbf{ í allt}}}\foreignlanguage{czech}{{ celkem}} $\triangleright$ {\textit{\textbf{ Þetta voru 35 epli í allt.}}}{\textit{\foreignlanguage{czech}{ Celkem to bylo 35 jablek.}}},{\textit{ (alla leið)}}\foreignlanguage{czech}{{ celou cestu}} $\triangleright$ {\textit{\textbf{ allt út á nes}}}{\textit{\foreignlanguage{czech}{ až na mys}}},{\textit{ (alveg)}}\foreignlanguage{czech}{{ celou dobu}} $\triangleright$ {\textit{\textbf{ allt frá því}}}{\textit{\foreignlanguage{czech}{ celou dobu}}},{\textit{ (næstum)}}{\textsl{\textbf{ allt að (því)}}}\foreignlanguage{czech}{{ téměř}} $\triangleright$ {\textit{\textbf{ Ferðin var allt að tveimur tímum.}}}{\textit{\foreignlanguage{czech}{ Cesta trvala téměř dvě hodiny.}}},{\textsl{\textbf{ allt annað}}}\foreignlanguage{czech}{{ úplně něco jiného}},{\textit{ (þrátt fyrir)}}{\textsl{\textbf{ allt svo}}}{\footnotesize{ conj}}\foreignlanguage{czech}{{ jakkoliv}},{\textsl{\textbf{ allt svo lengi}}}{\footnotesize{ conj}}\foreignlanguage{czech}{{ dokud}},}
+\entry{{all··taf}}{{\textipa{[{a}{\textsubring{d}}{\textsubring{l}}{t\textsuperscript{h}}{a}{f}]}}{\color{darkgreen}{\small{ adv}}}{\textit{ (sífellt)}}\foreignlanguage{czech}{{ vždy, (neu)stále}} $\triangleright$ {\textit{\textbf{ Eldurinn er alltaf heitur.}}}{\textit{\foreignlanguage{czech}{ Oheň je stále horký.}}}}
+\entry{{all··tént}}{{\textipa{[{a}{\textsubring{d}}{\textsubring{l}}{t\textsuperscript{h}}{j}{\textepsilon}{\textsubring{n}}{\textsubring{d}}]}}{\color{darkgreen}{\small{ adv}}} $\rightarrow$       alltjent}
+\entry{{allt··jent}}{{\textipa{[{a}{\textsubring{l}}{\textsubring{d}}{j}{\textepsilon}{\textsubring{n}}{\textsubring{d}}]}}{\color{darkgreen}{\small{ adv}}}{ 1.}{\textit{ (hvað sem öðru líður)}}\foreignlanguage{czech}{{ přece, beztak, stejně}}{ 2.}{\textit{ (alltaf)}}\foreignlanguage{czech}{{ vždy}},}
+
+\end{document}

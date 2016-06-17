@@ -1,0 +1,129 @@
+How to setup:
+to configure this system, you need to upload all files in whichever directory 
+of your web space with PHP Support, then looking for the line:
+"$config->dir     = "PERCORSO";
+replace the value "PERCORSO" with relative path to your languageset directory
+es: /home/margini/ecc.../languageset/
+                               
+ -----------------------   FILE = index.php3   --------------------------
+<?
+// Silvio Terzi kakchan@italyjapan.com www.dawnofdreams.org www.japanworlds.it 
+class object {};
+$config = new object;
+$config->dir     = "PERCORSO";
+if (! isset($lang)) {
+	$lang = "it";
+}
+else if ($lang == "it" ) { $SESSION["lang"] = "it"; }
+else if ($lang == "us" ) { $SESSION["lang"] = "en"; }
+$config->global = $config->dir.$lang."/language.php";
+include ($config->global);
+?>
+<html>
+<head>
+</head>
+<body>
+<?=$phrase1?>
+</body>
+</html>
+
+Step 2:
+Create a directory called: "languageset" in Your Home/user/ directory
+in this directory create another two directories called: "it" and "us"
+with inside, file called: language.php (in each directory)
+
+Step 3:
+collect all information you want to multilinguagize:)
+
+Step 4:
+insert these phrase in "language.php" files (in "us" and "it" directory, 
+remember to translate the phrase in the two different language [italian and english]), 
+in this syntax:
+ ------------------------ language.php ---------------------------
+$example = "examplee";
+
+**** REMEMBER TO WRITE "<?php" at the begining and "?>" at the ending of the "language.php" files *******
+
+Step 5:
+an example of multilinguage code in "index.php3" can be (for the example up):
+<body>
+<?=$phrase1?>
+</body>
+
+**** you write <?=$phrase1?> in index.php3 only if you have write $phrase1 in language.php3 files
+if you have declared a variabile called $bimbino in language.php3 files. you must write <?=$bimbino?>
+in index.php3 ****
+
+Step 6:
+fill language.php files at your request and place the variabiles in the form <?=variabile?> in index.php3..
+
+TIPS: 
+you can rename index.php3 at your request
+you make everything you want on index.php3 file, but you must hold the php line:
+
+<?
+/* Php Multilanguage System (c) 2000 Silvio Terzi (kakchan@crosswinds.net)
+                ----------- http://www.kakchan.com -----------          */
+
+class object {};
+$config = new object;
+$config->dir     = "PERCORSO";
+if (! isset($lang)) {
+	$lang = "it";
+}
+else if ($lang == "it" ) { $SESSION["lang"] = "it"; }
+else if ($lang == "us" ) { $SESSION["lang"] = "en"; }
+$config->global = $config->dir.$lang."/language.php";
+include ($config->global);
+?>
+
+at the beginning of the file.....
+after this code write everithing you want!!
+
+EXAMPLE OF THE MULTILANGUAGE FILE SET:
+
+index.php3
+languageset     <DIR>
+     	en 	<DIR>
+         	language.php
+     	it 	<DIR>
+       		language.php
+
+Step 7:
+               HOW TO ADD MORE LANGUAGE:
+
+Sub-Step 1:
+create the language directories in "languageset" dir
+call this with name like "fr" for frech, "jp" for japanese
+ 
+Sub-Step 2:
+edit index.php3
+look the line 
+else if ($lang == "it" ) { $SESSION["lang"] = "it"; }
+add another similar below:
+es: else if ($lang == "jp" ) { $SESSION["lang"] = "jp"; } 
+(if you had created a folder called "jp" in your languageset directory with
+the dictionary inside(language.php)
+
+Sub-Step 3:
+to delete a language simply delete a line like (of the language u wanna delete:))
+else if ($lang == "it" ) { $SESSION["lang"] = "it"; }
+
+Step 8:
+                      HOW TO ACCESS TO DIFFERENT LANGUAGES:
+simply direct your browser to these address:
+example if the script is in the root directory of the site:
+http://www.site.com/index.php3?lang=it (this go to italian version)
+http://www.site.com/index.php3?lang=us (this go to english version)
+http://www.site.com/index.php3?lang=anotherlanguage (a language you have specified)
+and goo on:))
+(Tips: if you try http://www.site.com/index.php3 the script redirect you to italian
+version, change $lang = "it"; to $lang = "yourlanguage"; in the code:
+if (! isset($lang)) {
+	$lang = "it";
+} )
+
+Step 9:
+ENJOY With this System and sometimes visit my site ^_^ http://www.kakchan.com
+
+Eof

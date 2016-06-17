@@ -1,0 +1,3 @@
+This folder contains any images you need to reference in your docs. IMG tags should look like this:
+
+<img src="images/your_image_name.gif" />
